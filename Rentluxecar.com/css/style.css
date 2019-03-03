@@ -10,11 +10,13 @@ p {
 a {
     text-decoration: none !important;
 }
-button{
-    outline: none!important;
+
+button {
+    outline: none !important;
 }
-label{
-    margin: 0!important;
+
+label {
+    margin: 0 !important;
 }
 
 .s-surfing {
@@ -316,19 +318,19 @@ label{
 .tour__footer {
     background: rgba(0, 0, 0, 0.5);
     padding: 12px 12px 12px 30px;
-    display: -webkit-box!important;
-    display: -webkit-flex!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -webkit-box-orient: horizontal!important;
-    -webkit-box-direction: normal!important;
-    -webkit-flex-direction: row!important;
-    -ms-flex-direction: row!important;
-    flex-direction: row!important;
-    -webkit-box-pack: justify!important;
-    -webkit-justify-content: space-between!important;
-    -ms-flex-pack: justify!important;
-    justify-content: space-between!important;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-pack: justify !important;
+    -webkit-justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
 }
 
 .tour__footer p {
@@ -396,11 +398,12 @@ label{
     -o-transition: all ease 1s;
     transition: all ease 1s;
 }
-.one__out:hover{
+
+.one__out:hover {
     -webkit-transition: all ease 1s;
     -o-transition: all ease 1s;
     transition: all ease 1s;
-     opacity: 1;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -437,6 +440,7 @@ label{
 .one__title {
     font-size: 36px;
 }
+
 .two__out {
     background: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -452,11 +456,12 @@ label{
     -o-transition: all ease 1s;
     transition: all ease 1s;
 }
-.two__out:hover{
+
+.two__out:hover {
     -webkit-transition: all ease 1s;
     -o-transition: all ease 1s;
     transition: all ease 1s;
-     opacity: 1;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -560,43 +565,32 @@ label{
     padding-bottom: 20px;
 }
 
-/*
-.cars__item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-*/
-
 /*Cars Exp Background*/
 .cars__one {
-    background: url(../img/images/car_1.png) center center no-repeat;
-    background-size: cover;
-    width: 260px;
-    height: 270px;
-    border: 1px solid #f9f9f9;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+        -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+    border:2px solid #fafafa;
+}
+.cars__one:hover{
+        -webkit-box-shadow: 0px 0px 76px -29px rgba(168, 168, 168, 1);
+    box-shadow: 0px 0px 76px -29px rgba(168, 168, 168, 1);
+    -webkit-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
 }
 
 .cars__two {
@@ -824,16 +818,16 @@ label{
     color: #696969;
     text-align: center;
     margin-bottom: 20px;
-    
+
 }
-.cars__pick p{
-        padding-bottom: 10px;
+
+.cars__pick p {
+    padding-bottom: 10px;
 }
 
 .cars__pick:hover {
     color: #8d8d8d;
--webkit-box-shadow: 0px 0px 76px -29px rgba(168,168,168,1);
-box-shadow: 0px 0px 76px -29px rgba(168,168,168,1);
+
 }
 
 .cars__pick {
@@ -1040,23 +1034,26 @@ box-shadow: 0px 0px 76px -29px rgba(168,168,168,1);
 .slick-dots {
     display: none !important;
 }
-.form-control{
+
+.form-control {
     width: 150px;
-    outline: none!important;
+    outline: none !important;
     border: none;
     cursor: pointer;
 }
+
 .form-control option {
     padding: 10px;
 }
-.form-control:focus{
-    outline: none!important;
+
+.form-control:focus {
+    outline: none !important;
     border: none;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.slick-next.slick-arrow{
+.slick-next.slick-arrow {
     right: 10px;
     background: url(../img/slideNext.png);
     width: 50px;
@@ -1065,23 +1062,29 @@ box-shadow: 0px 0px 76px -29px rgba(168,168,168,1);
     -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
-.slick-next.slick-arrow:hover{
+
+.slick-next.slick-arrow:hover {
     -webkit-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0.5;
 }
-.slick-next:before,.slick-prev:before{content: '';
+
+.slick-next:before,
+.slick-prev:before {
+    content: '';
 }
-.slick-prev.slick-arrow{
-        left: 10px;
+
+.slick-prev.slick-arrow {
+    left: 10px;
     background: url(../img/slidePrev.png);
     width: 50px;
     height: 50px;
     z-index: 1;
 }
-.slick-prev.slick-arrow:hover{
-        -webkit-transition: all ease 0.5s;
+
+.slick-prev.slick-arrow:hover {
+    -webkit-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0.5;

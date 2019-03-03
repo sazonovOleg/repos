@@ -123,6 +123,9 @@
     .m-other-tour-slide {
         display: block;
     }
+    .fixedNavToggler{
+        display: none;
+    }
 }
 
 @media all and (max-width : 768px) {
