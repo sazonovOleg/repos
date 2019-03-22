@@ -165,5 +165,8 @@
     .block_eight__wrap p {
         font-size: 14px;
     }
+    .block_three__col{
+        height: 350px;
+    }
 }
 }
