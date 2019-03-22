@@ -1,6 +1,7 @@
-body{
+body {
     font-family: 'Comfortaa', cursive;
 }
+
 button {
     outline: none !important;
 }
@@ -11,7 +12,8 @@ button {
 }
 
 .header_container {
-    padding-top: 25px;
+        padding-top: 0;
+    margin-top: -5px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -31,25 +33,69 @@ button {
     align-items: flex-end;
 }
 
+.header__link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__link a {
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+    text-decoration: none;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.header__link a:hover {
+    -webkit-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
+    color: #9ecef2;
+    opacity: 0.7;
+}
+
+.header__link img {
+    width: 25px;
+    height: 25px;
+}
+
 .header_container__logo img {
     width: 150px;
     height: auto;
     cursor: pointer;
 }
 
-.container__menu{
+.container__menu {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background: url(../img/menu.png) center center no-repeat;
     background-size: cover;
 }
 
-.header_container__link{
+.header_container__link {
     font-size: 14px;
     padding-right: 35px;
     text-decoration: none;
@@ -146,7 +192,7 @@ button {
     border: none;
     font-family: 'Comfortaa', cursive;
     border-radius: 5px;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     -webkit-transition: all ease 0.5s;
     -o-transition: all ease 0.5;
     -webkit-transition: all ease 0.5;
@@ -820,7 +866,7 @@ button {
     -webkit-transition: all ease 0.5;
     transition: all ease 0.5;
     color: #fff;
-    margin-bottom: 30px;
+    margin: 20px 0 30px 0;
 }
 
 .block_ten__btn:hover {
@@ -894,8 +940,8 @@ footer {
 }
 
 .footer_inst img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
