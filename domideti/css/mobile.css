@@ -37,6 +37,29 @@
 }
 
 @media all and (max-width : 768px) {
+    header {
+        background-attachment: unset;
+    }
+
+    .day {
+
+        background-attachment: unset;
+    }
+
+    .finish {
+        background-attachment: unset;
+    }
+
+    .arifm {
+
+        background-attachment: unset;
+    }
+
+    .footer {
+
+        background-attachment: unset;
+    }
+
     .navbar {
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
@@ -175,7 +198,8 @@
     .every_xs {
         display: block;
     }
-    .collapse.show{
+
+    .collapse.show {
         width: 95%;
     }
 
@@ -194,7 +218,8 @@
     .why_wrap img {
         left: 25%;
     }
-    .arifm_wrap__title{
+
+    .arifm_wrap__title {
         font-size: 22px;
     }
 }
@@ -222,6 +247,7 @@
     .why_wrap img {
         left: 18%;
     }
+
     .day_wrap h4 {
         font-size: 24px;
     }
