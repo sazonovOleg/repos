@@ -1,0 +1,228 @@
+@media all and (max-width : 1200px) {}
+
+@media all and (max-width : 1024px) {
+    .header_logo img {
+        width: 250px;
+    }
+
+    .why_wrap {
+        margin-bottom: 25px;
+        height: 300px;
+    }
+
+    .why_wrap p {
+        padding: 20px 15px 15px 15px;
+        text-align: left;
+        color: #727272;
+        height: 300px;
+    }
+
+    .why_wrap img {
+        top: 20%;
+        left: 25%;
+
+    }
+
+    .why_text {
+        text-align: center;
+    }
+
+    .emotzy_text p {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .size_lg {
+        padding: 10px 30px 30px 10px !important;
+    }
+}
+
+@media all and (max-width : 768px) {
+    .navbar {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .header_nav {
+        z-index: 1000;
+    }
+
+    .header_link {
+        opacity: 1;
+    }
+
+    .header_link:hover {
+        padding-top: 0;
+    }
+
+    .header_link:nth-child(1) {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .header_link:nth-child(5) {
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    .why_wrap,
+    .why_text {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .why_wrap img {
+        left: 30%;
+
+    }
+
+    .day_wrap h4 {
+        font-size: 28px;
+    }
+
+    .photo_link {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .icons_wrap {
+        padding: 6px 0;
+    }
+
+    .footer_wrap__link {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer_wrap {
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width : 425px) {
+    .header_column h1 {
+        font-size: 32px;
+    }
+
+    .vizit_btn {
+        padding: 12px 30px;
+    }
+
+    .why_wrap {
+        min-height: 300px;
+        height: auto;
+    }
+
+    .why_wrap p {
+        height: auto;
+    }
+
+    .why_wrap,
+    .why_text {
+        text-align: center;
+        max-width: 395px;
+    }
+
+    .why_text p {
+        height: auto;
+    }
+
+    .day_wrap {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+    .emotzy_text p {
+        margin: 0 auto;
+        max-width: 200px;
+        height: 128px;
+        padding: 10px 0 0 0 !important;
+    }
+
+    .emotzy_image p {
+        max-width: 200px;
+        margin: 0 auto;
+        border-bottom: 2px solid #a2d9f7;
+        margin-bottom: 20px;
+    }
+
+    .every_md {
+        display: none;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .every_xs {
+        display: block;
+    }
+    .collapse.show{
+        width: 95%;
+    }
+
+    .photo_row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .photo_image {
+        margin-bottom: 20px;
+    }
+
+    .why_wrap img {
+        left: 25%;
+    }
+    .arifm_wrap__title{
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width : 375px) {
+    .main_title {
+        font-size: 24px;
+    }
+
+    .header_logo img {
+        width: 200px;
+    }
+
+    .navbar-toggler-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .why_wrap img {
+        left: 22%;
+    }
+}
+
+@media all and (max-width : 320px) {
+    .why_wrap img {
+        left: 18%;
+    }
+    .day_wrap h4 {
+        font-size: 24px;
+    }
+}

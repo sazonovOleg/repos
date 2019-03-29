@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="block_form" action="send.php" method="post">
+                        <input class="block_input" type="text" name="fio" placeholder="ФИО">
+                        <input class="block_input" type="email" name="fio" placeholder="Почта">
+                        <input class="block_input" type="tel" name="tel" placeholder="Номер телефона">
+                        <input input type="submit" value="Отправить" class="block_btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <section class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand header_logo" href="#"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse header_nav" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link header_link" href="#">
+                                <p>Почему мы?</p>
+                            </a>
+                            <a class="nav-item nav-link header_link" href="#">Программа лагеря</a>
+                            <a class="nav-item nav-link header_link" href="#">Цена</a>
+                            <a class="nav-item nav-link header_link" href="#">Оставить заявку</a>
+                            <a class="nav-item nav-link header_link" href="#">Контакты</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="header_column col-12">
+                        <h1>
+                            Городской летний лагерь <br>«Дом и Дети»</h1>
+                        <button class="vizit_btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="why">
+
+            <div class="container">
+                <h1 class="main_title">Почему Вам стоит выбрать наш городской лагерь?</h1>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_wrap">
+                            <h3>Нескучные каникулы</h3>
+                            <img src="img/camping.png" alt="">
+                            <p>Программа лагеря насыщенна и разнообразна, разработана с учетом интересов подрастающего поколения.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_wrap">
+                            <h3>WhatsApp контроль</h3>
+                            <img src="img/shield.png" alt="">
+                            <p>Вы всегда будете в курсе всего, что происходит с Вашим ребенком: что у него сегодня на обед, или одел ли он на прогулку кепку? Для каждой смены создается чат в WatsApp, куда педагоги будут отправлять все самые интересные моменты из лагерной жизни!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_wrap">
+                            <h3>Лето без планшета!</h3>
+                            <img src="img/smartphone.png" alt="">
+                            <p>В сторону гаджеты, ведь вокруг столько интересного! Мы будем проводить время весело и с пользой, а планшетами и телефонами пользоваться не будем.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_wrap">
+                            <h3>Вожатые, которые не боятся детей</h3>
+                            <img src="img/fear.png" alt="">
+                            <p>Наши вожатые – не студенты, а настоящие профессионалы, за плечами которых сотня воспитанников. Они знают о детях всё, и даже больше. Найдут общий язык и с застенчивой стесняшкой, и с бойким озорником-заводилой! Индивидуальный подход к каждому ребенку – не просто слова, а принцип работы наших вожатых!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-12">
+                        <div class="why_text">
+                            <h3>1 смена – 1 неделя</h3>
+                            <p>Присоединяйтесь в удобное время.
+                                Каждая смена длится 5 рабочих дней.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_text">
+                            <h3>8:00-19:30 </h3>
+                            <p>Время работы лагеря</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_text">
+                            <h3>1 экскурсия в смену </h3>
+                            <p>Включена в стоимость</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <div class="why_text">
+                            <h3>7-11 лет</h3>
+                            <p>Возраст участников</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="day">
+
+            <div class="container">
+                <h1 class="main_title">Наш режим дня:</h1>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>8:00-8:45</h4>
+                            <p>встреча друзей, настольные игры</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>8:45-9:00</h4>
+                            <p>хип-хоп зарядка</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>9:00-9:30</h4>
+                            <p>вкусный завтрак</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>9:30-10:00</h4>
+                            <p>обсуждение планов на день</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>10:00-11:30</h4>
+                            <p>мероприятия дня</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>11:30-12:00</h4>
+                            <p>полезный перекус</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>12:00-13:45</h4>
+                            <p>игры, эстафеты, спортивные соревнования, тематические мероприятия на свежем воздухе</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>14:00-14:30</h4>
+                            <p>сытный обед</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>14:30-15:30</h4>
+                            <p>время спокойного отдыха</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>15:30-17:00</h4>
+                            <p>мероприятия дня</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>17:00-17:30</h4>
+                            <p>легкий ужин</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>17:30-18:30</h4>
+                            <p>вечерняя прогулка или тематические мероприятия в зависимости от погоды</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="day_wrap">
+                            <h4>18:30</h4>
+                            <p>подведение итогов дня, уход домой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emotzy">
+
+            <div class="container">
+                <h1 class="main_title">Каждая смена – новые друзья и эмоции. А ещё …</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/ball.png" alt="">
+                            <p>Спорт</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p>
+                                Быстрее, выше, сильнее! Ни дня без движения!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/paint-palette.png" alt="">
+                            <p>Творчество</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p class="size_xs">
+                                Креативим на бумаге, и не только.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image"> <img src="img/bus.png" alt="">
+                            <p>Экскурсии</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p>
+                                Познаем новое, интересное, неизведанное.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/laugh.png" alt="">
+                            <p>Познаем новое, интересное, неизведанное. </p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p class="size_lg">
+                                Некогда скучать, вокруг столько интересного: игры, конкурсы, песни, танцы…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/hiking.png" alt="">
+                            <p>Прогулки</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p class="size_lg">
+                                У природы нет плохой погоды, а если есть, то одеваемся потеплее.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/project-management.png" alt="">
+                            <p>Проекты</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p class="size_lg">
+                                Учимся правильно излагать свои мысли, расширяем кругозор, фантазируем с пользой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image"> <img src="img/map.png" alt="">
+                            <p>Квесты</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p>
+                                Модно, увлекательно, всегда захватывающе!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 emotzy_wrap">
+                        <div class="emotzy_image">
+                            <img src="img/chemistry.png" alt="">
+                            <p>Научные лаборатории</p>
+                        </div>
+                        <div class="emotzy_text">
+                            <p>
+                                Безопасно, интересно и наглядно изучаем устройство мира!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="finish">
+            <div class="container">
+                <h1 class="main_title">Отзывы родителей о нескучных каникулах в городском лагере «Дом и Дети»</h1>
+                <div class="finish_row row">
+                    <div class="col-12">
+                        <p>Добрый день! Хочу сказать тёплые, добрые слова благодарности всему коллективу центра "Дом и Дети" за внимание, доброту и заботу о наших детях, за проведение разных мероприятий, праздников и интересных занятий в городском летнем лагере. Очень хочется отметить профессиональный уровень, душевное тепло и любовь к детям вожатых Ольги и Валерии! Огромное спасибо Вам за создание эмоционально-положительной атмосферы в отряде, за то, что с уважением относитесь к каждому ребенку!</p>
+                        <span>Елена, мама Максима, 9 лет.</span>
+                    </div>
+                    <button class="finish_btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Показать ещё отзывы
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body row">
+                            <div class="col-12 finish_column">
+                                <p> Моя дочка ходила в городской летний лагерь в центре Дом и Дети, безумно довольна! Посетили все смены в 2018 году. Дочка ждёт с нетерпением следующего лета, чтобы вновь пойти в лагерь))</p>
+                                <span>Галина, мама Маши, 10 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Довольна работой летнего лагеря. Жалко, что попали только одну смену, надеемся в следующем году удастся посетить больше! Моему сыночку очень понравилось, не хотел уходить. В сентябре придем на занятия!</p>
+                                <span>Ирина, мама Артема, 7 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Спасибо за наше спокойствие! Так не хотелось, чтобы ребенок провел все лето в четырех стенах, пока мы на работе. На помощь пришел городской лагерь в центре Дом и Дети. Каждый вечер дочь рассказывала, чем они занимались и что нового узнали. Остались довольны! Спасибо администрации центра и вожатым Алексею и Татьяне за хорошую профессиональную работу! </p>
+                                <span>Нина, мама Андрея, 9 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Ребенок прекрасно провел время! Мы очень довольны. Вожатые большие молодцы, сумели заинтересовать детей. Понравилось то, что каждый день было что-то новое: игры, квесты, экскурсии, конкурсы… Спасибо!</p>
+                                <span>Анастасия, мама Тимура, 8 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Все было просто супер! Дочка очень довольна! Огромное спасибо Веронике Владимировне и Алексею Игоревичу! Катюшка уже скучает.</p>
+                                <span>Татьяна, мама Кати, 7 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Дочь посещала первую смену лагеря на ул. Новосёлов,37, осталась очень довольна! Каждый день была определенная тема, материал подавался в интересной форме, затем какая-нибудь поделка на изучаемую тему, очень много рисовали. Были и подвижные игры на улице и настольные игры в плохую погоду, дети сами для себя готовили на полдник блюда разных народов. Особо хочу отметить, что ребята, несмотря на разный возраст, так хорошо организованы вожатыми, что всем интересно и все постоянно при деле! Выражаю огромную благодарность вожатым чуткое отношение к деткам и профессионализм в педагогическом деле!</p>
+                                <span>Юлия, мама Ксении, 8 лет.</span>
+                                <div class="finish_border"></div>
+                            </div>
+                            <div class="col-12">
+                                <p>Быстро пролетели две недели…уже закрытие первой смены. Что хочется сказать. Все было отлично!!!! Боялась, что моя походит два дня, а потом не захочет вставать по утрам. А нет! Вскакивала - я бы сказала, все две недели и бежала бегом. Всё было очень интересно, каждый день что-то новое. Спасибо большое нашим вожатым Алексею и Татьяне. А также всем, кто принимал участие и помогал нашим вожатым с нашими детьми.</p>
+                                <span>Ольга, мама Маши, 11 лет.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="every">
+            <div class="container">
+                <h1 class="main_title">Море эмоций и горы впечатлений каждый день!</h1>
+                <div class="row every_md">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-6 every_column"><img src="img/five.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/six.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/eleven.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/eight.jpg" alt=""></div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-6 every_column"><img src="img/nine.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/ten.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/twelve.jpg" alt=""></div>
+                                    <div class="col-6 every_column"><img src="img/seven.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row every_xs">
+                    <div id="carouselExampleControlsOne" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/five.jpg" alt=""></div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/six.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/eleven.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/eight.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/nine.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/ten.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/twelve.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 every_column"><img src="img/seven.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControlsOne" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControlsOne" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo">
+            <div class="container">
+                <h1 class="main_title">Ежедневный фотоотчет</h1>
+                <div class="row photo_row">
+                    <div class="col-12 col-sm-6">
+                        <p>
+                            Каждый день мы ловим в объектив фотоаппарата самые яркие моменты. Регулярно мы публикуем в наших социальных сетях VK и Instagram фото и видео, чтобы вы всегда были в курсе нашей насыщенной лагерной жизни!
+                        </p>
+                        <div class="photo_link"> <a class="icons_wrap" href="">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="">Мы Вконтакте<img class="icons_link" src="img/vk.png" alt=""></a></div>
+
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img class="photo_image" src="img/bgr.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="arifm">
+            <div class="container">
+                <h1 class="main_title">Простая арифметика веселого лета! </h1>
+                <div class="row arifm_row">
+                    <div class="col-12 arifm_wrap__title">
+                        <p>Специальное предложение для тех, кто планирует свое время заранее.<br>
+                            Чем раньше покупаете путевку в лагерь, тем выгоднее для Вас!</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_red">5600 ₽</p><span>За 55 дней до начала смены</span>
+                        </div>
+                        <img class="arifm_image" src="img/red.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_green">5600 ₽</p><span>За 55 дней до начала смены</span>
+                        </div><img class="arifm_image" src="img/green.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_blue">5600 ₽</p><span>За 55 дней до начала смены</span>
+                        </div><img class="arifm_image" src="img/blue.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_orange">5600 ₽</p><span>За 55 дней до начала смены</span>
+                        </div><img class="arifm_image" src="img/orange.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_purple">5600 ₽</p><span>За 55 дней до начала смены</span>
+                        </div><img class="arifm_image" src="img/purple.png" alt="">
+                    </div>
+                    <div class="col-12 arifm_wrap__title first">
+                        <p>С каждой новой сменой Вы получаете новую скидку!</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_blue">7000 ₽</p><span>1 смена</span>
+                        </div>
+                        <img class="arifm_image" src="img/blue-one.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_orange">6300 ₽</p><span>2 смены</span>
+                        </div><img class="arifm_image" src="img/orange-one.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_green">5600 ₽</p><span>3 смены</span>
+                        </div><img class="arifm_image" src="img/green-two.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <div class="arifm_text">
+                            <p class="text_red">4900 ₽</p><span>4 смены</span>
+                        </div><img class="arifm_image" src="img/red-one.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="connct">
+            <div class="container">
+                <h1 class="main_title">Присоединяйтесь в любое время, когда Вам удобно. </h1>
+                <div class="row">
+                    <div class="connct_column col-12 col-md-6">
+                        <div class="connct_wrap">
+                            <p>3-7 июня</p>
+                            <img src="img/one.jpg" alt="Эко-дизайн или «Очумелые ручки»">
+                            <h5>Эко-дизайн или «Очумелые ручки»</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="connct_column connct_wrap">
+                            <p>10-14 июня</p>
+                            <img src="img/two.jpg" alt="Эко-дизайн или «Очумелые ручки»">
+                            <h5>«Дарвин» мир природы</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="connct_column connct_wrap">
+                            <p>17-21 июня</p>
+                            <img src="img/three.jpg" alt="Эко-дизайн или «Очумелые ручки»">
+                            <h5>«Головоломка» квесты, расследования, логика</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="connct_column connct_wrap">
+                            <p>24-28 июня</p>
+                            <img src="img/four.jpg" alt="Эко-дизайн или «Очумелые ручки»">
+                            <h5>«Тайны закулисья» театральная смена</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vizit">
+            <div class="container">
+                <h1 class="main_title">Оставьте заявку на городской лагерь прямо сейчас!</h1>
+                <div class="row">
+                    <div class="vizit_column col-12">
+                        <button class="vizit_btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parents">
+            <div class="container">
+                <h1 class="main_title">Вопросы, которые нам часто задают родители:</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="parents_wrap">
+                            <h5>Сколько раз в день дети кушают?</h5>
+                            <p>В лагере организовано 4- разовое питание: завтрак, второй завтрак, обед, полдник, ужин, чаепитие. Специальное детское меню заботливо разработано нашим шеф-поваром, с учетом особенностей растущего организма ребенка.
+                                Даже малоежки кушают за обе щёки в компании друзей.</p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExampleOne">
+                        <div class="card card-body row">
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5>Сколько раз в день дети кушают?</h5>
+                                    <p>В лагере организовано 4- разовое питание: завтрак, второй завтрак, обед, полдник, ужин, чаепитие. Специальное детское меню заботливо разработано нашим шеф-поваром, с учетом особенностей растущего организма ребенка.
+                                        Даже малоежки кушают за обе щёки в компании друзей.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5>Как часто дети гуляют?</h5>
+                                    <p>Мы выходим на прогулку 1 или 2 раза в день, в зависимости от погодных условий.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5>Дети какого возраста посещают лагерь?</h5>
+                                    <p>Основная масса детей – 7-11 лет, однако в наших отрядах прекрасно и комфортно себя чувствуют и дети 6 лет, и 12-13 лет.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5>Сколько вожатых в одной смене?</h5>
+                                    <p>В каждой смене работают 2 вожатых.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5> Есть ли у вожатых опыт работы с детьми и педагогическое образование?</h5>
+                                    <p> Все вожатые, которые работают в городском лагере «Дом и Дети» имеют педагогическое или психолого-педагогическое образование и опыт работы с детьми данного возраста, знают как найти подход к любому ребенку и стать для него настоящим другом.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="parents_wrap">
+                                    <h5> Если я не смогу приводить ребенка каждый день, или захочу присоединиться в середине смены?</h5>
+                                    <p> Вы можете приводить ребенка, когда есть возможность или необходимость. Для этого предусмотрен вариант оплаты лагеря по дням.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="finish_btn" type="button" data-toggle="collapse" data-target="#collapseExampleOne" aria-expanded="false" aria-controls="collapseExample">
+                        Показать ещё ответы
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <h1 class="main_title">Контакты</h1>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="footer_wrap">
+                            <p>г.Рязань ул.Комбайновая, 26<a class="link_tel" href="">тел. 8(4912)37-37-27</a></p>
+                            <p>г.Рязань ул.Новосёлов, 37<a class="link_tel" href="">тел. 8(4912)90-91-16</a></p>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="footer_wrap__link">
+                            <a class="icons_wrap" href="">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="">Мы Вконтакте<img class="icons_link" src="img/vk.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <iframe class="footer_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31086.390432817076!2d39.750082299280926!3d54.61262795062982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4149e22d71ad6143%3A0xe073e38d3310fa10!2z0J3QuNC20L3QuNC5INCz0L7RgNC-0LTRgdC60L7QuSDRgdCw0LQ!5e0!3m2!1sru!2sru!4v1553759149868" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
