@@ -94,7 +94,6 @@ p {
 header {
     background: url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .header {
@@ -131,16 +130,17 @@ header {
     display: block;
     padding: 15px 5px;
     text-align: center;
-    opacity: 0.75;
+    opacity: 0.89;
     -webkit-transition: all ease 1s;
     -o-transition: all ease 1s;
     transition: all ease 1s;
     height: 65px;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .header_column {
-    padding: 150px 0 105px 0;
+    padding: 250px 0 145px 0;
     text-align: center;
 }
 
@@ -564,6 +564,18 @@ header {
 
 .photo_link {
     padding-top: 15px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .arifm {
