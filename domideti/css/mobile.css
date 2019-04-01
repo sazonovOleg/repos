@@ -88,13 +88,15 @@
     }
 
     .header_link:nth-child(1) {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
     .header_link:nth-child(5) {
-        border-bottom-right-radius: 3px;
-        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
     .why_wrap,
@@ -131,6 +133,12 @@
 }
 
 @media all and (max-width : 425px) {
+    .header_logo p {
+        padding-left: 10px;
+    }
+    .navbar{
+        padding: 10px;
+    }
     .header_column h1 {
         font-size: 32px;
     }
