@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="shortcut icon" href="img/ico.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
@@ -27,8 +28,11 @@
                 <div class="modal-body">
                     <div class="block_ten__wrap col-12">
                         <form class="block_ten__form" action="send.php" method="post">
-                            <input class="block_ten__input" type="text" name="fio" placeholder="Имя">
-                            <input class="block_ten__input" type="tel" name="tel" placeholder="Номер телефона">
+                            <input type="hidden" name="project_name" value="Zevs-studio">
+                            <input type="hidden" name="admin_email" value="sazonovoleg93@gmail.com">
+                            <input type="hidden" name="form_subject" value="Заявка">
+                            <input class="block_ten__input" type="text" name="Name" name="fio" placeholder="ФИО">
+                            <input class="block_ten__input" type="text" name="Phone" name="tel" placeholder="Номер телефона">
                             <input input type="submit" value="Отправить" class="block_ten__btn">
                         </form>
 
@@ -37,7 +41,6 @@
             </div>
         </div>
     </div>
-
 
     <section class="header">
         <div class="header__link container">
@@ -532,6 +535,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <script type="text/javascript">
         $(function() {
             $('.link_one').on('click', function(e) {
