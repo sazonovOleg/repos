@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <title></title>
+    <title> Городской летний лагерь "Дом и Дети" </title>
 </head>
 
 <body>
@@ -24,10 +24,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="block_form" action="send.php" method="post">
-                        <input class="block_input" type="text" name="fio" placeholder="ФИО">
-                        <input class="block_input" type="email" name="fio" placeholder="Почта">
-                        <input class="block_input" type="tel" name="tel" placeholder="Номер телефона">
+                    <form class="block_form">
+                        <input type="hidden" name="project_name" value="Детский городской лагерь">
+                        <input type="hidden" name="admin_email" value="sazonovoleg93@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка">
+                        <input class="block_input" type="text" name="Name" name="fio" placeholder="ФИО">
+                        <input class="block_input" type="text" name="E-mail" name="fio" placeholder="Почта">
+                        <input class="block_input" type="text" name="Phone" name="tel" placeholder="Номер телефона">
                         <input input type="submit" value="Отправить" class="block_btn">
                     </form>
                 </div>
@@ -35,7 +38,7 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand header_logo" href="http://xn--d1aadkcun0b.xn--p1ai/kid-center/" target="_blank"><p>центр детского развития</p><img src="img/logo.png" alt=""></a>
+        <a class="navbar-brand header_logo" href="http://xn--d1aadkcun0b.xn--p1ai/kid-center/" target="_blank"><img src="img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,7 +60,7 @@
                     <div class="header_column col-12">
                         <h1>
                             НЕСКУЧНЫЕ КАНИКУЛЫ В ГОРОДЕ</h1>
-                            <h3>городской летний лагерь <span>&#8226;</span> с 8:30 до 18:30 <span>&#8226;</span> от 6 до 11 лет </h3>
+                        <h3>городской летний лагерь <span>&#8226;</span> с 8:30 до 18:30 <span>&#8226;</span> от 6 до 11 лет </h3>
                         <button class="header_btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
                     </div>
                 </div>
@@ -470,10 +473,6 @@
                             Каждый день мы ловим в объектив фотоаппарата самые яркие моменты. Регулярно мы публикуем в наших социальных сетях VK и Instagram фото и видео, чтобы вы всегда были в курсе нашей насыщенной лагерной жизни!
                         </p>
                         <div class="photo_link"> <a class="icons_wrap" href="https://www.instagram.com/domideti/" target="_blank">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="https://vk.com/domidetki" target="_blank">Мы Вконтакте<img class="icons_link" src="img/vk.png" alt=""></a></div>
-
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <img class="photo_image" src="img/bgr.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -525,17 +524,17 @@
                     </div>
                     <div class="col-lg-2 col-sm-4 col-12 mb-4">
                         <div class="arifm_text">
-                            <p class="text_orange">6300 ₽</p><span>2 смены</span>
+                            <p class="text_orange">6300 ₽</p><span>2 смена</span>
                         </div><img class="arifm_image" src="img/orange-one.png" alt="">
                     </div>
                     <div class="col-lg-2 col-sm-4 col-12 mb-4">
                         <div class="arifm_text">
-                            <p class="text_green">5600 ₽</p><span>3 смены</span>
+                            <p class="text_green">5600 ₽</p><span>3 смена</span>
                         </div><img class="arifm_image" src="img/green-two.png" alt="">
                     </div>
                     <div class="col-lg-2 col-sm-4 col-12 mb-4">
                         <div class="arifm_text">
-                            <p class="text_red">4900 ₽</p><span>4 смены</span>
+                            <p class="text_red">4900 ₽</p><span>4 смена</span>
                         </div><img class="arifm_image" src="img/red-one.png" alt="">
                     </div>
                 </div>
@@ -671,6 +670,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <script type="text/javascript">
         $(function() {
             $('.link_one').on('click', function(e) {
