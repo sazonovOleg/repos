@@ -24,13 +24,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="block_form">
-                        <input type="hidden" name="project_name" value="Детский городской лагерь">
-                        <input type="hidden" name="admin_email" value="sazonovoleg93@gmail.com">
-                        <input type="hidden" name="form_subject" value="Заявка">
-                        <input class="block_input" type="text" name="Name" name="fio" placeholder="ФИО">
-                        <input class="block_input" type="text" name="E-mail" name="fio" placeholder="Почта">
-                        <input class="block_input" type="text" name="Phone" name="tel" placeholder="Номер телефона">
+                    <form class="block_form" id="contact-form" method="post" action="contact.php" role="form">
+                        <input class="block_input" id="form_name" type="text" name="name"  placeholder="ФИО" required="required" data-error="Имя указано неверно">
+                        <input class="block_input" id="form_email" type="email" name="email" class="form-control" placeholder="Ваша почта" required="required" data-error="Неправильно указан email">
+                        <input class="block_input" id="form_lastname" name="surname" class="form-control" placeholder="Номер телефона" required="required" data-error="Неправильно указан номер">
                         <button class="block_btn"> Отправить</button>
                     </form>
                 </div>

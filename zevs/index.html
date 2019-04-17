@@ -27,12 +27,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="block_ten__wrap col-12">
-                        <form class="block_ten__form">
-                            <input type="hidden" name="project_name" value="Zevs-studio">
-                            <input type="hidden" name="admin_email" value="sazonovoleg93@gmail.com">
-                            <input type="hidden" name="form_subject" value="Заявка">
-                            <input class="block_ten__input" type="text" name="Name" name="fio" placeholder="ФИО">
-                            <input class="block_ten__input" type="text" name="Phone" name="tel" placeholder="Номер телефона">
+                        <form class="block_ten__form" id="contact-form" method="post" action="contact.php" role="form">
+                            <input class="block_ten__input" id="form_name" type="text" name="name"  placeholder="ФИО" required="required" data-error="Имя указано неверно">
+                            <input class="block_ten__input" id="form_lastname" name="surname" class="form-control" placeholder="Номер телефона" required="required" data-error="Неправильно указан номер">
+                            <input class="block_ten__input" id="form_email" type="email" name="email" class="form-control" placeholder="Ваша почта" required="required" data-error="Неправильно указан email">
                             <button class="block_ten__btn"> Отправить</button>
                         </form>
                     </div>
@@ -329,13 +327,12 @@
                             </div>
                             <div class="modal-body">
                                 <div class="block_ten__wrap col-12">
-                                    <form class="block_ten__form" action="send.php" method="post">
-                                        <input class="block_ten__input" type="text" name="fio" placeholder="ФИО">
-                                        <input class="block_ten__input" type="tel" name="tel" placeholder="Номер телефона">
-                                        <textarea class="block_ten__input" name="" id="" cols="30" rows="10"></textarea>
+                                    <form class="block_ten__form" form id="contact-form" method="post" action="contact.php" role="form">
+                                        <input class="block_ten__input" id="form_name" type="text" name="name"  placeholder="ФИО" required="required" data-error="Имя указано неверно">
+                                        <input class="block_ten__input"  id="form_lastname" name="surname" class="form-control" placeholder="Номер телефона" required="required" data-error="Неправильно указан номер">
+                                        <textarea class="block_ten__input" id="form_phone" name="message" id="form_massage" cols="30" rows="10"></textarea>
                                         <input input type="submit" value="Отправить" class="block_ten__btn">
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -503,11 +500,11 @@
             </div>
             <div class="row">
                 <div class="block_ten__wrap col-12">
-                    <form class="block_ten__form" action="">
-                        <input class="block_ten__input" type="text" placeholder="Имя">
-                        <input class="block_ten__input" type="tel" placeholder="Номер телефона">
+                    <form class="block_ten__form" form id="contact-form" method="post" action="contact.php" role="form">
+                        <input class="block_ten__input" placeholder="Имя" id="form_name" type="text" name="name"  placeholder="ФИО" required="required" data-error="Данные введены неверно">
+                        <input class="block_ten__input" id="form_lastname" name="surname" class="form-control" placeholder="Номер телефона" required="required" data-error="Неправильно указан номер">
+						<input input type="submit" value="Записаться на тренировку" class="block_ten__btn">
                     </form>
-                    <button class="block_ten__btn">Записаться на тренировку</button>
                 </div>
             </div>
         </div>
@@ -534,7 +531,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="contact.js"></script>
     <script type="text/javascript">
         $(function() {
             $('.link_one').on('click', function(e) {
