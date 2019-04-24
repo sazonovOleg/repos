@@ -1,0 +1,32 @@
+@media all and (max-width : 1200px) {}
+
+@media all and (max-width : 1024px) {}
+
+@media all and (max-width : 768px) {
+    .nav-tabs {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 11px;
+        max-width: 260px;
+    }
+}
+
+@media all and (max-width : 425px) {
+    .title_wrap__main {
+        font-size: 30px;
+    }
+
+    .nav-tabs .nav-link {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (max-width : 375px) {}
+
+@media all and (max-width : 320px) {}
