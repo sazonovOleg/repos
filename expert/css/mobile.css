@@ -60,6 +60,17 @@
 }
 
 @media all and (max-width : 768px) {
+    .header_nav {
+        padding: 20px;
+        background: #65696e;
+        color: #fff;
+    }
+    .header_nav:nth-child(1) {
+        border-top-left-radius: 55px;
+    }
+    .header_nav:nth-child(4) {
+        border-bottom-right-radius: 55px;
+    }
     .carousel-control-prev.prev {
         left: -40px;
     }
@@ -72,7 +83,9 @@
         width: 250px;
         margin-bottom: 10px;
     }
-
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
     .nav-tabs {
         -webkit-box-pack: start;
         -webkit-justify-content: flex-start;
@@ -108,11 +121,17 @@
     .footer_col__input {
         margin-right: 5px;
     }
+    .footer_col__phone  {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
 
 }
 
 @media all and (max-width : 425px) {
-        .carousel-control-prev {
+    .carousel-control-prev {
         display: none;
     }
 
@@ -127,43 +146,77 @@
     .carousel-control-next.next {
         display: none;
     }
+
     .service_row__col {
         max-width: 310px;
         margin: 0 auto;
         margin-bottom: 20px;
     }
+
     .footer_col.end {
         padding-top: 20px;
     }
+
     .exam_col__title {
         font-size: 30px;
     }
+
     .exam_col__text {
         font-size: 14px;
     }
+
     .main_title__iner {
         font-size: 30px
     }
+
     .header_logo {
         width: 200px;
     }
+
     .header_nav {
         border: 1px solid #f3f6f8;
         max-width: 180px;
         padding: 20px;
     }
+
     .header_nav:nth-child(4) {
         border-right: 1px solid #f3f6f8;
     }
+    .footer_col__form {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .footer_col__input {
+        max-width: 218px;
+        margin-bottom: 15px;
+    }
+    .work_row {
+        padding: 15px;
+    }
+    .work_footer__row {
+        padding: 15px;
+    }
+    .work_col__iner {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .work_col__iner img {
+        display: none;
+    }
+    .work_col__iner h2 {
+        font-size: 22px
+    }
 }
-
-@media all and (max-width : 375px) {}
 
 @media all and (max-width : 320px) {
     .header_logo {
         margin: 20px;
         width: 150px;
     }
+
     .navbar-toggler-icon {
         font-size: 16px;
     }
