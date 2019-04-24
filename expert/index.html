@@ -15,6 +15,38 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_wrap">
+                        <img src="img/modal.png" alt="">
+                        <h2 class="modal_wrap__title">
+                            Оставьте заявку
+                        </h2>
+                        <div class="modal_brd"></div>
+                        <p class="modal_wrap__text">
+                            Оставьте заявку с контактными — данными и наш менеджер свяжется
+                            — с вами в ближайшее время.
+                        </p>
+                        <form action="" class="modal_form">
+                            <input class="modal_input" type="text" placeholder="ВВЕДИТЕ ИМЯ">
+                            <input class="modal_input" type="text" placeholder="ВВЕДИТЕ ТЕЛЕФОН">
+                            <button type="button" class="modal_btn">отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <header>
         <section class="header container">
             <nav class="header_wrap navbar navbar-expand-lg ">
@@ -34,7 +66,7 @@
                         <div class="header_butt__image">
                             <img src="img/icon.png" alt="">
                         </div>
-                        <button class="header_btn">
+                        <button class="header_btn" type="button" data-toggle="modal" data-target="#exampleModal">
                             Заказать звонок
                         </button>
                     </a>
@@ -157,7 +189,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -171,7 +203,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -185,7 +217,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -200,7 +232,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -218,7 +250,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -232,7 +264,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -246,7 +278,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -261,7 +293,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -279,7 +311,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -293,7 +325,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -307,7 +339,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
@@ -322,7 +354,7 @@
                                         <p class="service_row__text">В частности, внедрение современных методик требует от нас анализа... стандартных </p>
                                         <span class="service_row__span">от 40 000 руб.</span>
                                         <div class="main_btn">
-                                            <button class="main_btn__active">заказать</button>
+                                            <button class="main_btn__active" type="button" data-toggle="modal" data-target="#exampleModal">заказать</button>
                                             <div class="main_block"><img src="img/icon.png" alt=""></div>
                                         </div>
                                     </div>
