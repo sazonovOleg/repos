@@ -73,7 +73,6 @@ a:hover {
 
 .nav-tabs .nav-link {
     max-width: 280px;
-    padding: 7% 1%;
     color: #0a1f35;
     background: #fff;
     border: none;
@@ -111,8 +110,6 @@ a:hover {
 }
 
 .nav-tabs .nav-item {
-
-    margin-right: 8px;
     margin-bottom: 20px;
     display: block;
 }
@@ -301,10 +298,29 @@ a:hover {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
+
 
 .work_col__image img {
     width: 100%;
@@ -466,4 +482,46 @@ a:hover {
 
 .work_row__one {
     overflow: hidden;
+}
+
+.work_row__img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.work_row__list {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.work_row__columns {
+    text-align: center;
+}
+
+.work_list {
+    padding: 35px 0;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/next.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/prev.png);
+}
+
+.carousel-control-prev {
+    width: 40px;
+    left: -40px;
+    height: 40px;
+    top: 40%;
+}
+
+.carousel-control-next {
+    width: 40px;
+    right: -40px;
+    height: 40px;
+    top: 40%;
 }

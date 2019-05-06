@@ -1,7 +1,3 @@
-@media all and (max-width : 1200px) {}
-
-@media all and (max-width : 1024px) {}
-
 @media all and (max-width : 768px) {
     .nav-tabs {
         -webkit-justify-content: space-around;
@@ -12,6 +8,20 @@
     .nav-tabs .nav-link {
         font-size: 11px;
         max-width: 260px;
+    }
+
+    .carousel-control-prev {
+        left: -32px;
+    }
+
+    .carousel-control-next {
+        right: -32px;
+    }
+}
+
+@media all and (max-width : 600px) {
+    .work_list {
+        display: none;
     }
 }
 
@@ -24,9 +34,5 @@
         max-width: 260px;
         margin: 0 auto;
     }
-
 }
 
-@media all and (max-width : 375px) {}
-
-@media all and (max-width : 320px) {}
