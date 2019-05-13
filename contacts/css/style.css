@@ -264,3 +264,9 @@ a:hover {
 .iframe_col {
     height: inherit;
 }
+.info_row__adres {
+    font-size: 16px;
+    color: #313a44;
+    font-weight: bold;
+    padding: 0 15px;
+}
