@@ -1149,6 +1149,7 @@ div:nth-child(1).client_col:hover {
     border-radius: 2px;
     border: 1px solid #d8d9db;
 }
+
 .modal_btn {
     padding: 10px;
     font-size: 14px;
@@ -1159,9 +1160,17 @@ div:nth-child(1).client_col:hover {
     transition: .5s all ease;
     font-weight: 500;
 }
+
 .modal_btn:hover {
     background: #ffdf00;
     transition: .5s all ease;
 }
 
-
+.modal_textarea {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #d8d9db;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
