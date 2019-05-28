@@ -1,0 +1,7 @@
+/*Heeader*/
+@import url('../fonts/PoiretOne.ttf');
+
+header{
+    background: url(../img/bg.jpg) center center no-repeat;
+    background-size: cover;
+}
