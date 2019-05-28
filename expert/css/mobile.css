@@ -209,6 +209,13 @@
     .work_col__iner h2 {
         font-size: 22px
     }
+    .f-client {
+        display: none;
+    }
+    .s-order {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #f6ff00;
+    }
 }
 
 @media all and (max-width : 320px) {
