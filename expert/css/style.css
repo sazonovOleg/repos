@@ -1,7 +1,7 @@
 /*Heeader*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800');
 
-header {
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1137,6 +1137,8 @@ li.active {
     font-size: 12px;
     margin-bottom: 15px;
 }
+
+/*end modal*/
 
 .client_img {
     margin-top: 10px;
