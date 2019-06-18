@@ -75,17 +75,6 @@ padding-bottom: 350px;
         right: -55px;
     }
 
-    .tariff_col {
-        max-width: 280px;
-        opacity: 1;
-    }
-    .tariff_col:hover {
-        -webkit-animation: none;
-        animation: none;
-    }
-    .tariff_col__flash {
-        display: none;
-    }
     .team_row {
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -275,10 +264,6 @@ padding-bottom: 350px;
 
     .main_carousel__img {
         max-width: 130px;
-    }
-
-    .tariff_col {
-        margin-bottom: 30px;
     }
 
     .why_col {

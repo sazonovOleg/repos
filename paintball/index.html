@@ -10,6 +10,8 @@
     <link rel="shortcut icon" href="img/ico.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-master/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <title>Строительная экспертиза</title>
@@ -51,27 +53,16 @@
                 </div>
             </nav>
             <div class="header container">
-                <ul class="nav nav-tabs header_left" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link header_lift__link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> 01</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header_lift__link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">02</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header_lift__link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">03</a>
-                    </li>
-                </ul>
                 <img class="header_image__ball" src="img/ball2.png" alt="">
                 <img class="orange_ball" src="img/ball3.png" alt="">
                 <img class="green_ball" src="img/ball4.png" alt="">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="header_row row">
-                            <div class="col-md-5 header_image" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
+                <div class="top-slider">
+                    <div>
+                        <div class="header_row row align-items-center">
+                            <div class="col-md-6 header_image">
                                 <img class="guy" src="img/guy.png" alt="">
                             </div>
-                            <div class="col-md-6" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
+                            <div class="col-md-6">
                                 <div class="header_right">
                                     <h1 class="header_right__title">
                                         <img class="header_ball__title" src="img/ball1.png" alt="">
@@ -81,10 +72,10 @@
                                         Комплекс развлекательных программ для
                                         активного отдыха
                                     </p>
-                                    <button class="header_right__button yellow">
+                                    <button class="header_right__button yellow" data-toggle="modal" data-target="#buyModal">
                                         заказать
                                     </button>
-                                    <button class="header_right__button white">
+                                    <button class="header_right__button white" data-toggle="modal" data-target="#moreInfoModal">
                                         Узнать подробнее
                                     </button>
                                     <div class="header_right__block">
@@ -101,9 +92,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="header_row row">
-                            <div class="col-md-5 header_image">
+                    <div>
+                        <div class="header_row row align-items-center">
+                            <div class="col-md-6 header_image">
                                 <img class="guy" src="img/right-block-image-three.png" alt="">
                             </div>
                             <div class="col-md-6">
@@ -115,10 +106,10 @@
                                         Для вашего удобства и комфорта мы можем
                                         предложить крытые отапливаемые беседки
                                     </p>
-                                    <button class="header_right__button yellow">
+                                    <button class="header_right__button yellow" data-toggle="modal" data-target="#buyModal">
                                         заказать
                                     </button>
-                                    <button class="header_right__button white">
+                                    <button class="header_right__button white" data-toggle="modal" data-target="#moreInfoModal">
                                         Узнать подробнее
                                     </button>
                                     <div class="header_right__block">
@@ -135,9 +126,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="header_row row">
-                            <div class="col-md-5 header_image">
+                    <div>
+                        <div class="header_row row mt-5 align-items-center">
+                            <div class="col-md-6 header_image">
                                 <img class="guy" src="img/bes.png" alt="">
                             </div>
                             <div class="col-md-6">
@@ -150,10 +141,10 @@
                                         предложить крытые отапливаемые
                                         беседки
                                     </p>
-                                    <button class="header_right__button yellow">
+                                    <button class="header_right__button yellow" data-toggle="modal" data-target="#buyModal">
                                         заказать
                                     </button>
-                                    <button class="header_right__button white">
+                                    <button class="header_right__button white" data-toggle="modal" data-target="#moreInfoModal">
                                         Узнать подробнее
                                     </button>
                                     <div class="header_right__block">
@@ -345,16 +336,16 @@
                         <div id="carouselExampleIndicatorsOne" class="carousel slide" data-ride="false">
                             <div class="main_carousel carousel-inner">
                                 <div class="main_carousel__item carousel-item active">
-                                    <img src="img/slide1.jpg" class="main_carousel__slider" alt="slide">
+                                    <img src="img/slide1.jpg" class="main_carousel__slid" alt="slide">
                                 </div>
                                 <div class="main_carousel__item carousel-item">
-                                    <img src="img/slide2.jpg" class="main_carousel__slider" alt="slide">
+                                    <img src="img/slide2.jpg" class="main_carousel__slid" alt="slide">
                                 </div>
                                 <div class="main_carousel__item carousel-item">
-                                    <img src="img/slide3.jpg" class="main_carousel__slider" alt="slide">
+                                    <img src="img/slide3.jpg" class="main_carousel__slid" alt="slide">
                                 </div>
                                 <div class="main_carousel__item carousel-item">
-                                    <img src="img/slide4.jpg" class="main_carousel__slider" alt="slide">
+                                    <img src="img/slide4.jpg" class="main_carousel__slid" alt="slide">
                                 </div>
                             </div>
                             <div class="carousel-control-wrap"> <a class="carousel-control-prev main_carousel__prev" href="#carouselExampleIndicatorsOne" role="button" data-slide="prev">
@@ -416,28 +407,34 @@
         <section class="tariff container">
             <h1 class="title_black" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">ТАРИФЫ НА ИГРУ В ПЕЙНТБОЛ</h1>
             <div class="tariff_row row">
-                <div class="tariff_column  col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
-                    <img src="img/flash1.jpg" alt="" class="tariff_col__flash">
-                    <div class="tariff_col">
-                        <div class="tariff_col__header">
-                            <h1 class="tariff_col__title">ЭКОНОМНЫЙ</h1>
-                            <h2 class="tariff_col__price">700
-                            </h2>
-                            <span class="tariff_col__span">руб</span>
+                <div class="flip_effect_horizontal col-lg-4 col-sm-6">
+                    <div class="front">
+                        <img src="img/flash1.jpg" class="tariff_col__flash" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="tariff_col">
+                            <div class="tariff_col__header">
+                                <h1 class="tariff_col__title">ЭКОНОМНЫЙ</h1>
+                                <h2 class="tariff_col__price">700
+                                </h2>
+                                <span class="tariff_col__span">руб</span>
+                            </div>
+                            <p class="tariff_col__text">аренда оборудования*</p>
+                            <p class="tariff_col__text">200 шаров</p>
+                            <p class="tariff_col__text">время игры примерно 1 час</p>
+                            <p class="tariff_col__text">игра на всех 4-х площадках
+                                без ограничения</p>
+                            <p class="tariff_col__text">Дополнительные шары
+                                750р. = 500 штук</p>
+                            <button class="tariff_col__btn">заказать игру</button>
                         </div>
-                        <p class="tariff_col__text">аренда оборудования*</p>
-                        <p class="tariff_col__text">200 шаров</p>
-                        <p class="tariff_col__text">время игры примерно 1 час</p>
-                        <p class="tariff_col__text">игра на всех 4-х площадках
-                            без ограничения</p>
-                        <p class="tariff_col__text">Дополнительные шары
-                            750р. = 500 штук</p>
-                        <button class="tariff_col__btn">заказать игру</button>
                     </div>
                 </div>
-
-                <div class="tariff_column  col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay=".2s">
-                    <img src="img/flash2.jpg" alt="" class="tariff_col__flash">
+                <div class="flip_effect_horizontal col-lg-4 col-sm-6">
+                    <div class="front">
+                        <img src="img/flash2.jpg" class="tariff_col__flash" alt="">
+                    </div>
+                    <div class="back">
                     <div class="tariff_col">
                         <div class="tariff_col__header">
                             <h1 class="tariff_col__title">СТАНДАРТ</h1>
@@ -454,10 +451,13 @@
                             750р. = 500 штук</p>
                         <button class="tariff_col__btn">заказать игру</button>
                     </div>
+                    </div>
                 </div>
-
-                <div class="tariff_column  col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay=".3s">
-                    <img src="img/flash3.jpg" alt="" class="tariff_col__flash">
+                <div class="flip_effect_horizontal col-lg-4 col-sm-6">
+                    <div class="front">
+                        <img src="img/flash3.jpg" class="tariff_col__flash" alt="">
+                    </div>
+                    <div class="back">
                     <div class="tariff_col">
                         <div class="tariff_col__header">
                             <h1 class="tariff_col__title">ВОИН</h1>
@@ -473,6 +473,7 @@
                         <p class="tariff_col__text">игра со своим оборудованием
                             500р.</p>
                         <button class="tariff_col__btn">заказать игру</button>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -694,7 +695,7 @@
             <div class="footer_container container">
                 <div class="footer_row row">
                     <img class="footer_row__brd" src="img/footerbrd.png" alt="">
-                    <div class="footer_col col-6 col-lg-2 col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
+                    <div class="footer_col col-6 col-lg-2 col-md-4" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
                         <span class="footer_title"> меню</span>
                         <a href="" class="footer_link">Главная</a>
                         <a href="" class="footer_link">О клубе</a>
@@ -704,7 +705,7 @@
                         <a href="" class="footer_link">Отзывы</a>
                         <a href="" class="footer_link">Контакты</a>
                     </div>
-                    <div class="footer_col col-6 col-lg-3 col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="100">
+                    <div class="footer_col col-6 col-lg-3 col-md-4" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-delay="100">
                         <span class="footer_title">услуги </span>
                         <a href="" class="footer_link">Ведущий мероприятий</a>
                         <a href="" class="footer_link">Детский аниматор</a>
@@ -712,7 +713,7 @@
                         <a href="" class="footer_link">Трансфер</a>
                         <a href="" class="footer_link">Заправка воздухом</a>
                     </div>
-                    <div class="footer_col regions col-6 col-lg-3 col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="200">
+                    <div class="footer_col regions col-6 col-lg-3 col-md-4" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-delay="200">
                         <span class="footer_title">регионы </span>
                         <a href="" class="footer_link"> Ногинск</a>
                         <a href="" class="footer_link">Электросталь</a>
@@ -721,7 +722,7 @@
                         <a href="" class="footer_link">Фрязино</a>
                         <a href="" class="footer_link">Черноголовка</a>
                     </div>
-                    <div class="footer_col col-6 col-lg-4 col-md-12" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="300">
+                    <div class="footer_col col-6 col-lg-4 col-md-12" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-delay="300">
                         <span class="footer_title">контакты </span>
                         <a href="" class="footer_link">8-495-008-32-54</a>
                         <a href="" class="footer_link">8-916-777-32-54</a>
@@ -733,7 +734,7 @@
                             <a class="footer_wrap__link" href=""><img class="footer_wrap__image" src="img/instfooter.png" alt="icon"></a>
                         </div>
                     </div>
-                    <div class="footer_col other col-12 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-once="true" data-aos-delay="400">
+                    <div class="footer_col other col-12 col-md-6" data-aos="fade-left" data-aos-duration="600" data-aos-once="true" data-aos-delay="400">
                         <p class="footer_col__text">© 2012 - 2019 ПЕЙНТБОЛ-ЛАЗЕРТАГ КЛУБ S.O.V.A.
                             ИЗГОТОВЛЕНИЕ И ДИЗАЙН COLOR-PLUS</p>
                     </div>
@@ -741,13 +742,70 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade buy-modal" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Заполните форму заказа</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="play_content__form">
+                        <input type="text" class="play_content__input" placeholder="Имя">
+                        <input type="text" class="play_content__input" placeholder="Телефон">
+                        <input type="text" class="play_content__input" placeholder="Дата">
+                        <button class="play_content__btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade buy-modal" id="moreInfoModal" tabindex="-1" role="dialog" aria-labelledby="moreInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Заполните форму заказа</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="play_content__form">
+                        <input type="text" class="play_content__input" placeholder="Имя">
+                        <input type="text" class="play_content__input" placeholder="Телефон">
+                        <button class="play_content__btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="slick-master/slick/slick.min.js"></script>
     <script>
         AOS.init();
-
+        $('.top-slider').slick({
+            dots: true,
+            arrows: false,
+            draggable: false,
+            swipe: false,
+            vertical: true,
+            slidesToShow: 1,
+            slideToScroll: 1,
+            infinite: false,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    vertical: false,
+                }
+            }]
+        })
     </script>
 </body>
 
