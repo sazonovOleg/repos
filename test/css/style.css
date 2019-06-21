@@ -53,6 +53,7 @@
 }
 
 .main_form {
+    max-width: 370px;
     border: 1px solid #000;
     width: 100%;
     display: -webkit-box;
