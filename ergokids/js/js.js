@@ -3,7 +3,7 @@
         $(".main_iner").css({'border-color':'#7bb235'});
         $(".main_iner__brd").css({'border-color':'#58961e'});
         $(".main_title").css({'color':'#7bb235'});
-        $(".wrap_icon").css({'background':'#7db12e'});
+        $(".wrap_icon").css({'background':'#7db12e','border':'none'});
         $(".footer_btn").css({'background':'#91ca00'});
         $(".circle").css({'border-color':'#7eb339'});
         $(".circle_block").css({'background':'#7db12e'});
@@ -42,7 +42,7 @@
         $(".main_iner").css({'border-color':'#ff7d3d','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#ff7d3d','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#ff7d3d','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#ff7d3d','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#ff7d3d','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#ff7d3d','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#ff7d3d','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#ff7d3d','transition':'0.6s all ease'});
@@ -82,7 +82,7 @@
         $(".main_iner").css({'border-color':'#cd171a','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#cd171a','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#cd171a','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#cd171a','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#cd171a','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#cd171a','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#cd171a','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#cd171a','transition':'0.6s all ease'});
@@ -121,7 +121,7 @@
         $(".main_iner").css({'border-color':'#f486e5','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#f486e5','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#f486e5','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#f486e5','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#f486e5','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#f486e5','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#f486e5','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#f486e5','transition':'0.6s all ease'});
@@ -159,7 +159,7 @@
         $(".main_iner").css({'border-color':'#3ba1c8','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#3ba1c8','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#3ba1c8','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#3ba1c8','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#3ba1c8','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#3ba1c8','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#3ba1c8','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#3ba1c8','transition':'0.6s all ease'});
@@ -197,7 +197,7 @@
         $(".main_iner").css({'border-color':'#1b2896','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#1b2896','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#1b2896','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#1b2896','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#1b2896','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#1b2896','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#1b2896','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#1b2896','transition':'0.6s all ease'});
@@ -235,7 +235,7 @@
         $(".main_iner").css({'border-color':'#7c5f37','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#7c5f37','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#7c5f37','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#7c5f37','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#7c5f37','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#7c5f37','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#7c5f37','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#7c5f37','transition':'0.6s all ease'});
@@ -273,7 +273,7 @@
         $(".main_iner").css({'border-color':'#706e6f','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#706e6f','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#706e6f','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#706e6f','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#706e6f','transition':'0.6s all ease','border':'none'});
         $(".footer_btn").css({'background':'#706e6f','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#706e6f','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#706e6f','transition':'0.6s all ease'});
@@ -311,7 +311,7 @@
         $(".main_iner").css({'border-color':'#202020','transition':'0.6s all ease'});
         $(".main_iner__brd").css({'border-color':'#202020','transition':'0.6s all ease'});
         $(".main_title").css({'color':'#202020','transition':'0.6s all ease'});
-        $(".wrap_icon").css({'background':'#202020','transition':'0.6s all ease'});
+        $(".wrap_icon").css({'background':'#ffffff','transition':'0.6s all ease','border':'1px solid #000'});
         $(".footer_btn").css({'background':'#202020','transition':'0.6s all ease'});
         $(".circle").css({'border-color':'#202020','transition':'0.6s all ease'});
         $(".circle_block").css({'background':'#202020','transition':'0.6s all ease'});
