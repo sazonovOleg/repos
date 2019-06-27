@@ -83,8 +83,18 @@
     margin-top: -5px;
     margin-left: -5px;
 }
-.main_orange {
-    margin-top: -185px;
+
+.main_orange,
+.main_red,
+.main_pink,
+.main_grey,
+.main_blue,
+.main_black,
+.main_brown,
+.main_aqua {
+    top: 0;
+    left: 0;
+    position: absolute;
     opacity: 0;
 }
 
@@ -113,6 +123,13 @@
     -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.footer_row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .line {
@@ -148,9 +165,19 @@
     -ms-transform: rotate(30deg);
     transform: rotate(30deg);
 }
-.line_orange {
+
+.line_orange,
+.line_red,
+.line_pink,
+.line_blue,
+.line_aqua,
+.line_brown,
+.line_grey,
+.line_black
+    {
     opacity: 0;
 }
+
 .circle {
     position: absolute;
     width: 20px;
@@ -175,6 +202,7 @@
     -ms-flex-align: center;
     align-items: center;
 }
+
 .header_content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -189,6 +217,7 @@
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
+
 .circle_block {
     width: 16px;
     height: 16px;
@@ -200,19 +229,24 @@
     left: 535px;
     top: 205px;
 }
+
 .circle.two {
     right: 372px;
     top: 300px;
 }
+
 .circle.three {
     left: 405px;
     top: 180px;
 }
+
 .circle.four {
     top: 180px;
     right: 310px;
 }
+
 .main_iner__brd {
+    position: relative;
     width: 134px;
     height: 134px;
     border: 2px solid #58961e;
@@ -251,10 +285,19 @@
     position: absolute;
     left: 43%;
 }
+
 .chair.green {
     opacity: 1;
 }
-.chair.orange {
+
+.chair.orange,
+.chair.red,
+.chair.pink,
+.chair.aqua,
+.chair.blue,
+.chair.brown,
+.chair.grey,
+.chair.black {
     opacity: 0;
 }
 
@@ -305,6 +348,10 @@
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 20px;
+}
+
+.footer_col {
+    max-width: 260px;
 }
 
 .footer_iner {
@@ -369,10 +416,11 @@
     align-items: center;
     border-radius: 50%;
 }
+
 .footer_icon {
     max-width: 30px
-        
 }
+
 .footer_iner__title {
     font-size: 15px;
     color: #7bb235;
@@ -438,4 +486,8 @@
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(194, 194, 194, 1);
     box-shadow: 0px 0px 10px 1px rgba(194, 194, 194, 1);
+}
+
+.colors_wrap img {
+    cursor: pointer;
 }
