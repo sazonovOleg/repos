@@ -202,6 +202,10 @@ nav {
 
 
 #menuToggle {
+    width: 40px;
+            background: url(../img/icon/menu.svg) center center no-repeat;
+    height: 40px;
+    background-size: cover;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -222,6 +226,7 @@ nav {
 }
 
 #menuToggle input {
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
