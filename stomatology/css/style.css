@@ -176,6 +176,88 @@ input {
 }
 
 /*Mobile menu*/
+.site-wrapper{
+    -webkit-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
+}
+.main-content {
+    position: relative;
+}
+.fixedNavToggler{
+    position: fixed;
+    left: 45px;
+    z-index: 2;
+    top: 110px;
+    background: none;
+    border: 0;
+    padding: 0;
+    display: none;
+}
+.fixedNavToggler .bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    margin: 4px 0;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+.fixedNavToggler_close{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1;
+    color: #000;
+    -webkit-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 165px;
+    opacity: 0;
+}
+.site-wrapper.active .fixedNavToggler_close{
+   opacity: 1;
+}
+.fixed-menu__nav {
+    position: fixed;
+    width: 130px;
+    min-height:  100vh;
+    background: #ffffff;
+    z-index: 100;
+    left: -150px;
+    -webkit-transition: .3s all linear;
+    -o-transition: .3s all linear;
+    transition: .3s all linear;
+    top: 0;
+    bottom: 0;
+}
+body{
+    position: relative;
+}
+.site-wrapper__content{
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.site-wrapper.active .fixed-menu__nav{
+    left: 0;
+}
+.site-wrapper.active .site-wrapper__content{
+    width: calc(100% - 149px);
+}
+.fixed-menu__nav.active{
+    left: 0;
+}
+
+
+/*
 .nav-mobile {
     width: 100%;
     position: relative;
@@ -221,6 +303,7 @@ input {
     -webkit-box-shadow: 0px 20px 31px -1px rgba(219, 219, 219, 1);
     box-shadow: 0px 20px 31px -1px rgba(219, 219, 219, 1);
 }
+*/
 
 /*Desctop menu*/
 .navbar {
@@ -1037,21 +1120,30 @@ input {
 }
 
 @media all and (max-width : 992px) {
-    .nav-mobile {
+    .fixedNavToggler {
         display: block;
     }
 }
 
 @media all and (max-width : 768px) {
+    .header_content__logo {
+        display: none;
+    }
+    .header_content__location {
+        width: 100%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
     .nav-link {
-        max-width: 120px;
         width: 100%;
         text-align: center;
-        margin: 10px 0;
     }
 
     .navbar-nav {
-        padding-top: 15px;
+        padding-top: 125px;
+        padding-left: 5px;
     }
 
     .dentistry_title {
