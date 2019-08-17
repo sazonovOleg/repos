@@ -8,12 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Vollkorn:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <title> Городской летний лагерь "Дом и Дети" </title>
 </head>
 
 <body>
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -25,7 +23,7 @@
                 </div>
                 <div class="modal-body">
                     <form class="block_form" id="contact-form" method="post" action="contact.php" role="form">
-                        <input class="block_input" id="form_name" type="text" name="name"  placeholder="ФИО" required="required" data-error="Имя указано неверно">
+                        <input class="block_input" id="form_name" type="text" name="name" placeholder="ФИО" required="required" data-error="Имя указано неверно">
                         <input class="block_input" id="form_email" type="email" name="email" class="form-control" placeholder="Ваша почта" required="required" data-error="Неправильно указан email">
                         <input class="block_input" id="form_lastname" name="surname" class="form-control" placeholder="Номер телефона" required="required" data-error="Неправильно указан номер">
                         <button class="block_btn"> Отправить</button>
@@ -34,21 +32,26 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand header_logo" href="http://xn--d1aadkcun0b.xn--p1ai/kid-center/" target="_blank"><img src="img/logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse header_nav" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link header_link link_one" href="one">Почему мы?</a>
-                <a class="nav-item nav-link header_link link_two" href="two">Программа лагеря</a>
-                <a class="nav-item nav-link header_link link_three" href="three">Цена</a>
-                <a class="nav-item nav-link header_link link_four" href="four">Оставить заявку</a>
-                <a class="nav-item nav-link header_link link_five" href="five">Контакты</a>
-            </div>
+    <div class="nav">
+        <div class="nav_wrap">
+            <nav class="navbar navbar-expand-lg container">
+                <a class="navbar-brand header_logo" href="http://xn--d1aadkcun0b.xn--p1ai/kid-center/" target="_blank"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header_nav" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link header_link link_one" href="one">Почему мы?</a>
+                        <a class="nav-item nav-link header_link link_two" href="two">Программа лагеря</a>
+                        <a class="nav-item nav-link header_link link_three" href="three">Цена</a>
+                        <a class="nav-item nav-link header_link link_four" href="four">Оставить заявку</a>
+                        <a class="nav-item nav-link header_link link_five" href="five">Контакты</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
+
     <header>
         <section class="header">
             <div class="container">
@@ -58,7 +61,8 @@
                         <h1>
                             НЕСКУЧНЫЕ КАНИКУЛЫ В ГОРОДЕ</h1>
                         <h3>городской летний лагерь <span>&#8226;</span> с 8:30 до 18:30 <span>&#8226;</span> от 6 до 11 лет </h3>
-                        <button class="header_btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                        <button class="header_btn" data-toggle="modal" data-target="#exampleModal">Оставить
+                            заявку</button>
                     </div>
                 </div>
             </div>
@@ -76,14 +80,16 @@
                         <div class="why_wrap">
                             <h3>Нескучные каникулы</h3>
                             <img src="img/camping.png" alt="">
-                            <p>Программа лагеря насыщенна и разнообразна, разработана с учетом интересов подрастающего поколения.</p>
+                            <p>Программа лагеря насыщенна и разнообразна, разработана с учетом интересов подрастающего поколения.
+                            </p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6">
                         <div class="why_wrap">
                             <h3>WhatsApp контроль</h3>
                             <img src="img/shield.png" alt="">
-                            <p>Вы всегда будете в курсе всего, что происходит с Вашим ребенком: что у него сегодня на обед, или одел ли он на прогулку кепку? Для каждой смены создается чат в WatsApp, куда педагоги будут отправлять все самые интересные моменты из лагерной жизни!</p>
+                            <p>Вы всегда будете в курсе всего, что происходит с Вашим ребенком: что у него сегодня на обед, или одел ли он на прогулку кепку? Для каждой смены создается чат в WatsApp, куда педагоги будут отправлять все самые интересные моменты
+                                из лагерной жизни!</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6">
@@ -97,14 +103,14 @@
                         <div class="why_wrap">
                             <h3>Вожатые, которые не боятся детей</h3>
                             <img src="img/fear.png" alt="">
-                            <p>Наши вожатые – не студенты, а настоящие профессионалы, за плечами которых сотня воспитанников. Они знают о детях всё, и даже больше. Найдут общий язык и с застенчивой стесняшкой, и с бойким озорником-заводилой! Индивидуальный подход к каждому ребенку – не просто слова, а принцип работы наших вожатых!</p>
+                            <p>Наши вожатые – не студенты, а настоящие профессионалы, за плечами которых сотня воспитанников. Они знают о детях всё, и даже больше. Найдут общий язык и с застенчивой стесняшкой, и с бойким озорником-заводилой! Индивидуальный
+                                подход к каждому ребенку – не просто слова, а принцип работы наших вожатых!</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-12">
                         <div class="why_text">
                             <h3>1 смена – 1 неделя</h3>
-                            <p>Присоединяйтесь в удобное время.
-                                Каждая смена длится 5 рабочих дней.</p>
+                            <p>Присоединяйтесь в удобное время. Каждая смена длится 5 рабочих дней.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6">
@@ -319,12 +325,15 @@
                 <h1 class="main_title">Отзывы родителей о нескучных каникулах в городском лагере «Дом и Дети»</h1>
                 <div class="finish_row row">
                     <div class="col-12">
-                        <p>Добрый день! Хочу сказать тёплые, добрые слова благодарности всему коллективу центра "Дом и Дети" за внимание, доброту и заботу о наших детях, за проведение разных мероприятий, праздников и интересных занятий в городском летнем лагере. Очень хочется отметить профессиональный уровень, душевное тепло и любовь к детям вожатых Ольги и Валерии! Огромное спасибо Вам за создание эмоционально-положительной атмосферы в отряде, за то, что с уважением относитесь к каждому ребенку!</p>
+                        <p>Добрый день! Хочу сказать тёплые, добрые слова благодарности всему коллективу центра "Дом и Дети" за внимание, доброту и заботу о наших детях, за проведение разных мероприятий, праздников и интересных занятий в городском летнем
+                            лагере. Очень хочется отметить профессиональный уровень, душевное тепло и любовь к детям вожатых Ольги и Валерии! Огромное спасибо Вам за создание эмоционально-положительной атмосферы в отряде, за то, что с уважением относитесь
+                            к каждому ребенку!</p>
                         <span>Елена, мама Максима, 9 лет.</span>
                         <div class="finish_border"></div>
                     </div>
                     <div class="col-12">
-                        <p> Моя дочка ходила в городской летний лагерь в центре Дом и Дети, безумно довольна! Посетили все смены в 2018 году. Дочка ждёт с нетерпением следующего лета, чтобы вновь пойти в лагерь))</p>
+                        <p> Моя дочка ходила в городской летний лагерь в центре Дом и Дети, безумно довольна! Посетили все смены в 2018 году. Дочка ждёт с нетерпением следующего лета, чтобы вновь пойти в лагерь))
+                        </p>
                         <span>Галина, мама Маши, 10 лет.</span>
 
                     </div>
@@ -340,7 +349,8 @@
                                 <div class="finish_border"></div>
                             </div>
                             <div class="col-12">
-                                <p>Спасибо за наше спокойствие! Так не хотелось, чтобы ребенок провел все лето в четырех стенах, пока мы на работе. На помощь пришел городской лагерь в центре Дом и Дети. Каждый вечер дочь рассказывала, чем они занимались и что нового узнали. Остались довольны! Спасибо администрации центра и вожатым Алексею и Татьяне за хорошую профессиональную работу! </p>
+                                <p>Спасибо за наше спокойствие! Так не хотелось, чтобы ребенок провел все лето в четырех стенах, пока мы на работе. На помощь пришел городской лагерь в центре Дом и Дети. Каждый вечер дочь рассказывала, чем они занимались
+                                    и что нового узнали. Остались довольны! Спасибо администрации центра и вожатым Алексею и Татьяне за хорошую профессиональную работу! </p>
                                 <span>Нина, мама Андрея, 9 лет.</span>
                                 <div class="finish_border"></div>
                             </div>
@@ -355,12 +365,16 @@
                                 <div class="finish_border"></div>
                             </div>
                             <div class="col-12">
-                                <p>Дочь посещала первую смену лагеря на ул. Новосёлов,37, осталась очень довольна! Каждый день была определенная тема, материал подавался в интересной форме, затем какая-нибудь поделка на изучаемую тему, очень много рисовали. Были и подвижные игры на улице и настольные игры в плохую погоду, дети сами для себя готовили на полдник блюда разных народов. Особо хочу отметить, что ребята, несмотря на разный возраст, так хорошо организованы вожатыми, что всем интересно и все постоянно при деле! Выражаю огромную благодарность вожатым чуткое отношение к деткам и профессионализм в педагогическом деле!</p>
+                                <p>Дочь посещала первую смену лагеря на ул. Новосёлов,37, осталась очень довольна! Каждый день была определенная тема, материал подавался в интересной форме, затем какая-нибудь поделка на изучаемую тему, очень много рисовали.
+                                    Были и подвижные игры на улице и настольные игры в плохую погоду, дети сами для себя готовили на полдник блюда разных народов. Особо хочу отметить, что ребята, несмотря на разный возраст, так хорошо организованы вожатыми,
+                                    что всем интересно и все постоянно при деле! Выражаю огромную благодарность вожатым чуткое отношение к деткам и профессионализм в педагогическом деле!</p>
                                 <span>Юлия, мама Ксении, 8 лет.</span>
                                 <div class="finish_border"></div>
                             </div>
                             <div class="col-12">
-                                <p>Быстро пролетели две недели…уже закрытие первой смены. Что хочется сказать. Все было отлично!!!! Боялась, что моя походит два дня, а потом не захочет вставать по утрам. А нет! Вскакивала - я бы сказала, все две недели и бежала бегом. Всё было очень интересно, каждый день что-то новое. Спасибо большое нашим вожатым Алексею и Татьяне. А также всем, кто принимал участие и помогал нашим вожатым с нашими детьми.</p>
+                                <p>Быстро пролетели две недели…уже закрытие первой смены. Что хочется сказать. Все было отлично!!!! Боялась, что моя походит два дня, а потом не захочет вставать по утрам. А нет! Вскакивала - я бы сказала, все две недели и
+                                    бежала бегом. Всё было очень интересно, каждый день что-то новое. Спасибо большое нашим вожатым Алексею и Татьяне. А также всем, кто принимал участие и помогал нашим вожатым с нашими детьми.
+                                </p>
                                 <span>Ольга, мама Маши, 11 лет.</span>
                             </div>
                         </div>
@@ -373,23 +387,23 @@
             <div class="container">
                 <h1 class="main_title">Море эмоций и горы впечатлений каждый день!</h1>
                 <div class="row every_md">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-6 every_column"><img src="img/five.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/six.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/eleven.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/eight.jpg" alt=""></div>
+                                <div class="every_row row">
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/five.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/six.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/eleven.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/eight.jpg" alt=""></div>
                                 </div>
 
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-6 every_column"><img src="img/nine.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/ten.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/twelve.jpg" alt=""></div>
-                                    <div class="col-6 every_column"><img src="img/seven.jpg" alt=""></div>
+                                <div class="every_row row">
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/nine.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/ten.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/twelve.jpg" alt=""></div>
+                                    <div class="col-xl-6 col-5 every_column"><img src="img/seven.jpg" alt=""></div>
                                 </div>
                             </div>
                         </div>
@@ -469,7 +483,8 @@
                         <p>
                             Каждый день мы ловим в объектив фотоаппарата самые яркие моменты. Регулярно мы публикуем в наших социальных сетях VK и Instagram фото и видео, чтобы вы всегда были в курсе нашей насыщенной лагерной жизни!
                         </p>
-                        <div class="photo_link"> <a class="icons_wrap" href="https://www.instagram.com/domideti/" target="_blank">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="https://vk.com/domidetki" target="_blank">Мы Вконтакте<img class="icons_link" src="img/vk.png" alt=""></a></div>
+                        <div class="photo_link"> <a class="icons_wrap" href="https://www.instagram.com/domideti/" target="_blank">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="https://vk.com/domidetki" target="_blank">Мы Вконтакте<img
+                                    class="icons_link" src="img/vk.png" alt=""></a></div>
                     </div>
                 </div>
             </div>
@@ -481,8 +496,7 @@
                 <h1 class="main_title" id="three">Простая арифметика веселого лета! </h1>
                 <div class="row arifm_row">
                     <div class="col-12 arifm_wrap__title">
-                        <p>Специальное предложение для тех, кто планирует свое время заранее.<br>
-                            Чем раньше покупаете путевку в лагерь, тем выгоднее для Вас!</p>
+                        <p>Специальное предложение для тех, кто планирует свое время заранее.<br> Чем раньше покупаете путевку в лагерь, тем выгоднее для Вас!</p>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-12 mb-4">
                         <div class="arifm_text">
@@ -580,7 +594,8 @@
                 <h1 class="main_title" id="four">Оставьте заявку на городской лагерь прямо сейчас!</h1>
                 <div class="row">
                     <div class="vizit_column col-12">
-                        <button class="vizit_btn" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                        <button class="vizit_btn" data-toggle="modal" data-target="#exampleModal">Оставить
+                            заявку</button>
                     </div>
                 </div>
             </div>
@@ -593,8 +608,8 @@
                     <div class="col-12">
                         <div class="parents_wrap">
                             <h5>Сколько раз в день дети кушают?</h5>
-                            <p>В лагере организовано 4- разовое питание: завтрак, второй завтрак, обед, полдник, ужин, чаепитие. Специальное детское меню заботливо разработано нашим шеф-поваром, с учетом особенностей растущего организма ребенка.
-                                Даже малоежки кушают за обе щёки в компании друзей.</p>
+                            <p>В лагере организовано 4- разовое питание: завтрак, второй завтрак, обед, полдник, ужин, чаепитие. Специальное детское меню заботливо разработано нашим шеф-поваром, с учетом особенностей растущего организма ребенка. Даже малоежки
+                                кушают за обе щёки в компании друзей.</p>
                         </div>
                     </div>
                     <div class="col-12">
@@ -620,7 +635,8 @@
                             <div class="col-12">
                                 <div class="parents_wrap">
                                     <h5> Есть ли у вожатых опыт работы с детьми и педагогическое образование?</h5>
-                                    <p> Все вожатые, которые работают в городском лагере «Дом и Дети» имеют педагогическое или психолого-педагогическое образование и опыт работы с детьми данного возраста, знают как найти подход к любому ребенку и стать для него настоящим другом.</p>
+                                    <p> Все вожатые, которые работают в городском лагере «Дом и Дети» имеют педагогическое или психолого-педагогическое образование и опыт работы с детьми данного возраста, знают как найти подход к любому ребенку и стать для
+                                        него настоящим другом.</p>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -642,24 +658,29 @@
         <section class="footer">
             <div class="container">
                 <h1 class="main_title" id="five">Контакты</h1>
-                <div class="row">
+                <div class="footer_row row">
                     <div class="col-12 col-sm-6">
                         <div class="footer_wrap">
-                            <p>г.Рязань ул.Комбайновая, 26<a class="link_tel" href="tel:+7 4912 37 37 27">тел. 8(4912)37-37-27</a></p>
-                            <p>г.Рязань ул.Новосёлов, 37<a class="link_tel" href="tel:+7 4912 90 91 16">тел. 8(4912)90-91-16</a></p>
+                            <p>г.Рязань ул.Комбайновая, 26<a class="link_tel" href="tel:+7 4912 37 37 27">тел.
+                                    8(4912)37-37-27</a></p>
+                            <p>г.Рязань ул.Новосёлов, 37<a class="link_tel" href="tel:+7 4912 90 91 16">тел.
+                                    8(4912)90-91-16</a></p>
                             <a href=""></a>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6">
                         <div class="footer_wrap__link">
-                            <a class="icons_wrap" href="https://www.instagram.com/domideti/" target="_blank">Наш Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="https://vk.com/domidetki" target="_blank">Мы Вконтакте<img class="icons_link" src="img/vk.png" alt=""></a>
+                            <a class="icons_wrap" href="https://www.instagram.com/domideti/" target="_blank">Наш
+                                Instagram<img class="icons_link" src="img/inst.png" alt=""></a><a class="icons_wrap" href="https://vk.com/domidetki" target="_blank">Мы Вконтакте<img class="icons_link"
+                                    src="img/vk.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-12">
-                        <iframe class="footer_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4618.027034933122!2d39.65743499758219!3d54.63898011885068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4149e2ece37b6ba5%3A0x8571195a54e6ee62!2z0JrQvtC80LHQsNC50L3QvtCy0LDRjyDRg9C7LiwgMjYsINCg0Y_Qt9Cw0L3RjCwg0KDRj9C30LDQvdGB0LrQsNGPINC-0LHQuy4sIDM5MDA0NA!5e0!3m2!1sru!2sru!4v1554059154320!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
+            <iframe class="footer_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4618.027034933122!2d39.65743499758219!3d54.63898011885068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4149e2ece37b6ba5%3A0x8571195a54e6ee62!2z0JrQvtC80LHQsNC50L3QvtCy0LDRjyDRg9C7LiwgMjYsINCg0Y_Qt9Cw0L3RjCwg0KDRj9C30LDQvdGB0LrQsNGPINC-0LHQuy4sIDM5MDA0NA!5e0!3m2!1sru!2sru!4v1554059154320!5m2!1sru!2sru"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
     </footer>
 
