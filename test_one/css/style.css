@@ -986,7 +986,9 @@ header {
 .btn_menu {
     display: none;
 }
-
+    .single-slide.slick-initialized.slick-slider {
+        display: none;
+    }
 
 /* @media */
 
@@ -1000,9 +1002,7 @@ header {
         max-width: 1266px;
         width: 100%;
     }
-    .single-slide.slick-initialized.slick-slider {
-        display: none;
-    }
+
 }
 
 @media all and (min-width: 1000px) and (max-width: 1366px) {
@@ -1048,7 +1048,7 @@ header {
     }
 }
 
-@media all and  (min-width: 400px) and (max-width: 999px) {
+@media all and (min-width: 400px) and (max-width: 999px) {
     .menu {
         display: none;
     }
