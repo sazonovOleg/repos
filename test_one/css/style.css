@@ -678,10 +678,6 @@ header {
     margin-bottom: 30px;
 }
 
-.case_left {
-    margin-right: 16px;
-}
-
 .case_link {
     color: #7f8d9c;
     -webkit-transition: .3s all ease;
