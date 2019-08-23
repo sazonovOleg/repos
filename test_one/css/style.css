@@ -1043,6 +1043,9 @@ header {
     .company {
         height: 446px;
     }
+    .single-slide.slick-initialized.slick-slider {
+        display: none;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 999px) {
@@ -1130,5 +1133,8 @@ header {
 
     .case .container {
         padding: 0;
+    }
+        .single-slide.slick-initialized.slick-slider {
+        display: block;
     }
 }
