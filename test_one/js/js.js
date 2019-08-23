@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+$(window).scroll(function () {
 
     var st = $(this).scrollTop();
 
@@ -13,9 +13,9 @@ $(window).scroll(function() {
     });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         if ($(window).scrollTop() > 320) {
             $('.btn_menu').fadeIn(400)
@@ -53,10 +53,14 @@ $(document).ready(function() {
     });
 });
 
-$(".mobile_navbar").click(function() {
+$(".mobile_navbar").click(function () {
     $(".mobile_wrap").fadeIn()
-        .css({ top: 80 })
-        .animate({ top: 775 }, 800, function() {
+        .css({
+            top: 80
+        })
+        .animate({
+            top: 775
+        }, 800, function () {
             //callback
         });
     $(".mobile_navbar").fadeOut(400).css({
@@ -67,7 +71,7 @@ $(".mobile_navbar").click(function() {
     });
 });
 
-$(".mobile_close").click(function() {
+$(".mobile_close").click(function () {
     $(".mobile_navbar").fadeIn(400).css({
         "display": "block"
     });
@@ -79,7 +83,7 @@ $(".mobile_close").click(function() {
     });
 });
 
-$('.case_right').click(function() {
+$('.case_right').click(function () {
     $('.case_col').fadeIn()
         .css({
             "margin-left": "-120px"
