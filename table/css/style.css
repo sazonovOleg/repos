@@ -100,12 +100,6 @@
     position: absolute;
     transition: .5s all ease;
     z-index: 2;
-}
-
-.table-img--black,
-.table-img--wood,
-.table-img--ball,
-.table-img--buble {
     opacity: 0;
 }
 
@@ -134,7 +128,14 @@
     background-size: cover;
     background-repeat: repeat;
     outline: none!important;
+    background: #fff;
+    opacity: 0.5;
+    cursor: pointer;
     position: relative;
+}
+
+.visible {
+    opacity: 1;
 }
 
 .legs-check,
@@ -143,8 +144,8 @@
     cursor: pointer;
     width: 38px;
     height: 38px;
-    position: absolute;
     border-radius: 50%;
+    position: absolute;
 }
 
 .main_table,
@@ -157,20 +158,9 @@
     min-height: 169px;
 }
 
-.legs--white,
-.table--white {
-    background: #fff;
-    opacity: 0.8;
-}
-
 .legs:hover,
 .table:hover {
     opacity: 1;
-}
-
-.legs:checked,
-.table:checked {
-    border: 1px solid #ba0000;
 }
 
 .legs--grey,
