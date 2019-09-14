@@ -6,7 +6,8 @@ const btnLegsWhite = document.querySelector('.legs-check--one'),
     btnTableBrown = document.querySelector('.table-check--three'),
     btnTableBall = document.querySelector('.table-check--four'),
     btnTableBuble = document.querySelector('.table-check--five'),
-    result = document.querySelector('.form_wrapper--total'),
+    resultOne = document.querySelector('#resultOne'),
+    resultTwo = document.querySelector('#resultTwo'),
     checkOne = document.querySelector('.form_checkbox--one'),
     checkTwo = document.querySelector('.form_checkbox--two'),
     tableCheckOne = document.querySelector('.table-check--one'),
@@ -30,35 +31,16 @@ const btnLegsWhite = document.querySelector('.legs-check--one'),
     labelLegsWhite = document.querySelector('.legs--white'),
     labelLegsGrey = document.querySelector('.legs--grey'),
     labelLegsBlack = document.querySelector('.legs--black'),
-    labelLegs = document.querySelectorAll('.legs');
+    btnSand = document.querySelector('.form_wrapper--btn');
 
-btnLegsWhite.onclick = function() {
+// Функции цвета ножек
+labelLegsWhite.onclick = function() {
     legsImageGray.style.opacity = '0';
     legsImageBlack.style.opacity = '0';
     legsImageWhite.style.opacity = '1';
     labelLegsBlack.classList.remove("visible");
     labelLegsGrey.classList.remove("visible");
     labelLegsWhite.classList.add("visible");
-    if (labelLegsWhite.classList.contains('visible')) {
-        let a = 22000;
-        result.value = a;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(b);
-            } else {
-                result.value = a;
-            }
-        };
-        checkTwo.onclick = function() {
-            let c = 2000;
-            if (checkTwo.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(c);
-            } else {
-                result.value = a;
-            }
-        };
-    }
 }
 
 btnLegsGrey.onclick = function() {
@@ -68,26 +50,6 @@ btnLegsGrey.onclick = function() {
     labelLegsWhite.classList.remove("visible");
     labelLegsGrey.classList.add("visible");
     labelLegsBlack.classList.remove("visible");
-    if (labelLegsGrey.classList.contains('visible')) {
-        let a = 22000;
-        result.value = a;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(b);
-            } else {
-                result.value = a;
-            }
-        };
-        checkTwo.onclick = function() {
-            let c = 2000;
-            if (checkTwo.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(c);
-            } else {
-                result.value = a;
-            }
-        };
-    }
 }
 
 btnLegsBlack.onclick = function() {
@@ -97,158 +59,72 @@ btnLegsBlack.onclick = function() {
     labelLegsWhite.classList.remove("visible");
     labelLegsBlack.classList.add("visible");
     labelLegsGrey.classList.remove("visible");
-    if (labelLegsBlack.classList.contains('visible')) {
-        let a = 22000;
-        result.value = a;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(b);
-            } else {
-                result.value = a;
-            }
-        };
-        checkTwo.onclick = function() {
-            let c = 2000;
-            if (checkTwo.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(c);
-            } else {
-                result.value = a;
-            }
-        };
-    }
 }
 
-
-labelTableWhite.onclick = function() {
+// Функции цвета столешницы
+btnTableWhite.onclick = function() {
     tableImageWhite.style.opacity = '1';
     tableImageBuble.style.opacity = '0';
     tableImageBall.style.opacity = '0';
     tableImageBlack.style.opacity = '0';
     tableImageWood.style.opacity = '0';
-    labelTableBlack.classList.remove("visible");
-    labelTableBrown.classList.remove("visible");
-    labelTableBall.classList.remove("visible");
-    labelTableBuble.classList.remove("visible");
-    labelTableWhite.classList.add("visible");
-    if (labelTableWhite.classList.contains('visible')) {
-        let num = 0,
-            a = 25900;
-        num = Number.parseInt(result.value) + Number.parseInt(a);
-        result.value = num;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-        checkTwo.onclick = function() {
-            let b = 2000;
-            if (checkTwo.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-    }
     if (tableCheckOne.checked) {
+        resultOne.value = 25900;
+        resultTwo.value = 25900;
         labelTableWhite.classList.add("visible");
+        labelTableBlack.classList.remove("visible");
+        labelTableBrown.classList.remove("visible");
+        labelTableBall.classList.remove("visible");
+        labelTableBuble.classList.remove("visible");
     } else {
         labelTableWhite.classList.remove("visible");
-        let a = 22000;
-        result.value = a;
         tableImageWhite.style.opacity = '0';
+        resultOne.value = 22000;
+        resultTwo.value = 22000;
     }
 }
 
-labelTableBlack.onclick = function() {
+
+btnTableGrey.onclick = function() {
     tableImageWhite.style.opacity = '0';
     tableImageBuble.style.opacity = '0';
     tableImageBall.style.opacity = '0';
     tableImageBlack.style.opacity = '1';
     tableImageWood.style.opacity = '0';
-    labelTableWhite.classList.remove("visible");
-    labelTableBrown.classList.remove("visible");
-    labelTableBall.classList.remove("visible");
-    labelTableBuble.classList.remove("visible");
-    if (labelTableBlack.classList.contains('visible')) {
-        result.value = 22000;
-        let num = 0,
-            a = 25900;
-        num = Number.parseInt(result.value) + Number.parseInt(a);
-        result.value = num;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-        checkTwo.onclick = function() {
-            let b = 2000;
-            if (checkTwo.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-    } else {
-
-    }
-    if (labelTableBlack.classList.contains('visible')) {
-        true;
+    if (tableCheckTwo.checked) {
+        resultOne.value = 25900;
+        resultTwo.value = 25900;
+        labelTableBlack.classList.add("visible");
+        labelTableWhite.classList.remove("visible");
+        labelTableBrown.classList.remove("visible");
+        labelTableBall.classList.remove("visible");
+        labelTableBuble.classList.remove("visible");
     } else {
         labelTableBlack.classList.remove("visible");
-        let a = 22000;
-        result.value = a;
         tableImageBlack.style.opacity = '0';
+        resultOne.value = 22000;
+        resultTwo.value = 22000;
     }
 }
-
-tableCheckThree.onclick = function() {
+btnTableBrown.onclick = function() {
     tableImageWhite.style.opacity = '0';
     tableImageBuble.style.opacity = '0';
     tableImageBall.style.opacity = '0';
     tableImageBlack.style.opacity = '0';
     tableImageWood.style.opacity = '1';
-    labelTableWhite.classList.remove("visible");
-    labelTableBlack.classList.remove("visible");
-    labelTableBall.classList.remove("visible");
-    labelTableBuble.classList.remove("visible");
     if (tableCheckThree.checked) {
-        result.value = 22000;
-        let num = 0,
-            a = 35900;
-        num = Number.parseInt(result.value) + Number.parseInt(a);
-        result.value = num;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-        checkTwo.onclick = function() {
-            let b = 2000;
-            if (checkTwo.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-    } else {
-        let a = 22000;
-        result.value = a;
-        tableImageWood.style.opacity = '0';
-    }
-    if (tableCheckThree.checked) {
+        resultOne.value = 35900;
+        resultTwo.value = 35900;
         labelTableBrown.classList.add("visible");
+        labelTableWhite.classList.remove("visible");
+        labelTableBlack.classList.remove("visible");
+        labelTableBall.classList.remove("visible");
+        labelTableBuble.classList.remove("visible");
     } else {
         labelTableBrown.classList.remove("visible");
+        tableImageWood.style.opacity = '0';
+        resultOne.value = 22000;
+        resultTwo.value = 22000;
     }
 }
 
@@ -258,41 +134,19 @@ tableCheckFour.onclick = function() {
     tableImageBall.style.opacity = '1';
     tableImageBlack.style.opacity = '0';
     tableImageWood.style.opacity = '0';
-    labelTableWhite.classList.remove("visible");
-    labelTableBlack.classList.remove("visible");
-    labelTableBrown.classList.remove("visible");
-    labelTableBuble.classList.remove("visible");
-    if (tableCheckThree.checked) {
-        result.value = 22000;
-        let num = 0,
-            a = 35900;
-        num = Number.parseInt(result.value) + Number.parseInt(a);
-        result.value = num;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-        checkTwo.onclick = function() {
-            let b = 2000;
-            if (checkTwo.checked) {
-                result.value = num + Number.parseInt(b);
-            } else {
-                result.value = num;
-            }
-        };
-    } else {
-        let a = 22000;
-        result.value = a;
-        tableImageWood.style.opacity = '0';
-    }
     if (tableCheckFour.checked) {
+        resultOne.value = 65900;
+        resultTwo.value = 65900;
         labelTableBall.classList.add("visible");
+        labelTableWhite.classList.remove("visible");
+        labelTableBlack.classList.remove("visible");
+        labelTableBrown.classList.remove("visible");
+        labelTableBuble.classList.remove("visible");
     } else {
         labelTableBall.classList.remove("visible");
+        tableImageBall.style.opacity = '0';
+        resultOne.value = 22000;
+        resultTwo.value = 22000;
     }
 }
 
@@ -302,36 +156,18 @@ tableCheckFive.onclick = function() {
     tableImageBall.style.opacity = '0';
     tableImageBlack.style.opacity = '0';
     tableImageWood.style.opacity = '0';
-    labelTableWhite.classList.remove("visible");
-    labelTableBlack.classList.remove("visible");
-    labelTableBrown.classList.remove("visible");
-    labelTableBall.classList.remove("visible");
     if (tableCheckFive.checked) {
-        let a = 6500;
-        result.value = a;
-        checkOne.onclick = function() {
-            let b = 1000;
-            if (checkOne.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(b);
-            } else {
-                result.value = a;
-            }
-        };
-        checkTwo.onclick = function() {
-            let c = 2000;
-            if (checkTwo.checked) {
-                result.value = Number.parseInt(result.value) + Number.parseInt(c);
-            } else {
-                result.value = a;
-            }
-        };
-    } else {
-        let a = 6500;
-        result.value = a;
-    }
-    if (tableCheckFive.checked) {
+        resultOne.value = 65900;
+        resultTwo.value = 65900;
         labelTableBuble.classList.add("visible");
+        labelTableWhite.classList.remove("visible");
+        labelTableBlack.classList.remove("visible");
+        labelTableBrown.classList.remove("visible");
+        labelTableBall.classList.remove("visible");
     } else {
+        resultOne.value = 22000;
+        resultTwo.value = 22000;
         labelTableBuble.classList.remove("visible");
+        tableImageBuble.style.opacity = '0';
     }
 }

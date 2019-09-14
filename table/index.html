@@ -11,13 +11,74 @@
 </head>
 
 <body>
+    <!-- Первая модалка-->
+    <div class="modal fade" id="sendTable" tabindex="-1" role="dialog" aria-labelledby="sendTableLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sendTableLabel">Ваш заказ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="modal-form">
+                        <input type="text" placeholder="Введите имя" class="modal-form__input">
+                        <input type="tel" placeholder="Введите телефон" class="modal-form__input">
+                        <div class="modal-form__wrapper">
+                            <h3 class="form_wrapper--subtitle">
+                                Цена:
+                            </h3>
+                            <input type="text" placeholder="" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
+                            <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#sendModal">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Вторая -->
+    <div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="sendModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sendModalLabel">Заказ успешно отправлен</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="main_right--form">
+                        <div class="form_wrap">
+                            <input type="checkbox" class="form_checkbox form_checkbox--one" value="1000">
+                            <label for="" class="form_label">Доставка 1000р.</label>
+                        </div>
+                        <div class="form_wrap">
+                            <input type="checkbox" class="form_checkbox form_checkbox--two" value="2000">
+                            <label for="" class="form_label">Сборка 2000р.</label>
+                        </div>
+                        <div class="modal-form">
+                            <h3 class="form_wrapper--subtitle">
+                                Цена:
+                            </h3>
+
+                            <input type="text" placeholder="" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
+
+                            <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <main>
         <section class="main">
             <div class="container">
-                <h1 class="main_title">электрический стол </h1>
-                <h2 class="main_subtitle">для работы сидя - стоя</h2>
                 <div class="main_row row">
-                    <div class="main_left col-3">
+                    <div class="main_left col-lg-3 col-6 col-sm-12">
                         <div class="main_left--wrap">
                             <div class="main_left--image">
                                 <img src="img/icon-1.png" alt="">
@@ -57,7 +118,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main_center col-6">
+                    <div class="main_center col-lg-6 col-12">
+                        <h1 class="main_title">электрический стол </h1>
+                        <h2 class="main_subtitle">для работы сидя - стоя</h2>
                         <div class="main_table">
                             <img src="img/white.png" alt="" class="table-img table-img--white">
                             <img src="img/black.png" alt="" class="table-img table-img--black">
@@ -69,13 +132,13 @@
                             <img src="img/legs-black.png" alt="pic" class="legs-img legs-img--black">
                         </div>
                     </div>
-                    <div class="main_right col-3">
+                    <div class="main_right col-lg-3 col-12">
                         <div class="main_right--wrapper">
                             <h3 class="main_right--title">
                                 Выбрать цвет ножек:
                             </h3>
                             <div class="main_right--content">
-                                <label class="legs legs--white visible" for=""><input type="checkbox" class="legs-check legs-check--one " checked></label>
+                                <label class="legs visible legs--white " for=""><input type="checkbox" class="legs-check legs-check--one " checked></label>
                                 <label class="legs legs--grey"><input type="checkbox" class="legs-check legs-check--two"></label>
                                 <label class="legs legs--black"><input type="checkbox" class="legs-check legs-check--three"></label>
                             </div>
@@ -93,26 +156,14 @@
                             </div>
                         </div>
                         <form action="" class="main_right--form">
-                            <div class="form_wrap">
-                                <input type="checkbox" class="form_checkbox form_checkbox--one" value="1000">
-                                <label for="" class="form_label">Доставка 1000р.</label>
-                            </div>
-                            <div class="form_wrap">
-                                <input type="checkbox" class="form_checkbox form_checkbox--two" value="2000">
-                                <label for="" class="form_label">Сборка 2000р.</label>
-                            </div>
                             <div class="form_wrapper">
-                                <h3 class="form_wrapper--subtitle">
-                                    Цена:
-                                </h3>
-
-                                <input type="text" placeholder="" value="22000" class="form_wrapper--total" disabled>
-
-                                <button class="form_wrapper--btn">ЗАКАЗАТЬ</button>
+                                <h3 class="form_wrapper--subtitle">Цена:</h3>
+                                <input type="text" placeholder="" id="resultOne" value="22000" class="form_wrapper--total" disabled>
+                                <button class="btn" type="button" data-toggle="modal" data-target="#sendTable">ЗАКАЗАТЬ</button>
                             </div>
                         </form>
                     </div>
-                    <div class="main_bot col-12">
+                    <div class="main_bot col-6 col-sm-12">
                         <div class="main_bot--wrapper">
                             <div class="main_bot--img">
                                 <img src="img/icon-7.png" alt="">
@@ -163,7 +214,7 @@
                         <p class="footer_col--text">
                             Адрес склада г. Москва Улица Речников д.17
                         </p>
-                        <a href="#" class="footer_col--link">
+                        <a href="tel:88003434334" class="footer_col--link">
                             тел.: 8 800 343 43 34
                         </a>
                     </div>
