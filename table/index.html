@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ergo Kids</title>
+    <title>Электрический стол</title>
 </head>
 
 <body>
@@ -22,14 +22,14 @@
               </button>
                 </div>
                 <div class="modal-body">
-                    <form action="" class="modal-form">
-                        <input type="text" placeholder="Введите имя" class="modal-form__input">
-                        <input type="tel" placeholder="Введите телефон" class="modal-form__input">
+                    <form id="contact-form" method="post" action="contact.php" role="form" class="modal-form">
+                        <input type="text" id="form_name" placeholder="Введите имя" class="modal-form__input">
+                        <input type="tel" id="form_lastname" placeholder="Введите телефон" class="modal-form__input">
                         <div class="modal-form__wrapper">
                             <h3 class="form_wrapper--subtitle">
                                 Цена:
                             </h3>
-                            <input type="text" placeholder="" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
+                            <input type="text" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
                             <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#sendModal">Отправить</button>
                         </div>
                     </form>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- Вторая -->
-    <div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="sendModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="sendModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <main>
