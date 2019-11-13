@@ -313,7 +313,7 @@ th {
 }
 
 .btn-wrapper--form {
-    max-width: 270px;
+    max-width: 280px;
     width: 100%
 }
 
@@ -348,7 +348,7 @@ th {
 }
 
 .btn--catalog {
-    max-width: 270px;
+    max-width: 280px;
     -webkit-box-shadow: 0 4px 23px rgba(0, 0, 0, .27);
     box-shadow: 0 4px 23px rgba(0, 0, 0, .27)
 }
@@ -387,6 +387,10 @@ th {
 .modal-content {
     background-color: #fff;
     border-radius: 5px
+}
+
+.modal-backdrop {
+    display: none!important;
 }
 
 .modal-header {
@@ -914,6 +918,13 @@ main .s-tool .input {
     margin-bottom: 15px
 }
 
+main .s-tool .row {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
 main .s-tool .col-icon {
     margin-right: 20px
 }
@@ -992,7 +1003,7 @@ footer .s-footer .input {
 }
 
 footer .s-footer .btn {
-    margin-left: 20px
+    margin-left: 5px
 }
 
 footer .s-footer .form {
@@ -1108,6 +1119,14 @@ main .s-tool .col {
         padding: 40px 15px 0
     }
 
+    main .s-catalog .col {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        -webkit-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 300px !important
+    }
+
     main .s-tool .title {
         font-size: 24px
     }
@@ -1118,6 +1137,14 @@ main .s-tool .col {
         -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center
+    }
+
+    main .s-tool .col {
+        max-width: 100% !important;
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        -webkit-flex: 0 0 100% !important;
+        flex: 0 0 100% !important
     }
 
     main .s-tool .col-wrap--two {
@@ -1216,13 +1243,6 @@ main .s-tool .col {
     main .s-tool .title {
         font-size: 36px
     }
-
-    main .s-tool .col {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 60%;
-        -webkit-flex: 0 0 60%;
-        flex: 0 0 60%
-    }
 }
 
 @media (max-width:768px) {
@@ -1235,21 +1255,79 @@ main .s-tool .col {
         padding: 8px 5px
     }
 
-    .btn-wrapper {
-        text-align: center
-    }
-
     .btn-image {
         display: none
     }
 
-    .btn--footer,
-    .input {
+    .btn--catalog {
         max-width: 270px
     }
 
+    .btn--footer {
+        max-width: 270px !important
+    }
+
     .input {
-        padding: 13px
+        padding: 13px;
+        max-width: 270px
+    }
+
+    main .s-advantage .row {
+        padding-top: 30px
+    }
+
+    main .s-catalog {
+        padding: 45px 0
+    }
+
+    main .s-catalog .text {
+        height: 60px
+    }
+
+    main .s-catalog .row {
+        padding-top: 40px
+    }
+
+    main .s-catalog .col-wrap--price {
+        font-size: 16px
+    }
+
+    main .s-form .row {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto
+    }
+
+    main .s-form .text--bot {
+        padding-top: 20px
+    }
+
+    main .s-tool .title {
+        font-size: 30px
+    }
+}
+
+@media (max-width:500px) {
+    .title {
+        font-size: 24px
+    }
+
+    main .s-conditions .text--number {
+        margin-right: 15px
+    }
+}
+
+@media (max-width:1024px) {
+    .btn-wrapper {
+        text-align: center
+    }
+
+    .btn--header {
+        max-width: 200px
+    }
+
+    .btn--footer {
+        max-width: 280px
     }
 
     header .nav {
@@ -1307,8 +1385,7 @@ main .s-tool .col {
         -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
         -webkit-justify-content: space-evenly;
-        justify-content: space-evenly;
-        padding-top: 30px
+        justify-content: space-evenly
     }
 
     main .s-advantage .col {
@@ -1320,34 +1397,8 @@ main .s-tool .col {
         margin-bottom: 15px
     }
 
-    main .s-catalog {
-        padding: 45px 0
-    }
-
-    main .s-catalog .text {
-        height: 60px
-    }
-
-    main .s-catalog .row {
-        padding-top: 40px
-    }
-
     main .s-catalog .col {
         max-width: 30%
-    }
-
-    main .s-catalog .col-wrap--price {
-        font-size: 16px
-    }
-
-    main .s-form .row {
-        max-width: 768px;
-        width: 100%;
-        margin: 0 auto
-    }
-
-    main .s-form .text--bot {
-        padding-top: 20px
     }
 
     main .s-form .input {
@@ -1368,10 +1419,6 @@ main .s-tool .col {
 
     main .s-form .form-bg {
         display: none
-    }
-
-    main .s-tool .title {
-        font-size: 30px
     }
 
     main .s-tool .col {
@@ -1404,37 +1451,5 @@ main .s-tool .col {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center
-    }
-}
-
-@media (max-width:500px) {
-    .title {
-        font-size: 24px
-    }
-
-    main .s-catalog .col {
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        -webkit-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 300px
-    }
-
-    main .s-conditions .text--number {
-        margin-right: 15px
-    }
-
-    main .s-tool .col {
-        max-width: 100%;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-        -webkit-flex: 0 0 100%;
-        flex: 0 0 100%
-    }
-}
-
-@media (max-width:1024px) {
-    .btn--header {
-        max-width: 200px
     }
 }
