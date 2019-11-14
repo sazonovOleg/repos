@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>webpack</title>
     <link href="static/css/app.css" rel="stylesheet">
+    <title>Проект компании “Левша”</title>
 </head>
 
 <body>
@@ -27,33 +27,14 @@
                     <p class="text">Пн-Вс: 9 до 18</p>
                 </div>
                 <div class="nav-wrap nav-wrap--two">
-                    <a href="" class="link link--phone">
+                    <a href="tel:+73472926333" class="link link--phone">
                         <img src="static/img/icon-phone.svg" alt="phone" class="link-icon"> + 7 (347) 292-63-33
                     </a>
-                    <a href="mailto:info@levsha-ms.ru" class="link link--mail">
-                        info@levsha-ms.ru
+                    <a href="matilto:info@levsha-ms.ru" class="link link--mail">
+                            info@levsha-ms.ru
                     </a>
                 </div>
                 <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="title" id="exampleModalLabel">Мы вам перезвоним</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <form class="form">
-                                <h3 class="subtitle">Онлайн-заказ инструмента</h3>
-                                <input class="input" type="text" placeholder="Введите Ваше имя">
-                                <input class="input" type="text" placeholder="Введите Ваш телефон">
-                                <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
-                                <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="container" id="navContainer">
                 <img class="nav-close" src="static/img/close.svg" alt="">
@@ -68,20 +49,37 @@
                     <p class="text">Пн-Вс: 9 до 18</p>
                 </div>
                 <div class="nav-wrap nav-wrap--two">
-                    <a href="tel:+7(347)292-63-33" class="link link--phone">
+                    <a href="tel:+73472926333" class="link link--phone">
                         <img src="static/img/icon-phone.svg" alt="phone" class="link-icon"> + 7 (347) 292-63-33
                     </a>
                     <a href="mailto:info@levsha-ms.ru" class="link link--mail">
-                        info@levsha-ms.ru
-                    </a>
+                                info@levsha-ms.ru
+                        </a>
                 </div>
-                <button class="btn btn--header" >Заказать звонок</button>
+                <button class="btn btn--header">Заказать звонок</button>
             </div>
         </section>
     </header>
     <main>
-        <!-- Modal -->
-
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="title" id="exampleModalLabel">Мы вам перезвоним</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+                    <form class="form">
+                        <h3 class="subtitle">Онлайн-заказ инструмента</h3>
+                        <input class="input" type="text" placeholder="Введите Ваше имя">
+                        <input class="input" type="text" placeholder="Введите Ваш телефон">
+                        <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+                        <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
+                    </form>
+                </div>
+            </div>
+        </div>
         <section class="s-tool">
             <div class="container">
                 <div class="row">
@@ -370,7 +368,7 @@
                 <div class="row">
                     <h2 class="title">
                         Если Вы не знаете какой инструмент нужен для работы? Нет времени делать ремонт самим?
-                        </h3>
+                        </h2>
                         <div class="form">
                             <h3 class="subtitle">Специально для Вас услуга «Левша – мастер»</h3>
                             <p class="text">Наши мастера готовы Вам помочь в любой ситуации. Оставьте заявку и наши специалисты свяжутся с Вами.</p>
@@ -463,7 +461,7 @@
                 <hr class="s-footer--line">
                 <h3 class="subtitle">Остались вопросы? Позвоните нам!</h3>
                 <p class="text">Если есть вопросы, задайте их нашему менеджеру.<br> Мы будем рады ответить на все интересующие Вас вопросы.</p>
-                <a href="tel:+7(347)292-63-33" class="link link--phone">
+                <a href="tel:+73472926333" class="link link--phone">
                     <img src="static/img/icon-phone.svg" alt="location" class="link-icon"> + 7 (347) 292-63-33
                 </a>
             </div>
@@ -472,7 +470,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/js/app.js"></script>
-</body>
+<script type="text/javascript" src="static/js/app.js"></script></body>
 
 </html>

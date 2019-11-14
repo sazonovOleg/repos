@@ -389,10 +389,6 @@ th {
     border-radius: 5px
 }
 
-.modal-backdrop {
-    display: none!important;
-}
-
 .modal-header {
     border: none;
     position: relative;
@@ -1119,36 +1115,8 @@ main .s-tool .col {
         padding: 40px 15px 0
     }
 
-    main .s-catalog .col {
-        -webkit-box-flex: 0 !important;
-        -ms-flex: 0 0 100% !important;
-        -webkit-flex: 0 0 100% !important;
-        flex: 0 0 100% !important;
-        max-width: 300px !important
-    }
-
     main .s-tool .title {
         font-size: 24px
-    }
-
-    main .s-tool .row {
-        padding: 0 15px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center
-    }
-
-    main .s-tool .col {
-        max-width: 100% !important;
-        -webkit-box-flex: 0 !important;
-        -ms-flex: 0 0 100% !important;
-        -webkit-flex: 0 0 100% !important;
-        flex: 0 0 100% !important
-    }
-
-    main .s-tool .col-wrap--two {
-        padding-right: 0
     }
 }
 
@@ -1288,6 +1256,14 @@ main .s-tool .col {
         padding-top: 40px
     }
 
+    main .s-catalog .col {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        -webkit-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 300px !important
+    }
+
     main .s-catalog .col-wrap--price {
         font-size: 16px
     }
@@ -1303,7 +1279,35 @@ main .s-tool .col {
     }
 
     main .s-tool .title {
-        font-size: 30px
+        font-size: 30px;
+        text-align: center
+    }
+
+    main .s-tool .row {
+        padding: 0 15px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center
+    }
+
+    main .s-tool .col {
+        max-width: 100% !important;
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        -webkit-flex: 0 0 100% !important;
+        flex: 0 0 100% !important
+    }
+
+    main .s-tool .col-wrap {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center
+    }
+
+    main .s-tool .col-wrap--two {
+        padding-right: 0
     }
 }
 
