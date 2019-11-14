@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="static/css/app.css" rel="stylesheet">
-    <title>Проект компании “Левша”</title>
-</head>
+    <title>webpack</title>
+<link href="static/css/app.css" rel="stylesheet"></head>
 
 <body>
     <header>
         <section class="nav">
+            <a href="#" class="nav-logo nav-logo--sm">
+                <img src="static/img/logo.png" alt="" class="nav-logo--image">
+                <p class="text text--logo">Проект компании “Левша”</p>
+            </a>
             <img class="nav-navbar" src="static/img/navbar.svg" alt="">
             <div class="container">
                 <img class="nav-close" src="static/img/close.svg" alt="">
@@ -30,7 +33,7 @@
                     <a href="tel:+73472926333" class="link link--phone">
                         <img src="static/img/icon-phone.svg" alt="phone" class="link-icon"> + 7 (347) 292-63-33
                     </a>
-                    <a href="matilto:info@levsha-ms.ru" class="link link--mail">
+                    <a href="mailto:info@levsha-ms.ru" class="link link--mail">
                             info@levsha-ms.ru
                     </a>
                 </div>
@@ -38,10 +41,6 @@
             </div>
             <div class="container" id="navContainer">
                 <img class="nav-close" src="static/img/close.svg" alt="">
-                <div class="nav-logo">
-                    <img src="static/img/logo.png" alt="" class="nav-logo--image">
-                    <p class="text text-logo">Проект компании “Левша”</p>
-                </div>
                 <div class="nav-wrap">
                     <p class="text">
                         <img src="static/img/icon-location.svg" alt="location" class="nav-icon"> г. Уфа, ул. Новомостовая, 7<br>
@@ -56,11 +55,12 @@
                                 info@levsha-ms.ru
                         </a>
                 </div>
-                <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModalTwo">Заказать звонок</button>
+                <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModalOne">Заказать звонок</button>
             </div>
         </section>
     </header>
     <main>
+        <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -74,26 +74,26 @@
                         <h3 class="subtitle">Онлайн-заказ инструмента</h3>
                         <input class="input" type="text" placeholder="Введите Ваше имя">
                         <input class="input" type="text" placeholder="Введите Ваш телефон">
-                        <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+                        <button class="btn btn--modal">Заказать</button>
                         <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
                     </form>
                 </div>
             </div>
         </div>
-                <div class="modal fade" id="exampleModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="title" id="exampleModalLabel">Мы вам перезвоним</h5>
+                        <h5 class="title">Мы вам перезвоним</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                     </div>
                     <form class="form">
                         <h3 class="subtitle">Онлайн-заказ инструмента</h3>
                         <input class="input" type="text" placeholder="Введите Ваше имя">
                         <input class="input" type="text" placeholder="Введите Ваш телефон">
-                        <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+                        <button class="btn btn--modal">Заказать</button>
                         <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
                     </form>
                 </div>
@@ -124,7 +124,7 @@
                         <input class="input" type="text" placeholder="Введите Ваш телефон">
                         <div class="btn-wrapper btn-wrapper--tool">
                             <img class="btn-image" src="static/img/btn-phone.png" alt="phone">
-                            <button class="btn btn--tool">Заказать</button>
+                            <button class="btn btn--tool" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
                         </div>
                         <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
                     </form>
@@ -387,7 +387,7 @@
                 <div class="row">
                     <h2 class="title">
                         Если Вы не знаете какой инструмент нужен для работы? Нет времени делать ремонт самим?
-                        </h2>
+                        </h3>
                         <div class="form">
                             <h3 class="subtitle">Специально для Вас услуга «Левша – мастер»</h3>
                             <p class="text">Наши мастера готовы Вам помочь в любой ситуации. Оставьте заявку и наши специалисты свяжутся с Вами.</p>
