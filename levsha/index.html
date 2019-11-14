@@ -56,12 +56,31 @@
                                 info@levsha-ms.ru
                         </a>
                 </div>
-                <button class="btn btn--header">Заказать звонок</button>
+                <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModalTwo">Заказать звонок</button>
             </div>
         </section>
     </header>
     <main>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="title" id="exampleModalLabel">Мы вам перезвоним</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+                    <form class="form">
+                        <h3 class="subtitle">Онлайн-заказ инструмента</h3>
+                        <input class="input" type="text" placeholder="Введите Ваше имя">
+                        <input class="input" type="text" placeholder="Введите Ваш телефон">
+                        <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Заказать</button>
+                        <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+                <div class="modal fade" id="exampleModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
