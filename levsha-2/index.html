@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>webpack</title>
+    <link href="static/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="nav">
+            <a href="#" class="nav-logo nav-logo--sm">
+                <img src="static/img/logo.png" alt="" class="nav-logo--image">
+                <p class="text text--logo">Ближе к людям</p>
+            </a>
+            <img class="nav-navbar" src="static/img/navbar.svg" alt="">
+            <div class="container">
+                <img class="nav-close" src="static/img/close.svg" alt="">
+                <a href="#" class="nav-logo">
+                    <img src="static/img/logo.png" alt="" class="nav-logo--image">
+                    <p class="text text--logo">Ближе к людям</p>
+                </a>
+                <div class="nav-wrap">
+                    <p class="text">
+                        <img src="static/img/icon-location-yellow.png" alt="location" class="nav-icon"> г. Уфа, ул. Новомостовая, 7<br>
+                    </p>
+                    <p class="text">Пн-Вс: 9 до 18</p>
+                </div>
+                <div class="nav-wrap nav-wrap--two">
+                    <a href="tel:+73472926333" class="link link--phone">
+                        <img src="static/img/icon-phone-yellow.png" alt="phone" class="link-icon"> + 7 (347) 292-63-33
+                    </a>
+                    <a href="mailto:info@levsha-ms.ru" class="link link--mail">
+                        info@levsha-ms.ru
+                    </a>
+                </div>
+                <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
+            </div>
+            <div class="container" id="navContainer">
+                <img class="nav-close" src="static/img/close.svg" alt="">
+                <div class="nav-wrap">
+                    <p class="text">
+                        <img src="static/img/icon-location-yellow.png" alt="location" class="nav-icon"> г. Уфа, ул. Новомостовая, 7<br>
+                    </p>
+                    <p class="text">Пн-Вс: 9 до 18</p>
+                </div>
+                <div class="nav-wrap nav-wrap--two">
+                    <a href="tel:+73472926333" class="link link--phone">
+                        <img src="static/img/icon-phone-yellow.png" alt="phone" class="link-icon"> + 7 (347) 292-63-33
+                    </a>
+                    <a href="mailto:info@levsha-ms.ru" class="link link--mail">
+                        info@levsha-ms.ru
+                    </a>
+                </div>
+                <button class="btn btn--header" type="button" data-toggle="modal" data-target="#exampleModalOne">Заказать звонок</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="title" id="exampleModalLabel">Мы вам перезвоним</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="form">
+                        <h3 class="subtitle">Онлайн-заказ инструмента</h3>
+                        <input class="input" type="text" placeholder="Введите Ваше имя">
+                        <input class="input" type="text" placeholder="Введите Ваш телефон">
+                        <button class="btn btn--modal">Заказать</button>
+                        <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="title">Мы вам перезвоним</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="form">
+                        <h3 class="subtitle">Онлайн-заказ инструмента</h3>
+                        <input class="input" type="text" placeholder="Введите Ваше имя">
+                        <input class="input" type="text" placeholder="Введите Ваш телефон">
+                        <button class="btn btn--modal">Заказать</button>
+                        <small class="text text--small">Мы надежно защищаем Ваши персональные данные</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="s-tool">
+            <div class="container">
+                <img src="static/img/man.png" alt="" class="s-tool-img">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title">
+                            МАСТЕР НА ЧАС
+                        </h1>
+                        <div class="col-wrap">
+                            <img src="static/img/icon-people.png" alt="people" class="col-icon">
+                            <p class="text">Бесплатно для новых клиентов сети магазинов “Левша” и <a href="#" class="link link--small">левша.рф</a>
+                            </p>
+                        </div>
+                        <div class="col-wrap col-wrap--two">
+                            <img src="static/img/icon-car.png" alt="car" class="col-icon">
+                            <p class="text">
+                                Выезд мастера по Санкт-Петербургу
+                            </p>
+                        </div>
+                    </div>
+                    <form class="form">
+                        <h3 class="subtitle"><span class="subtitle--color">Онлайн-заказ</span><br> мастера
+                        </h3>
+                        <input class="input" type="text" placeholder="Введите Ваше имя">
+                        <input class="input" type="text" placeholder="Введите Ваш телефон">
+                        <div class="btn-wrapper btn-wrapper--tool">
+                            <button class="btn">Заказать</button>
+                        </div>
+                        <img src="static/img/arrow.png" alt="" class="form-img">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="s-help">
+            <div class="container">
+                <h2 class="title">
+                    ЧЕМ МЫ СМОЖЕМ ВАМ ПОМОЧЬ
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <img src="static/img/s-help/icon-1.png" alt="icon" class="col-img">
+                        <p class="text">ПОЧИНИМ ЭЛЕКТРИКУ
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="static/img/s-help/icon-2.png" alt="icon" class="col-img">
+                        <p class="text">ОТРЕМОНТИРУЕМ САНТЕХНИКУ
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="static/img/s-help/icon-3.png" alt="icon" class="col-img">
+                        <p class="text">СОБЕРЁМ МЕБЕЛЬ
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="static/img/s-help/icon-4.png" alt="icon" class="col-img">
+                        <p class="text">ВЕРНЁМ К ЖИЗНИ БЫТОВЫЕ ПРИБОРЫ</p>
+                    </div>
+                    <div class="col">
+                        <img src="static/img/s-help/icon-5.png" alt="icon" class="col-img">
+                        <p class="text">СДЕЛАЕМ МЕЛКИЙ РЕМОНТ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-products">
+            <div class="container">
+                <h2 class="title">
+                    ШИРОКИЙ СПЕКТР УСЛУГ
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="col-wrap col-wrap--top">
+                            <h3 class="subtitle subtitle--left">
+                                Мастер на час
+                            </h3>
+                            <h3 class="subtitle subtitle--right">
+                                Цены
+                            </h3>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"><span>Грузчик на час</span></p>
+                            <p class="text text--price">от 150 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"><span>Сантехник на час</span></p>
+                            <p class="text text--price">от 200 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"><span>Электрик на час</span></p>
+                            <p class="text text--price">от 200 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"><span>Ремонт мебели</span></p>
+                            <p class="text text--price">от 1000 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"><span>Ремонт бытовой техники</span></p>
+                            <p class="text text--price">от 200 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"> <span>Врезка замка</span> </p>
+                            <p class="text text--price">от 300 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"> <span>Навеска предметов интерьера</span> </p>
+                            <p class="text text--price">от 200 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"> <span>Установка люстры</span> </p>
+                            <p class="text text--price">от 200 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"> <span>Мелкий ремонт</span> </p>
+                            <p class="text text--price">от 150 руб/час</p>
+                        </div>
+                        <div class="col-wrap">
+                            <p class="text text--left"> <span>Муж на час</span> </p>
+                            <p class="text text--price">от 150 руб/час</p>
+                        </div>
+                    </div>
+                    <div class="col col--bot">
+                        <button class="btn">Скачать полный прайс на услуги</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-free">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title">
+                        Мастер на час <span class="title--free">БЕСПЛАТНО</span> для всех новых клиентов сети магазинов Левша в г. Санкт - Петербурге
+                    </h2>
+                    <p class="text">
+                        Подробности об акции узнавайте у продавцов магазинов
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="s-map">
+            <iframe class="s-map-maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7e1bc186dc11cd45d4bff71f6b14c827253a9f0b42971631bf751ecbce54967&amp;source=constructor" width="100%" height="720" frameborder="0">
+            </iframe>
+            <div class="container">
+                <div class="row">
+                    <h2 class="title">
+                        МАСТЕР НА ЧАС
+                        <img src="static/img/title-img.png" alt="" class="title-img">
+                    </h2>
+                    <p class="text">Услуги мастеров Левша - Мастер
+                        предоставляются на территории
+                        закреплённой к каждому магазину.</p>
+                    <p class="text">Вы можете посмотреть на карте:
+                        <b>входит ли ваш дом в обслуживаемую территорию.</b> </p>
+                </div>
+                <form class="form" action="">
+                    <div class="form-wrapper">
+                        <img src="static/img/location-grey.png" alt="" class="form-icon">
+                        <input type="text" class="input" placeholder="Введите Ваш адрес...">
+                    </div>
+                    <button class="btn btn--map">Поиск по моему адресу</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="s-footer">
+            <div class="container">
+                <h2 class="title">ПОЛУЧИТЕ ЭКОНОМИЮ В РЕМОНТЕ<br> ЗАКАЖИТЕ МАСТЕРА В ЛЕВШЕ</h2>
+                <div class="form">
+                    <input class="input" type="text" placeholder="Введите Ваше имя">
+                    <input class="input" type="text" placeholder="Введите Ваш телефон">
+                    <div class="btn-wrapper btn-wrapper--footer">
+                        <button class="btn btn--footer">Оставить заявку</button>
+                    </div>
+                    <small class="text">Мы надежно защищаем Ваши персональные данные</small>
+                </div>
+                <hr class="s-footer--line">
+                <h3 class="subtitle">Остались вопросы? Позвоните нам!</h3>
+                <p class="text">Если есть вопросы, задайте их нашему менеджеру.<br> Мы будем рады ответить на все интересующие Вас вопросы.</p>
+                <a href="tel:+73472926333" class="link link--phone">
+                    <img src="static/img/icon-phone.svg" alt="location" class="link-icon"> + 7 (347) 292-63-33
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
+</body>
+
+</html>
