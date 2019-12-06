@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.woff2) format("woff2")
+    src: url(../fonts/Roboto-regular.ttf) format("ttf")
 }
 
 @font-face {
@@ -706,6 +706,8 @@ main .s-free-proxy .col--main {
 main .s-free-proxy .col--bot {
     background-color: #4d4dad;
     cursor: pointer;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
     transition: .3s all ease;
 }
 
