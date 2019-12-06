@@ -1,0 +1,3076 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/slick.css">
+    <link rel="stylesheet" href="static/css/slick-theme.css">
+    <title>webpack</title>
+<link href="static/css/app.css" rel="stylesheet"></head>
+
+<body>
+
+<!--Header-->
+<header>
+    <section class="header">
+        <div class="container container--open">
+            <div class="row">
+                <div class="col col--top">
+                    <a href="#" class="logo">
+                        <img src="static/img/logo.png" alt="" class="logo-img">
+                    </a>
+                    <div class="col-wrap">
+                        <p class="header-lang">
+                            Ru/En
+                        </p>
+                        <img src="static/img/header/close.svg" alt="" class="close">
+                    </div>
+                </div>
+                <div class="col col--bot">
+                    <div class="menu">
+                        <a href="" class="menu-link">Бесплатные проки</a>
+                        <a href="" class="menu-link">Индивидуальные проки</a>
+                        <a href="" class="menu-link menu-link--tools">Инструменты</a>
+                        <a href="" class="menu-link menu-link--blog">Блог</a>
+                        <a href="" class="menu-link menu-link--info">О нас</a>
+                        <div class="header-wrap header-wrap--mobile">
+                            <img src="static/img/search-icon.svg" alt="" class="header-icon">
+                            <input type="text" class="header-search">
+                            <img src="static/img/arrow.svg" alt="" class="header-icon header-icon--arrow">
+                        </div>
+                    </div>
+                    <div class="society">
+                        <a href="" class="society-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                                <g>
+                                    <g>
+                                        <path class="society-icon" fill="#212121"
+                                              d="M36 18c0 9.941-8.06 18-18 18S0 27.941 0 18 8.06 0 18 0s18 8.059 18 18zm-9.065-.071c.664-.93 1.379-1.825 2.049-2.751.625-.866 1.265-1.73 1.594-2.766.21-.66.024-.95-.652-1.066a2.083 2.083 0 0 0-.355-.021l-4.013-.005c-.494-.007-.766.208-.942.646a24.243 24.243 0 0 1-.76 1.754c-.637 1.296-1.349 2.547-2.348 3.607-.22.234-.463.529-.832.407-.46-.167-.596-.926-.588-1.182l-.004-4.63c-.089-.661-.236-.956-.893-1.085h-4.166c-.557 0-.835.216-1.132.564-.171.2-.223.331.13.398.69.13 1.08.579 1.184 1.272.165 1.108.154 2.22.058 3.333a3.092 3.092 0 0 1-.212.952c-.202.477-.527.574-.955.28-.387-.265-.659-.64-.925-1.016-.999-1.412-1.796-2.934-2.447-4.534-.188-.463-.512-.743-1.002-.75a102.5 102.5 0 0 0-3.61 0c-.725.014-.94.366-.646 1.022 1.311 2.916 2.77 5.75 4.675 8.333.978 1.324 2.1 2.495 3.55 3.324 1.645.94 3.414 1.222 5.278 1.135.872-.041 1.135-.268 1.175-1.138.028-.595.095-1.187.388-1.721.288-.525.725-.625 1.228-.298.252.163.463.37.664.59.491.537.964 1.091 1.474 1.61.64.651 1.397 1.035 2.35.956l3.687.001c.594-.04.903-.766.56-1.43-.239-.465-.553-.878-.887-1.278-.753-.905-1.64-1.676-2.48-2.495-.757-.739-.805-1.167-.195-2.018z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="society-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                                <g>
+                                    <g>
+                                        <path class="society-icon" fill="#212121"
+                                              d="M36 18c0-9.94-8.06-18-18-18S0 8.06 0 18s8.06 18 18 18c.106 0 .21-.002.316-.004V21.984H14.45v-4.507h3.867V14.16c0-3.846 2.349-5.94 5.78-5.94 1.643 0 3.055.123 3.467.178v4.02h-2.366c-1.867 0-2.228.887-2.228 2.188v2.87h4.463l-.582 4.508h-3.881v13.32C30.492 33.149 36 26.217 36 18z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="society-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                                <g>
+                                    <g>
+                                        <path class="society-icon" fill="#212121"
+                                              d="M36 18c0 9.94-8.06 18-18 18S0 27.94 0 18 8.06 0 18 0s18 8.06 18 18zm-7.72-6.105c-.74.329-1.537.55-2.373.65a4.148 4.148 0 0 0 1.817-2.285 8.288 8.288 0 0 1-2.624 1.003 4.132 4.132 0 0 0-7.04 3.768 11.73 11.73 0 0 1-8.516-4.317 4.12 4.12 0 0 0-.56 2.077c0 1.433.73 2.699 1.839 3.439a4.103 4.103 0 0 1-1.871-.517v.053c0 2 1.423 3.671 3.314 4.05a4.135 4.135 0 0 1-1.866.07 4.136 4.136 0 0 0 3.86 2.87 8.29 8.29 0 0 1-5.132 1.769 8.42 8.42 0 0 1-.985-.057c1.828 1.172 4 1.856 6.332 1.856 7.6 0 11.755-6.296 11.755-11.756 0-.178-.003-.356-.011-.533a8.397 8.397 0 0 0 2.06-2.14z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="" class="society-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                                <g>
+                                    <g>
+                                        <path class="society-icon" fill="#212121"
+                                              d="M0 18C0 8.056 8.056 0 18 0s18 8.056 18 18-8.056 18-18 18S0 27.944 0 18zm8.236-.39c-1.189.465-1.168 1.123-.204 1.43l4.443 1.386 10.307-6.49c.478-.318.922-.138.56.182l-8.34 7.534-.32 4.58c.465 0 .667-.203.907-.443l2.171-2.09 4.5 3.316c.82.465 1.407.225 1.626-.762l2.955-13.921-.002.001c.262-1.218-.442-1.706-1.247-1.415z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container--fixed">
+            <a href="" class="logo">
+                <img src="static/img/logo.png" alt="" class="logo-img">
+            </a>
+            <div class="header-wrap">
+                <img src="static/img/search-icon.svg" alt="" class="header-icon">
+                <input type="text" class="header-search">
+                <img src="static/img/arrow.svg" alt="" class="header-icon header-icon--arrow">
+            </div>
+            <a class="header-menu">
+                <img src="static/img/header/menu.png" alt="" class="header-menu-img">
+            </a>
+        </div>
+    </section>
+</header>
+
+<!--Main-->
+<main>
+    <section class="s-free">
+        <div class="slider single-item">
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <h1 class="title">
+                            Бесплатные проверенные прокси
+                        </h1>
+                        <p class="text">Для рациональных</p>
+                        <p class="text">
+                            Все прокси абсолютно бесплатны<br>
+                            Все прокси проверяются на работоспособность<br>
+                            Мы исключаем из списка IP из «опасных» диапазонов<br>
+                            Список прокси обновляется каждые 30 секунд<br>
+                        </p>
+                        <button class="btn">Найти прокси</button>
+                    </div>
+                    <img src="static/img/main-pic.png" alt="pic" class="s-free-image">
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <h1 class="title">
+                            Бесплатные проверенные прокси
+                        </h1>
+                        <p class="text">Для рациональных</p>
+                        <p class="text">
+                            Все прокси абсолютно бесплатны<br>
+                            Все прокси проверяются на работоспособность<br>
+                            Мы исключаем из списка IP из «опасных» диапазонов<br>
+                            Список прокси обновляется каждые 30 секунд<br>
+                        </p>
+                        <button class="btn">Найти прокси</button>
+                    </div>
+                    <img src="static/img/main-pic.png" alt="pic" class="s-free-image">
+                </div>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <h1 class="title">
+                            Бесплатные проверенные прокси
+                        </h1>
+                        <p class="text">Для рациональных</p>
+                        <p class="text">
+                            Все прокси абсолютно бесплатны<br>
+                            Все прокси проверяются на работоспособность<br>
+                            Мы исключаем из списка IP из «опасных» диапазонов<br>
+                            Список прокси обновляется каждые 30 секунд<br>
+                        </p>
+                        <button class="btn">Найти прокси</button>
+                    </div>
+                    <img src="static/img/main-pic.png" alt="pic" class="s-free-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s-stats">
+        <div class="container">
+            <h2 class="title">
+                Статистика
+            </h2>
+            <p class="text text--stats">
+                Сейчас у нас <span class="text--stats-span">8867</span> рабочих прокси из <span
+                    class="text--stats-span">142</span> стран мира
+            </p>
+            <div class="row">
+                <img src="static/img/png-table.png" alt="" class="row-img">
+            </div>
+        </div>
+    </section>
+    <section class="s-free-proxy">
+        <div class="container">
+            <h2 class="title">
+                Бесплатные проверенные прокси
+            </h2>
+            <p class="text text--subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+                dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus
+                pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+            </p>
+            <div class="row">
+                <div class="col col--header">
+                    <div class="col-wrap col-wrap--1">
+                        <h3 class="subtitle">
+                            Адрес и тип
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <h3 class="subtitle">
+                            К
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <h3 class="subtitle">
+                            Анон. и сервисы
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <h3 class="subtitle">
+                            Скорость, отклик
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <h3 class="subtitle">
+                            Расположение
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <h3 class="subtitle">
+                            Аптайм
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <h3 class="subtitle">
+                            Обновлено
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <h3 class="subtitle">
+                            Копировать
+                        </h3>
+                    </div>
+                </div>
+                <div class="col col--main">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--adress">220.*.*.*.*</p>
+                        <div class="col-wrap-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <g>
+                                    <g>
+                                        <g/>
+                                        <g>
+                                            <g>
+                                                <path class="col-wrap--img"
+                                                      d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="" class="link link--proxy">SOCKS4</a>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <p class="text text--headline">-</p>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Высокоанонимный</p>
+                        <p class="text text--desc">Я G M T</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--headline">Средняя</p>
+                        <p class="text text--desc">511 мсек</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                        <p class="text text--desc">169 из 190</p>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">Только что</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="" class="copy">
+                            <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                        </a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="col col--main">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--adress">220.*.*.*.*</p>
+                        <div class="col-wrap-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <g>
+                                    <g>
+                                        <g/>
+                                        <g>
+                                            <g>
+                                                <path class="col-wrap--img"
+                                                      d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="" class="link link--proxy">SOCKS4</a>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <p class="text text--headline">-</p>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Высокоанонимный</p>
+                        <p class="text text--desc">Я G M T</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--headline">Средняя</p>
+                        <p class="text text--desc">511 мсек</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                        <p class="text text--desc">169 из 190</p>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">Только что</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="" class="copy">
+                            <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                        </a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="col col--main">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--adress">220.*.*.*.*</p>
+                        <div class="col-wrap-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <g>
+                                    <g>
+                                        <g/>
+                                        <g>
+                                            <g>
+                                                <path class="col-wrap--img"
+                                                      d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="" class="link link--proxy">SOCKS4</a>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <p class="text text--headline">-</p>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Высокоанонимный</p>
+                        <p class="text text--desc">Я G M T</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--headline">Средняя</p>
+                        <p class="text text--desc">511 мсек</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                        <p class="text text--desc">169 из 190</p>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">Только что</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="" class="copy">
+                            <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                        </a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="col col--main">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--adress">220.*.*.*.*</p>
+                        <div class="col-wrap-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <g>
+                                    <g>
+                                        <g/>
+                                        <g>
+                                            <g>
+                                                <path class="col-wrap--img"
+                                                      d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="" class="link link--proxy">SOCKS4</a>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <p class="text text--headline">-</p>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Высокоанонимный</p>
+                        <p class="text text--desc">Я G M T</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--headline">Средняя</p>
+                        <p class="text text--desc">511 мсек</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                        <p class="text text--desc">169 из 190</p>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">Только что</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="" class="copy">
+                            <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                        </a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="col col--main">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--adress">220.*.*.*.*</p>
+                        <div class="col-wrap-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <g>
+                                    <g>
+                                        <g/>
+                                        <g>
+                                            <g>
+                                                <path class="col-wrap--img"
+                                                      d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="" class="link link--proxy">SOCKS4</a>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <p class="text text--headline">-</p>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Высокоанонимный</p>
+                        <p class="text text--desc">Я G M T</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--headline">Средняя</p>
+                        <p class="text text--desc">511 мсек</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                 aria-valuemax="100"></div>
+                        </div>
+                        <p class="text text--desc">169 из 190</p>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">Только что</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="" class="copy">
+                            <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                        </a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="col col--main">
+                        <div class="col-wrap col-wrap--1">
+                            <p class="text text--adress">220.*.*.*.*</p>
+                            <div class="col-wrap-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <g>
+                                        <g>
+                                            <g/>
+                                            <g>
+                                                <g>
+                                                    <path class="col-wrap--img"
+                                                          d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <a href="" class="link link--proxy">SOCKS4</a>
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--2">
+                            <p class="text text--headline">-</p>
+                        </div>
+                        <div class="col-wrap col-wrap--3">
+                            <p class="text text--headline">Высокоанонимный</p>
+                            <p class="text text--desc">Я G M T</p>
+                        </div>
+                        <div class="col-wrap col-wrap--4">
+                            <p class="text text--headline">Средняя</p>
+                            <p class="text text--desc">511 мсек</p>
+                        </div>
+                        <div class="col-wrap col-wrap--5">
+                            <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                            <div class="col-wrap-inner">
+                                <p class="text text--headline">Франция</p>
+                                <p class="text text--desc">Париж</p>
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                            <p class="text text--desc">169 из 190</p>
+                        </div>
+                        <div class="col-wrap col-wrap--7">
+                            <p class="text text--headline">Только что</p>
+                        </div>
+                        <div class="col-wrap col-wrap--8">
+                            <a href="" class="copy">
+                                <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                            </a>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="col col--main">
+                        <div class="col-wrap col-wrap--1">
+                            <p class="text text--adress">220.*.*.*.*</p>
+                            <div class="col-wrap-content">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                    <g>
+                                        <g>
+                                            <g/>
+                                            <g>
+                                                <g>
+                                                    <path class="col-wrap--img"
+                                                          d="M13.15.763c1.018 0 1.85.829 1.85 1.85V9.78c0 1.018-.828 1.85-1.85 1.85H7.92v1.766h2.607c.234 0 .42.187.42.42 0 .234-.186.42-.42.42H4.473a.419.419 0 0 1-.42-.42c0-.233.186-.42.42-.42H7.08V11.63H1.85A1.852 1.852 0 0 1 0 9.78V2.613A1.85 1.85 0 0 1 1.85.763zm-11.303.841c-.554 0-1.01.452-1.01 1.01v5.989H14.16v-5.99c0-.557-.452-1.009-1.01-1.009zm11.303 9.185a1.01 1.01 0 0 0 1.009-1.01v-.335H.841v.336c0 .554.452 1.01 1.01 1.01z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <a href="" class="link link--proxy">SOCKS4</a>
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--2">
+                            <p class="text text--headline">-</p>
+                        </div>
+                        <div class="col-wrap col-wrap--3">
+                            <p class="text text--headline">Высокоанонимный</p>
+                            <p class="text text--desc">Я G M T</p>
+                        </div>
+                        <div class="col-wrap col-wrap--4">
+                            <p class="text text--headline">Средняя</p>
+                            <p class="text text--desc">511 мсек</p>
+                        </div>
+                        <div class="col-wrap col-wrap--5">
+                            <img src="static/img/country/france.png" alt="" class="col-wrap--image">
+                            <div class="col-wrap-inner">
+                                <p class="text text--headline">Франция</p>
+                                <p class="text text--desc">Париж</p>
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                            <p class="text text--desc">169 из 190</p>
+                        </div>
+                        <div class="col-wrap col-wrap--7">
+                            <p class="text text--headline">Только что</p>
+                        </div>
+                        <div class="col-wrap col-wrap--8">
+                            <a href="" class="copy">
+                                <img src="static/img/copy-img.png" alt="копировать" class="img-link">
+                            </a>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                </div>
+                <div class="col col--bot" data-toggle="collapse" href="#collapseExample" role="button"
+                     aria-expanded="false" aria-controls="collapseExample">
+                    <h3 class="subtitle">
+                        Показать еще
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-proxy-world">
+        <div class="container">
+            <div class="row">
+                <div class="col col--left">
+                    <h3 class="subtitle">Бесплатные прокси по странам</h3>
+                    <div class="col-wrap">
+                        <img src="static/img/country/france.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/france.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/usa.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/usa.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/belgium.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Бельгия</p>
+                            <p class="text text--desc">Брюгге</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/belgium.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Бельгия</p>
+                            <p class="text text--desc">Брюгге</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="col col--center">
+                    <h3 class="subtitle">
+                        Бесплатные прокси по типу
+                    </h3>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="HTTP">
+                        <label for="HTTP" class="label">
+                            HTTP
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="HTTPS">
+                        <label for="HTTPS" class="label">
+                            HTTPS
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="SOCKS4">
+                        <label for="SOCKS4" class="label">
+                            SOCKS4
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="SOCKS5">
+                        <label for="SOCKS5" class="label">
+                            SOCKS5
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="elit">
+                        <label for="elit" class="label">
+                            ЭЛИТНЫЕ
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="anonimus">
+                        <label for="anonimus" class="label">
+                            АНОНИМНЫЕ
+                        </label>
+                    </div>
+                </form>
+                <form class="col col--last">
+                    <h3 class="subtitle">
+                        Бесплатные прокси по задачам
+                    </h3>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="parsing">
+                        <label for="parsing" class="label label--other">
+                            Для парсинга
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="seo">
+                        <label for="seo" class="label label--other">
+                            Для CEO
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="crauling">
+                        <label for="crauling" class="label label--other">
+                            Для Краулинга
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-rating">
+        <div class="container">
+            <h2 class="title">
+                Рейтинг индивидуальных прокси
+            </h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+                dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis
+                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus
+                pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+            </p>
+            <div class="row">
+                <div class="col col--header">
+                    <div class="col-wrap col-wrap--1">
+                        <h3 class="subtitle">
+                            Компания
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <h3 class="subtitle">
+                            Рейтинг
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <h3 class="subtitle">
+                            Страны
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <h3 class="subtitle">
+                            Протокол
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <h3 class="subtitle">
+                            Тип IP
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <h3 class="subtitle">
+                            Ценовой<br>
+                            сегмент
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <h3 class="subtitle">
+                            Пробный<br>
+                            период
+                        </h3>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <h3 class="subtitle">
+                            Обзор
+                        </h3>
+                    </div>
+                </div>
+                <div class="col col--main" data-toggle="collapse" href="#colOne" role="button"
+                     aria-expanded="false" aria-controls="colOne">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                        <div class="col-wrap-content">
+                            <div class="arrowbox">
+                                <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                            </div>
+                            <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Более 65</p>
+                        <div class="col-wrap-box">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                        </div>
+                        <p class="text text--desc">и другие</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--info">https</p>
+                        <p class="text text--info">socks</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <p class="text text--info">IPV4</p>
+                        <p class="text text--info">IPV6</p>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <img src="static/img/download-ease.png" alt="" class="col-download">
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">ДА</p>
+                        <p class="text text--desc">7 дней</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="#" class="btn">На сайт</a>
+                        <a href="#" class="link">Обзор компании</a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="collapse collapse-row" id="colOne">
+                    <div class="collapse-col">
+                        <div class="collapse-wrap ">
+                            <p class="text text--headline">Страны</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 65</p>
+                            <div class="collapse-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="collapse-text">и другие</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Протоколы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тип IP</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">IPV4 | IPV6</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Shared прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы с IP в одни руки</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Цены</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Средний ценовой сегмент.
+                                Стоимость тарифов от 3$ до 25$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Техподдержка</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Личный кабинет</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей прокси.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тематические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Специальные пакеты для
+                                Twitch | YouTube | Email рассылок | Парсинга</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Серверные прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Динамические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15 минут.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">MIX пакеты</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Бесплатные прокси чекер</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">VPN сервис</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                        </div>
+                    </div>
+                    <div class="collapse-col collapse-col--last">
+                        <a href="" class="btn btn-link">Обзор</a>
+                        <a href="" class="btn btn-link">На сайт</a>
+                    </div>
+                </div>
+                <div class="col col--main" data-toggle="collapse" href="#colTwo" role="button"
+                     aria-expanded="false" aria-controls="colOne">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                        <div class="col-wrap-content">
+                            <div class="arrowbox">
+                                <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                            </div>
+                            <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Более 65</p>
+                        <div class="col-wrap-box">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                        </div>
+                        <p class="text text--desc">и другие</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--info">https</p>
+                        <p class="text text--info">socks</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <p class="text text--info">IPV4</p>
+                        <p class="text text--info">IPV6</p>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <img src="static/img/download-ease.png" alt="" class="col-download">
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">ДА</p>
+                        <p class="text text--desc">7 дней</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="#" class="btn">На сайт</a>
+                        <a href="#" class="link">Обзор компании</a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="collapse collapse-row" id="colTwo">
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Страны</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 65</p>
+                            <div class="collapse-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="collapse-text">и другие</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Протоколы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тип IP</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">IPV4 | IPV6</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Shared прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы с IP в одни руки</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Цены</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Средний ценовой сегмент.
+                                Стоимость тарифов от 3$ до 25$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Техподдержка</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Личный кабинет</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей прокси.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тематические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Специальные пакеты для
+                                Twitch | YouTube | Email рассылок | Парсинга</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Серверные прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Динамические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15 минут.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">MIX пакеты</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Бесплатные прокси чекер</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">VPN сервис</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                        </div>
+                    </div>
+                    <div class="collapse-col collapse-col--last">
+                        <a href="" class="btn btn-link">Обзор</a>
+                        <a href="" class="btn btn-link">На сайт</a>
+                    </div>
+                </div>
+                <div class="col col--main" data-toggle="collapse" href="#colThree" role="button"
+                     aria-expanded="false" aria-controls="colOne">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                        <div class="col-wrap-content">
+                            <div class="arrowbox">
+                                <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                            </div>
+                            <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Более 65</p>
+                        <div class="col-wrap-box">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                        </div>
+                        <p class="text text--desc">и другие</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--info">https</p>
+                        <p class="text text--info">socks</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <p class="text text--info">IPV4</p>
+                        <p class="text text--info">IPV6</p>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <img src="static/img/download-ease.png" alt="" class="col-download">
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">ДА</p>
+                        <p class="text text--desc">7 дней</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="#" class="btn">На сайт</a>
+                        <a href="#" class="link">Обзор компании</a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="collapse collapse-row" id="colThree">
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Страны</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 65</p>
+                            <div class="collapse-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="collapse-text">и другие</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Протоколы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тип IP</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">IPV4 | IPV6</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Shared прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы с IP в одни руки</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Цены</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Средний ценовой сегмент.
+                                Стоимость тарифов от 3$ до 25$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Техподдержка</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Личный кабинет</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей прокси.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тематические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Специальные пакеты для
+                                Twitch | YouTube | Email рассылок | Парсинга</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Серверные прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Динамические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15 минут.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">MIX пакеты</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Бесплатные прокси чекер</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">VPN сервис</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                        </div>
+                    </div>
+                    <div class="collapse-col collapse-col--last">
+                        <a href="" class="btn btn-link">Обзор</a>
+                        <a href="" class="btn btn-link">На сайт</a>
+                    </div>
+                </div>
+                <div class="col col--main" data-toggle="collapse" href="#colFour" role="button"
+                     aria-expanded="false" aria-controls="colOne">
+                    <div class="col-wrap col-wrap--1">
+                        <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                        <div class="col-wrap-content">
+                            <div class="arrowbox">
+                                <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                            </div>
+                            <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                        </div>
+                    </div>
+                    <div class="col-wrap col-wrap--2">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="col-wrap col-wrap--3">
+                        <p class="text text--headline">Более 65</p>
+                        <div class="col-wrap-box">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                        </div>
+                        <p class="text text--desc">и другие</p>
+                    </div>
+                    <div class="col-wrap col-wrap--4">
+                        <p class="text text--info">https</p>
+                        <p class="text text--info">socks</p>
+                    </div>
+                    <div class="col-wrap col-wrap--5">
+                        <p class="text text--info">IPV4</p>
+                        <p class="text text--info">IPV6</p>
+                    </div>
+                    <div class="col-wrap col-wrap--6">
+                        <img src="static/img/download-ease.png" alt="" class="col-download">
+                    </div>
+                    <div class="col-wrap col-wrap--7">
+                        <p class="text text--headline">ДА</p>
+                        <p class="text text--desc">7 дней</p>
+                    </div>
+                    <div class="col-wrap col-wrap--8">
+                        <a href="#" class="btn">На сайт</a>
+                        <a href="#" class="link">Обзор компании</a>
+                    </div>
+                    <hr class="col-line">
+                </div>
+                <div class="collapse collapse-row" id="colFour">
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Страны</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 65</p>
+                            <div class="collapse-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="collapse-text">и другие</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Протоколы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тип IP</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">IPV4 | IPV6</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Shared прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тарифы с IP в одни руки</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Цены</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Средний ценовой сегмент.
+                                Стоимость тарифов от 3$ до 25$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Техподдержка</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Личный кабинет</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей прокси.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Тематические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Специальные пакеты для
+                                Twitch | YouTube | Email рассылок | Парсинга</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Серверные прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Динамические прокси</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15 минут.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">MIX пакеты</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">Бесплатные прокси чекер</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да</p>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse-col">
+                        <div class="collapse-wrap">
+                            <p class="text text--headline">VPN сервис</p>
+                        </div>
+                        <div class="collapse-wrap">
+                            <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                        </div>
+                    </div>
+                    <div class="collapse-col collapse-col--last">
+                        <a href="" class="btn btn-link">Обзор</a>
+                        <a href="" class="btn btn-link">На сайт</a>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExampleOne">
+                    <div class="col col--main" data-toggle="collapse" href="#colFive" role="button"
+                         aria-expanded="false" aria-controls="colOne">
+                        <div class="col-wrap col-wrap--1">
+                            <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                            <div class="col-wrap-content">
+                                <div class="arrowbox">
+                                    <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                                </div>
+                                <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--2">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        </div>
+                        <div class="col-wrap col-wrap--3">
+                            <p class="text text--headline">Более 65</p>
+                            <div class="col-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="text text--desc">и другие</p>
+                        </div>
+                        <div class="col-wrap col-wrap--4">
+                            <p class="text text--info">https</p>
+                            <p class="text text--info">socks</p>
+                        </div>
+                        <div class="col-wrap col-wrap--5">
+                            <p class="text text--info">IPV4</p>
+                            <p class="text text--info">IPV6</p>
+                        </div>
+                        <div class="col-wrap col-wrap--6">
+                            <img src="static/img/download-ease.png" alt="" class="col-download">
+                        </div>
+                        <div class="col-wrap col-wrap--7">
+                            <p class="text text--headline">ДА</p>
+                            <p class="text text--desc">7 дней</p>
+                        </div>
+                        <div class="col-wrap col-wrap--8">
+                            <a href="#" class="btn">На сайт</a>
+                            <a href="#" class="link">Обзор компании</a>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse collapse-row" id="colFive">
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Страны</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 65</p>
+                                <div class="collapse-wrap-box">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                </div>
+                                <p class="collapse-text">и другие</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Протоколы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тип IP</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">IPV4 | IPV6</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Shared прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы с IP в одни руки</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                    день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Цены</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Средний ценовой сегмент.
+                                    Стоимость тарифов от 3$ до 25$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Техподдержка</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Личный кабинет</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей
+                                    прокси.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тематические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Специальные пакеты для
+                                    Twitch | YouTube | Email рассылок | Парсинга</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Серверные прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Динамические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15
+                                    минут.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">MIX пакеты</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Бесплатные прокси чекер</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">VPN сервис</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                            </div>
+                        </div>
+                        <div class="collapse-col collapse-col--last">
+                            <a href="" class="btn btn-link">Обзор</a>
+                            <a href="" class="btn btn-link">На сайт</a>
+                        </div>
+                    </div>
+                    <div class="col col--main" data-toggle="collapse" href="#colSix" role="button"
+                         aria-expanded="false" aria-controls="colOne">
+                        <div class="col-wrap col-wrap--1">
+                            <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                            <div class="col-wrap-content">
+                                <div class="arrowbox">
+                                    <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                                </div>
+                                <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--2">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        </div>
+                        <div class="col-wrap col-wrap--3">
+                            <p class="text text--headline">Более 65</p>
+                            <div class="col-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="text text--desc">и другие</p>
+                        </div>
+                        <div class="col-wrap col-wrap--4">
+                            <p class="text text--info">https</p>
+                            <p class="text text--info">socks</p>
+                        </div>
+                        <div class="col-wrap col-wrap--5">
+                            <p class="text text--info">IPV4</p>
+                            <p class="text text--info">IPV6</p>
+                        </div>
+                        <div class="col-wrap col-wrap--6">
+                            <img src="static/img/download-ease.png" alt="" class="col-download">
+                        </div>
+                        <div class="col-wrap col-wrap--7">
+                            <p class="text text--headline">ДА</p>
+                            <p class="text text--desc">7 дней</p>
+                        </div>
+                        <div class="col-wrap col-wrap--8">
+                            <a href="#" class="btn">На сайт</a>
+                            <a href="#" class="link">Обзор компании</a>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse collapse-row" id="colSix">
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Страны</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 65</p>
+                                <div class="collapse-wrap-box">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                </div>
+                                <p class="collapse-text">и другие</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Протоколы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тип IP</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">IPV4 | IPV6</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Shared прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы с IP в одни руки</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                    день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Цены</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Средний ценовой сегмент.
+                                    Стоимость тарифов от 3$ до 25$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Техподдержка</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Личный кабинет</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей
+                                    прокси.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тематические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Специальные пакеты для
+                                    Twitch | YouTube | Email рассылок | Парсинга</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Серверные прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Динамические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15
+                                    минут.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">MIX пакеты</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Бесплатные прокси чекер</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">VPN сервис</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                            </div>
+                        </div>
+                        <div class="collapse-col collapse-col--last">
+                            <a href="" class="btn btn-link">Обзор</a>
+                            <a href="" class="btn btn-link">На сайт</a>
+                        </div>
+                    </div>
+                    <div class="col col--main" data-toggle="collapse" href="#colSeven" role="button"
+                         aria-expanded="false" aria-controls="colOne">
+                        <div class="col-wrap col-wrap--1">
+                            <p class="text text--recomend">GiveProxy.com рекомендует</p>
+                            <div class="col-wrap-content">
+                                <div class="arrowbox">
+                                    <img src="static/img/arrow-down.svg" alt="" class="arrowbox-img">
+                                </div>
+                                <img src="static/img/proxy-jpg.png" alt="" class="col-wrap--img">
+                            </div>
+                        </div>
+                        <div class="col-wrap col-wrap--2">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                            <img src="static/img/star-icon.svg" alt="icon" class="icon">
+                        </div>
+                        <div class="col-wrap col-wrap--3">
+                            <p class="text text--headline">Более 65</p>
+                            <div class="col-wrap-box">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                            </div>
+                            <p class="text text--desc">и другие</p>
+                        </div>
+                        <div class="col-wrap col-wrap--4">
+                            <p class="text text--info">https</p>
+                            <p class="text text--info">socks</p>
+                        </div>
+                        <div class="col-wrap col-wrap--5">
+                            <p class="text text--info">IPV4</p>
+                            <p class="text text--info">IPV6</p>
+                        </div>
+                        <div class="col-wrap col-wrap--6">
+                            <img src="static/img/download-ease.png" alt="" class="col-download">
+                        </div>
+                        <div class="col-wrap col-wrap--7">
+                            <p class="text text--headline">ДА</p>
+                            <p class="text text--desc">7 дней</p>
+                        </div>
+                        <div class="col-wrap col-wrap--8">
+                            <a href="#" class="btn">На сайт</a>
+                            <a href="#" class="link">Обзор компании</a>
+                        </div>
+                        <hr class="col-line">
+                    </div>
+                    <div class="collapse collapse-row" id="colSeven">
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Страны</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 65</p>
+                                <div class="collapse-wrap-box">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                    <img src="static/img/country/belgium.png" alt="icon" class="icon--country">
+                                </div>
+                                <p class="collapse-text">и другие</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Протоколы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">HTTP | HTTPS | SOCKS</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тип IP</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">IPV4 | IPV6</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Более 24 тарифов под разные регионы и задачи</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Shared прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, от 3$ в день. Выдаются максимум трём людям.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тарифы с IP в одни руки</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть тарифы Platinum и Limited, с 100% чистыми IP. От 25$ в
+                                    день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Цены</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Средний ценовой сегмент.
+                                    Стоимость тарифов от 3$ до 25$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Техподдержка</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, 24\7. Онлайн чат на сайте, Skype, Telegram.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Личный кабинет</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, с полностью автоматизированной оплатой и выдачей
+                                    прокси.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Тематические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Специальные пакеты для
+                                    Twitch | YouTube | Email рассылок | Парсинга</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Серверные прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость серверных прокси от 8$ в день.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Динамические прокси</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, стоимость от 4$ в день. Частота смены IP каждый 15
+                                    минут.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">MIX пакеты</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, есть пакеты под любые задачи и микс регионов.</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">Бесплатные прокси чекер</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да</p>
+                            </div>
+                            <hr class="col-line">
+                        </div>
+                        <div class="collapse-col">
+                            <div class="collapse-wrap">
+                                <p class="text text--headline">VPN сервис</p>
+                            </div>
+                            <div class="collapse-wrap">
+                                <p class="collapse-text">Да, клиент для iOS, Android и Windows.</p>
+                            </div>
+                        </div>
+                        <div class="collapse-col collapse-col--last">
+                            <a href="" class="btn btn-link">Обзор</a>
+                            <a href="" class="btn btn-link">На сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col--bot" data-toggle="collapse" href="#collapseExampleOne" role="button"
+                     aria-expanded="false" aria-controls="collapseExample">
+                    <h3 class="subtitle">
+                        Показать еще
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-proxy-world">
+        <div class="container">
+            <div class="row">
+                <div class="col col--left">
+                    <h3 class="subtitle">Бесплатные прокси по странам</h3>
+                    <div class="col-wrap">
+                        <img src="static/img/country/france.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/france.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/usa.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/usa.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/belgium.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Бельгия</p>
+                            <p class="text text--desc">Брюгге</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/belgium.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Бельгия</p>
+                            <p class="text text--desc">Брюгге</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="col col--center">
+                    <h3 class="subtitle">
+                        Бесплатные прокси по типу
+                    </h3>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="HTTPOne">
+                        <label for="HTTPOne" class="label">
+                            HTTP
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="HTTPSOne">
+                        <label for="HTTPSOne" class="label">
+                            HTTPS
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="SOCKS4One">
+                        <label for="SOCKS4One" class="label">
+                            SOCKS4
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="SOCKS5One">
+                        <label for="SOCKS5One" class="label">
+                            SOCKS5
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="elitOne">
+                        <label for="elitOne" class="label">
+                            ЭЛИТНЫЕ
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="anonimusOne">
+                        <label for="anonimusOne" class="label">
+                            АНОНИМНЫЕ
+                        </label>
+                    </div>
+                </form>
+                <form class="col col--last">
+                    <h3 class="subtitle">
+                        Бесплатные прокси по задачам
+                    </h3>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="parsingOne">
+                        <label for="parsingOne" class="label label--other">
+                            Для парсинга
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="seoOne">
+                        <label for="seoOne" class="label label--other">
+                            Для CEO
+                        </label>
+                    </div>
+                    <div class="col-wrapper">
+                        <input type="checkbox" class="checkbox" id="craulingOne">
+
+                        <label for="craulingOne" class="label label--other">
+                            Для Краулинга
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-buy">
+        <div class="container">
+            <h2 class="title">Прокси ipv4 купить</h2>
+            <p class="text">
+                Повсеместное активное использование Всемирной Сети привело к тому, что проводить некоторые
+                операции онлайн стало нереально или небезопасно. Злоумышленники превратили Сеть в постоянный источник
+                нелегального дохода. Киберпреступники взламывают сайты, электронную почту, блоги, интернет-кошельки и
+                многое другое. Но и это далеко не весь список проблем. К примеру, в нашей стране власти уже проявляют
+                активный интерес к контенту и пользователям Сети, подвергая блокировке различные веб-ресурсы. И никто не
+                знает на 100%, что будет завтра. Сегодня нет гарантии, что пользователи интернета могут чувствовать себя
+                уверенно или в безопасности.</p>
+
+            <p class="text">Как это изменить?</p>
+
+            <p class="text">Стоит купить прокси IPV4. Зачем нужен промежуточный сервер?</p>
+
+            <p class="text"> Если коротко, приватные прокси – это обход всех запретов, защита от блокировок, обеспечение
+                безопасности
+                пользования сетью.</p>
+
+            <p class="text"> Прокси-сервера обеспечивают:</p>
+
+            <p class="text"><b>Анонимный и безопасный серфинг</b>. Сервер-посредник скрывает своих внутренних
+                пользователей от внешней
+                сети. Это значит, что клиент будет защищен от хакерского вмешательства, спама. При этом его личность в
+                Сети будет анонимна.</p>
+
+            <p class="text"><b>Кэширование.</b> Русский прокси «прячет» пользователя и делает невозможным поиск по
+                IP-адресу. Кроме того
+                устройство ускоряет трафик клиента за счет выдачи сайтов в кэше. Это значит, что вместо 12-15 секунд
+                открытия страницы вы получаете 5-6 секунд.</p>
+
+            <p class="text"><b>Администрирование</b>. Эта опция крайне полезна для крупных предприятий, в которых
+                одновременно несколько
+                людей пользуются Сетью через промежуточный сервер. Благодаря возможности администрирования можно
+                блокировать нежелательнее сайты (соцсети, азартные веб-площадки и т.д.) и настроить брандмауэры для всех
+                пользователей.</p>
+
+            <p class="text"> Получается, что если купить пакетные прокси IPV4, можно получить полную анонимность и
+                безопасность, а
+                также осваивать новые рынки с использованием IP-шников для конкретного государства. Наши сервера
+                позволяют использовать IP-адреса нужной страны и эффективно укреплять свои позиции на ее рынке. Где
+                купить прокси HTTPS или SOCKS5? Если после ознакомления с вышеуказанной информацией у вас появилось
+                желание купить прокси в России, воспользуйтесь услугами компании o2Proxy.</p>
+
+            <p class="text"><b>Своим клиентам мы гарантируем:</b></p>
+
+            <p class="text"><b>Выгодные цены</b> . У нас одни из самых низких цен на рынке. Это выгодно не только
+                частным пользователям, но
+                и перепродажникам.
+                Качество и надежность. Мы работаем только на своих ресурсах в надежном доменном центре, а не перепродаем
+                чужие услуги по завышенной стоимости.</p>
+
+            <p class="text"><b>Независимость</b> . Благодаря использованию собственных мощностей мы не зависим от
+                сторонних контор.
+                Наличие. Всегда в свободном пуле достаточно прокси.</p>
+
+            <p class="text"><b> Поддержка</b>. Оказываем клиентам всестороннюю помощь и консультирование.</p>
+
+            <p class="text"><b>Безопасность.</b> У нас можно купить прокси дешево в одни руки. Это значит, что не будет
+                блокировок из-за
+                массового использования одного сервера.</p>
+            <p class="text"><b>Универсальность.</b> Есть API для интеграции на сторонние сервисы.</p>
+
+            <p class="text"> Наше предложение будет интересно SMM и SEO продвиженцам, а также тем кто перепродает
+                прокси. Мы
+                предлагаем индивидуальные и общие прокси HTTPS или SOCKS5 с круглосуточной техподдержкой, стабильной
+                работой и высокой скоростью. У нас вы найдете доступные тарифные пакеты на любой период времени.</p>
+        </div>
+    </section>
+
+    <section class="s-tags">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                   aria-selected="true">Самое важное</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                   aria-controls="profile" aria-selected="false">Самое свежее</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                   aria-controls="contact" aria-selected="false">Самое-самое</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab"
+                   aria-controls="contact" aria-selected="false">Другие новости</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-shadow"></div>
+                <div class="slider multiple-items">
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-shadow"></div>
+                <div class="slider multiple-items">
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-shadow"></div>
+                <div class="slider multiple-items">
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-shadow"></div>
+                <div class="slider multiple-items">
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col">
+                            <img src="static/img/slider-jpg.jpg" alt="" class="col-img">
+                            <div class="col-wrapper">
+                                <div class="col-wrap">
+                                    <p class="text text--news">Самое новое</p>
+                                    <p class="text text--data">12 ноября</p>
+                                </div>
+                                <p class="text text--headline">Практические советы как подобрать
+                                    прокси для своих задач</p>
+                                <p class="text">
+                                    Как подобрать прокси для серфинга по заблокированным сайтам, парсинга, продвижения в
+                                    социальных
+                                    сетях, вилок в букмекерских конторах, создания твинков для фарм голд в WoW и других
+                                    MMORPG?
+                                </p>
+                                <p class="text text--name">Иван Иванов</p>
+                                <a href="#" class="btn">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--Footer-->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Франция</p>
+                            <p class="text text--desc">Париж</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">США</p>
+                            <p class="text text--desc">Вашингтон</p>
+                        </div>
+                    </div>
+                    <div class="col-wrap">
+                        <img src="static/img/country/russia.png" alt="" class="col-img">
+                        <div class="col-wrap-inner">
+                            <p class="text text--headline">Россия</p>
+                            <p class="text text--desc">Москва</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-link">
+                    <a href="#" class="link">Добавить сайт</a>
+                    <a href="#" class="link">Промокоды</a>
+                    <a href="#" class="link">Статьи</a>
+                    <a href="#" class="link">Обратная связь</a>
+                </div>
+                <form class="col col-mail">
+                    <p class="text text--mail">Введите свой E-mail, чтобы получать
+                        новости</p>
+                    <input type="email" class="input" placeholder="E-mail">
+                    <button class="btn">Готово</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="static/js/slick.min.js"></script>
+<script>
+    $('.single-item').slick({
+        infinite: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    $('.multiple-items').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+</script>
+<script type="text/javascript" src="static/js/app.js"></script></body>
+
+</html>
