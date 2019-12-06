@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Roboto;
+    font-family: Roboto , sans-serif;
     src: url(../fonts/Roboto-regular.ttf) format("ttf")
 }
 
@@ -190,7 +190,7 @@ th {
 
 .text {
     color: #000;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px
@@ -207,7 +207,7 @@ th {
 
 .link {
     color: #000;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -222,13 +222,13 @@ th {
 
 .title {
     color: #000;
-    font-family: Roboto-Bold;
+    font-family: Roboto-Bold , sans-serif;
     font-size: 36px;
     font-weight: 700
 }
 
 .subtitle {
-    font-family: Roboto-Bold
+    font-family: Roboto-Bold, sans-serif;
 }
 
 .btn,
@@ -362,7 +362,7 @@ header .header .col-wrap {
 
 header .header-lang {
     color: #000;
-    font-family: Roboto-Bold;
+    font-family: Roboto-Bold , sans-serif;
     font-size: 24px;
     margin-right: 60px;
     -webkit-transition: all .3s ease;
@@ -395,7 +395,7 @@ header .header .menu {
 
 header .header .menu-link {
     color: #000;
-    font-family: Roboto-Bold;
+    font-family: Roboto-Bold, sans-serif;
     font-size: 36px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33333%;
@@ -1118,7 +1118,7 @@ main .s-rating .collapse-wrap .text {
 
 main .s-rating .collapse-text {
     color: #000;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     font-size: 14px;
     font-weight: 400;
     margin-right: 20px
