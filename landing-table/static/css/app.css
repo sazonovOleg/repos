@@ -2081,9 +2081,9 @@ footer .footer .col-img {
     }
 
     main .s-proxy-world .col {
-        min-height: -webkit-min-content;
-        min-height: -moz-min-content;
-        min-height: min-content;
+        min-height: -webkit-max-content;
+        min-height: -moz-max-content;
+        min-height: max-content;
         max-width: 100%;
         height: 100%;
         margin-bottom: 40px
