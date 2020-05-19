@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Gillroy';
+  src: url("../font/Gilroy.woff") format("woff"); }
+@font-face {
+  font-family: 'Gillroy-Bold';
+  src: url("../font/Gilroy-Bold.woff") format("woff"); }
+body {
+  font-family: "Gillroy"; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Gillroy-Bold"; }
+
+main .s-main .col {
+  display: flex;
+  flex-direction: column; }
+
+header .nav-menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+
+main .s-main .container {
+  display: flex;
+  flex-flow: row wrap; }
+
+a, h1, h2, h3, h4, h5, p, span {
+  padding: 0;
+  margin: 0; }
+
+.title {
+  color: #3F3D56;
+  font-family: "Gillroy-Bold";
+  font-size: 36px;
+  line-height: 45px; }
+
+.subtitle {
+  color: #3F3D56;
+  font-size: 24px;
+  line-height: 30px; }
+
+.caption {
+  color: #3F3D56;
+  font-size: 18px;
+  line-height: 24px; }
+
+.text {
+  color: #818AA9;
+  font-size: 16px;
+  line-height: 24px; }
+
+.btn {
+  font-family: "Gillroy-Bold";
+  background: #3964FC;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 16px 0;
+  transition: 0.3s all ease; }
+  .btn:hover {
+    background-color: #355BE1; }
+  .btn--main {
+    max-width: 241px; }
+
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px; }
+
+header {
+  padding: 44px 0; }
+  header .nav {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between; }
+    header .nav-logo {
+      font-family: "Gillroy-Bold";
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      color: #3F3D56;
+      transition: 0.3s all ease; }
+      header .nav-logo:hover {
+        opacity: 0.75; }
+    header .nav-item {
+      font-family: "Gillroy-Bold";
+      color: #3F3D56;
+      margin: 0 12px;
+      transition: 0.3s all ease; }
+      header .nav-item:hover {
+        color: #3964FC; }
+      header .nav-item--btn {
+        padding: 14px 33px;
+        background: none;
+        border: 1px solid #E1E5EF;
+        border-radius: 33px;
+        transition: 0.3s all ease; }
+        header .nav-item--btn:hover {
+          color: #3F3D56;
+          background-color: #E1E5EF; }
+
+main .s-main-title {
+  font-size: 48px;
+  line-height: 59px;
+  padding-bottom: 15px; }
+  main .s-main-title--blue {
+    color: #3964FC; }
+main .s-main .text {
+  padding-bottom: 25px; }
+main .s-main .container {
+  max-width: 1366px;
+  align-items: center;
+  background-color: #F2F3F6;
+  border-radius: 33px; }
+main .s-main-img {
+  margin-top: -30px;
+  margin-left: 10px;
+  margin-bottom: -40px;
+  margin-right: 80px; }
+
+/*# sourceMappingURL=style.css.map */

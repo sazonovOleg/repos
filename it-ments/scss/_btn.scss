@@ -1,0 +1,16 @@
+.btn {
+	font-family: $fontGilroyBold;
+	background: $blue;
+	color: white;
+	border-radius: 15px;
+	text-align: center;
+	width: 100%;
+	padding: 16px 0;
+	transition: $standard;
+	&:hover {
+		background-color: $blueLight;
+	}
+	&--main {
+		max-width: 241px;
+	}
+}

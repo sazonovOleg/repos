@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Gillroy';
+	src: url('../font/Gilroy.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Gillroy-Bold';
+	src: url('../font/Gilroy-Bold.woff') format('woff');
+}
+
+$fontGilroy: 'Gillroy';
+$fontGilroyBold: 'Gillroy-Bold';
+body {
+	font-family: $fontGilroy;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $fontGilroyBold;
+}

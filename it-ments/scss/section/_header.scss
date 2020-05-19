@@ -1,0 +1,44 @@
+header {
+	padding: 44px 0;
+	.nav {
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 15px;
+		justify-content: space-between;
+		&-logo {
+			font-family: $fontGilroyBold;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 37px;
+			color: $black;
+			transition: $standard;
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+		&-menu {
+			@extend %flexRowCenter;
+		}
+		&-item {
+			font-family: $fontGilroyBold;
+			color: $black;
+			margin: 0 12px;
+			transition: $standard;
+			&:hover {
+				color: $blue;
+			}
+			&--btn {
+				padding: 14px 33px;
+				background: none;
+				border: 1px solid $greyLight;
+				border-radius: 33px;
+				transition: $standard;
+				&:hover {
+					color: $black;
+					background-color: $greyLight;
+				}
+			}
+		}
+	}
+}
