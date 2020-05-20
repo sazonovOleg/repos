@@ -1,0 +1,17 @@
+.s-services {
+	padding-bottom: 60px;
+	.container {
+		@extend %flexRow;
+	}
+	.row {
+		@extend %flexColumn;
+		flex: 1 0 0;
+		padding-left: 90px;
+	}
+	.subtitle {
+		padding-bottom: 24px;
+	}
+	.text {
+		padding-bottom: 30px;
+	}
+}

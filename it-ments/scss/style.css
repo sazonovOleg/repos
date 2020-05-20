@@ -10,16 +10,23 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Gillroy-Bold"; }
 
-main .s-main .col {
+main .s-main .col, main .s-about .container, main .s-services .row, main .s-price .col, main .s-question .col {
   display: flex;
   flex-direction: column; }
+
+main .s-work .col-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 header .nav-menu {
   display: flex;
   flex-flow: row wrap;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
-main .s-main .container {
+main .s-main .container, main .s-work .container, main .s-services .container {
   display: flex;
   flex-flow: row wrap; }
 
@@ -31,22 +38,34 @@ a, h1, h2, h3, h4, h5, p, span {
   color: #3F3D56;
   font-family: "Gillroy-Bold";
   font-size: 36px;
-  line-height: 45px; }
+  line-height: 45px;
+  margin-bottom: 15px; }
+  .title--blue {
+    color: #3964FC; }
 
 .subtitle {
   color: #3F3D56;
   font-size: 24px;
   line-height: 30px; }
+  .subtitle--blue {
+    color: #3964FC; }
 
 .caption {
   color: #3F3D56;
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 12px; }
 
 .text {
   color: #818AA9;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-weight: 700; }
+  .text--lg {
+    font-size: 18px;
+    padding-bottom: 50px; }
+  .text--black {
+    color: #3F3D56; }
 
 .btn {
   font-family: "Gillroy-Bold";
@@ -102,23 +121,152 @@ header {
           color: #3F3D56;
           background-color: #E1E5EF; }
 
-main .s-main-title {
-  font-size: 48px;
-  line-height: 59px;
-  padding-bottom: 15px; }
-  main .s-main-title--blue {
-    color: #3964FC; }
-main .s-main .text {
-  padding-bottom: 25px; }
-main .s-main .container {
-  max-width: 1366px;
-  align-items: center;
-  background-color: #F2F3F6;
-  border-radius: 33px; }
-main .s-main-img {
-  margin-top: -30px;
-  margin-left: 10px;
-  margin-bottom: -40px;
-  margin-right: 80px; }
+main .s-main {
+  padding-bottom: 50px; }
+  main .s-main-title {
+    font-size: 48px;
+    line-height: 59px;
+    padding-bottom: 15px; }
+    main .s-main-title--blue {
+      color: #3964FC; }
+  main .s-main .text {
+    padding-bottom: 25px; }
+  main .s-main .container {
+    max-width: 1366px;
+    align-items: center;
+    background-color: #F2F3F6;
+    border-radius: 33px; }
+  main .s-main-img {
+    margin-top: -30px;
+    margin-left: 10px;
+    margin-bottom: -40px;
+    margin-right: 80px; }
+main .s-work {
+  padding-bottom: 60px; }
+  main .s-work .col {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    text-align: center;
+    padding: 0 15px; }
+    main .s-work .col-header {
+      min-height: 180px;
+      margin-bottom: 15px; }
+main .s-about {
+  padding-bottom: 60px; }
+  main .s-about .subtitle {
+    padding-bottom: 25px; }
+  main .s-about .text--lg {
+    max-width: 470px; }
+  main .s-about .text--border {
+    max-width: 680px;
+    display: flex;
+    align-items: center; }
+  main .s-about .border {
+    margin-right: 15px;
+    padding-right: 5px;
+    width: 5px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #3964FC; }
+  main .s-about .col {
+    padding: 0 15px;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%; }
+    main .s-about .col-img {
+      margin-bottom: 24px; }
+main .s-services {
+  padding-bottom: 60px; }
+  main .s-services .row {
+    flex: 1 0 0;
+    padding-left: 90px; }
+  main .s-services .subtitle {
+    padding-bottom: 24px; }
+  main .s-services .text {
+    padding-bottom: 30px; }
+main .s-price {
+  padding-bottom: 90px; }
+  main .s-price .title {
+    text-align: center; }
+  main .s-price .subtitle {
+    text-align: center;
+    padding-bottom: 25px; }
+  main .s-price .text {
+    text-align: center;
+    padding-bottom: 36px; }
+  main .s-price .row {
+    padding: 0 15px;
+    justify-content: space-between; }
+  main .s-price .col {
+    flex: 0 0 30.8333333333%;
+    max-width: 30.8333333333%;
+    background-color: #F2F3F6;
+    position: relative;
+    padding: 37px 34px 27px;
+    border-radius: 15px;
+    border: 2px solid white;
+    transition: 0.3s all ease;
+    overflow: hidden;
+    cursor: pointer; }
+    main .s-price .col:hover {
+      border-color: #3964FC; }
+      main .s-price .col:hover .col-info {
+        top: 52px; }
+    main .s-price .col-info {
+      transform: rotate(-90deg);
+      top: -56px;
+      left: -30px;
+      position: absolute;
+      background-color: #3964FC;
+      color: white;
+      border-radius: 15px 0 0 15px;
+      font-size: 14px;
+      padding: 8px 10px 8px 25px;
+      line-height: 10px;
+      transition: 0.3s all ease; }
+    main .s-price .col-price {
+      font-size: 36px;
+      color: #3964FC;
+      text-align: center;
+      margin-bottom: 40px; }
+      main .s-price .col-price-exchange {
+        font-size: 24px; }
+    main .s-price .col-list {
+      flex: 1 0 0;
+      color: #3964FC;
+      padding-left: 20px; }
+      main .s-price .col-list-item {
+        color: #3F3D56;
+        font-weight: bold;
+        padding-bottom: 10px; }
+main .s-question .caption {
+  max-width: 465px;
+  margin-bottom: 36px; }
+main .s-question .row {
+  flex-direction: column; }
+main .s-question .col {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 7px; }
+  main .s-question .col-btn {
+    width: 100%;
+    padding: 25px 25px 25px 32px;
+    background: #F2F3F6;
+    text-align: left;
+    color: #3F3D56;
+    border-radius: 15px;
+    transition: 0.3s all ease;
+    font-size: 18px;
+    font-family: "Gillroy-Bold"; }
+    main .s-question .col-btn[aria-expanded="true"] {
+      background: #3964FC;
+      color: white;
+      border-radius: 15px 15px 0 0; }
+  main .s-question .col-card {
+    padding: 26px 60px 26px 32px;
+    background: #F2F3F6;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0 0 15px 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+.s-question {
+	.caption {
+		max-width: 465px;
+		margin-bottom: 36px;
+	}
+	.row {
+		flex-direction: column;
+	}
+	.col {
+		padding: 0 15px;
+		@include make-col(12);
+		@extend %flexColumn;
+		margin-bottom: 7px;
+		&-btn {
+			width: 100%;
+			padding: 25px 25px 25px 32px;
+			background: $greyLow;
+			text-align: left;
+			color: $black;
+			border-radius: 15px;
+			transition: $standard;
+			font-size: 18px;
+			font-family: $fontGilroyBold;
+			&[aria-expanded="true"] {
+				background: $blue;
+				color: white;
+				border-radius: 15px 15px 0 0;
+			}
+		}
+		&-card {
+			padding: 26px 60px 26px 32px;
+			background: $greyLow;
+			font-size: 16px;
+			line-height: 24px;
+			border-radius: 0 0 15px 15px;
+		}
+	}
+}

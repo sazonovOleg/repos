@@ -3,4 +3,8 @@
 	font-family: $fontGilroyBold;
 	font-size: 36px;
 	line-height: 45px;
+	margin-bottom: 15px;
+	&--blue {
+		color: $blue;
+	}
 }

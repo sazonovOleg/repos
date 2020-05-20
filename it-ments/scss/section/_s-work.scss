@@ -1,0 +1,16 @@
+.s-work {
+	padding-bottom: 60px;
+	.container {
+		@extend %flexRow;
+	}
+	.col {
+		@include make-col(4);
+		text-align: center;
+		padding: 0 15px;
+		&-header {
+			@extend %flexColumnCenter;
+			min-height: 180px;
+			margin-bottom: 15px;
+		}
+	}
+}

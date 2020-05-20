@@ -6,11 +6,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 %flexRowCenter {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
+	justify-content: center;
 }
 %flexRow {
 	display: flex;

@@ -1,0 +1,68 @@
+.s-price {
+	padding-bottom: 90px;
+	.title {
+		text-align: center;
+	}
+	.subtitle {
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	.text {
+		text-align: center;
+		padding-bottom: 36px;
+	}
+	.row {
+		padding: 0 15px;
+		justify-content: space-between;
+	}
+	.col {
+		@include make-col(3.7);
+		@extend %flexColumn;
+		background-color: $greyLow;
+		position: relative;
+		padding: 37px 34px 27px;
+		border-radius: 15px;
+		border: 2px solid white;
+		transition: $standard;
+		overflow: hidden;
+		cursor: pointer;
+		&:hover {
+			border-color: $blue;
+			.col-info {
+				top: 52px;
+			}
+		}
+		&-info {
+			transform: rotate(-90deg);
+			top: -56px;
+			left: -30px;
+			position: absolute;
+			background-color: $blue;
+			color: white;
+			border-radius: 15px 0 0 15px;
+			font-size: 14px;
+			padding: 8px 10px 8px 25px;
+			line-height: 10px;
+			transition: $standard;
+		}
+		&-price {
+			font-size: 36px;
+			color: $blue;
+			text-align: center;
+			margin-bottom: 40px;
+			&-exchange {
+				font-size: 24px;
+			}
+		}
+		&-list {
+			flex: 1 0 0;
+			color: $blue;
+			padding-left: 20px;
+			&-item {
+				color: $black;
+				font-weight: bold;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
