@@ -1,0 +1,43 @@
+.s-team {
+	padding-bottom: 67px;
+	.title {
+		text-align: center;
+	}
+	.subtitle {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.text {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.carousel {
+		&-wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-wrapper {
+			@extend %flexColumnCenter;
+			cursor: pointer;
+			&:hover {
+				.carousel-content {
+					opacity: 1;
+					z-index: 1;
+				}
+			}
+		}
+		&-img {
+			margin-bottom: 36px;
+		}
+		&-content {
+			transition: $standard;
+			display: flex;
+			justify-content: center;
+			opacity: 0;
+			z-index: -1;
+		}
+	}
+	.link-social {
+		margin: 0 5px;
+	}
+}
