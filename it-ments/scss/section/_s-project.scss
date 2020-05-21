@@ -1,0 +1,79 @@
+.s-project {
+	padding-bottom: 40px;
+	.subtitle {
+		margin-bottom: 13px;
+	}
+	.row {
+		justify-content: space-between;
+	}
+	.col {
+		@include make-col(5.5);
+		@extend %flexColumn;
+		align-items: flex-start;
+		padding: 40px 35px 44px;
+		margin-bottom: 43px;
+		background-color: $greyLow;
+		border-radius: 15px;
+		border: 2px solid $greyLow;
+		transition: $standard;
+		&:hover {
+			border: 2px solid $blue;
+		}
+		&-header {
+			width: 100%;
+			@extend %flexRow;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		&-year {
+			padding: 5px 8px;
+			background-color: white;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 26px;
+			border-radius: 5px;
+			text-align: center;
+		}
+		&-inner {
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			&--link {
+				background-color: white;
+				padding: 5px 8px;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 24px;
+				transition: $standard;
+				&--first {
+					border-radius: 5px 0 0 5px;
+				}
+				&--last {
+					border-radius: 0 5px 5px 0;
+				}
+				&:hover {
+					background-color: rgba(255,255,255,0.3);
+					opacity: 0.75;
+				}
+			}
+		}
+		&-img {
+			max-width: 100%;
+			margin-bottom: 38px;
+		}
+		.text {
+			margin-bottom: 25px;
+			font-size: 16px;
+		}
+		.btn {
+			max-width: 280px;
+			background-color: unset;
+			color: $black;
+			&:hover {
+				color: white;
+
+				background-color: $blue;
+			}
+		}
+	}
+}

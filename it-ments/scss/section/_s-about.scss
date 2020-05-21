@@ -12,17 +12,7 @@
 		}
 		&--border {
 			max-width: 680px;
-			display: flex;
-			align-items: center;
 		}
-	}
-	.border {
-		margin-right: 15px;
-		padding-right: 5px;
-		width: 5px;
-		height: 40px;
-		border-radius: 10px;
-		background-color: $blue;
 	}
 	.col {
 		padding: 0 15px;

@@ -11,4 +11,13 @@
 	&--bold {
 		font-family: $fontGilroyBold;
 	}
+	&-social {
+		margin: 0 10px;
+	}
+	&-svg {
+		transition: $standard;
+		&:hover {
+			fill: $blue;
+		}
+	}
 }

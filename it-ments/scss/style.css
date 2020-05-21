@@ -10,7 +10,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Gillroy-Bold"; }
 
-main .s-main-col, main .s-about .container, main .s-services .row, main .s-price .col, main .s-question .col, .footer .col--user, .footer .col--contact, .footer .col--callback {
+main .s-main-col, main .s-about .container, main .s-services .row, main .s-price .col, main .s-question .col, main .s-project .col, .footer .col--user, .footer .col--contact, .footer .col--callback {
   display: flex;
   flex-direction: column; }
 
@@ -20,13 +20,13 @@ main .s-work .col-header, main .s-team .carousel-wrapper {
   align-items: center;
   justify-content: center; }
 
-header .nav-menu {
+header .nav-menu, main .s-main .container {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center; }
 
-main .s-main .container, main .s-work .container, main .s-services .container, .footer .container {
+main .s-work .container, main .s-services .container, main .s-project .col-header, .footer .container {
   display: flex;
   flex-flow: row wrap; }
 
@@ -66,10 +66,20 @@ a, h1, h2, h3, h4, h5, p, span {
     padding-bottom: 50px; }
   .text--black {
     color: #3F3D56; }
+  .text--blue {
+    color: #3964FC; }
+  .text--vacancies {
+    font-size: 18px; }
+  .text--link {
+    text-decoration: underline; }
+  .text--border {
+    display: flex;
+    align-items: center; }
 
 .btn {
   font-family: "Gillroy-Bold";
   background: #3964FC;
+  border: 2px solid #3964FC;
   color: white;
   border-radius: 15px;
   text-align: center;
@@ -77,7 +87,8 @@ a, h1, h2, h3, h4, h5, p, span {
   padding: 16px 0;
   transition: 0.3s all ease; }
   .btn:hover {
-    background-color: #355BE1; }
+    background-color: #355BE1;
+    border-color: #355BE1; }
   .btn--main {
     max-width: 241px; }
 
@@ -92,6 +103,12 @@ a, h1, h2, h3, h4, h5, p, span {
     color: #3964FC; }
   .link--bold {
     font-family: "Gillroy-Bold"; }
+  .link-social {
+    margin: 0 10px; }
+  .link-svg {
+    transition: 0.3s all ease; }
+    .link-svg:hover {
+      fill: #3964FC; }
 
 .list {
   flex: 1 0 0;
@@ -102,6 +119,14 @@ a, h1, h2, h3, h4, h5, p, span {
     padding-bottom: 10px; }
     .list-item span {
       color: #3F3D56 !important; }
+
+.border {
+  margin-right: 15px;
+  padding-right: 5px;
+  width: 5px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #3964FC; }
 
 .carousel-indicators {
   margin-top: 45px; }
@@ -160,16 +185,21 @@ main .s-main {
     padding-bottom: 25px; }
   main .s-main .container {
     max-width: 1366px;
-    align-items: center;
     background-color: #F2F3F6;
     border-radius: 33px; }
   main .s-main-col {
     flex: 1 0 0; }
+    main .s-main-col--project {
+      max-width: 554px; }
   main .s-main-img {
     margin-top: -30px;
     margin-left: 10px;
     margin-bottom: -40px;
     margin-right: 80px; }
+    main .s-main-img--vacancies {
+      margin-right: 0; }
+    main .s-main-img--privacy {
+      margin-right: 40px; }
 main .s-work {
   padding-bottom: 60px; }
   main .s-work .col {
@@ -187,16 +217,7 @@ main .s-about {
   main .s-about .text--lg {
     max-width: 470px; }
   main .s-about .text--border {
-    max-width: 680px;
-    display: flex;
-    align-items: center; }
-  main .s-about .border {
-    margin-right: 15px;
-    padding-right: 5px;
-    width: 5px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: #3964FC; }
+    max-width: 680px; }
   main .s-about .col {
     padding: 0 15px;
     flex: 0 0 33.3333333333%;
@@ -272,6 +293,7 @@ main .s-question {
     max-width: 100%;
     margin-bottom: 7px; }
     main .s-question .col-btn {
+      position: relative;
       width: 100%;
       padding: 25px 25px 25px 32px;
       background: #F2F3F6;
@@ -285,12 +307,28 @@ main .s-question {
         background: #3964FC;
         color: white;
         border-radius: 15px 15px 0 0; }
+        main .s-question .col-btn[aria-expanded="true"] .line {
+          background-color: white; }
+          main .s-question .col-btn[aria-expanded="true"] .line--vertical {
+            transform: rotate(180deg); }
     main .s-question .col-card {
       padding: 26px 60px 26px 32px;
       background: #F2F3F6;
       font-size: 16px;
       line-height: 24px;
       border-radius: 0 0 15px 15px; }
+  main .s-question .line {
+    background-color: black;
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    border-radius: 15px;
+    top: 35px;
+    transition: 0.3s all ease; }
+    main .s-question .line--vertical {
+      transform: rotate(90deg); }
 main .s-team {
   padding-bottom: 67px; }
   main .s-team .title {
@@ -317,8 +355,6 @@ main .s-team {
     justify-content: center;
     opacity: 0;
     z-index: -1; }
-  main .s-team .link-social {
-    margin: 0 5px; }
 main .s-license {
   padding-bottom: 60px; }
   main .s-license .title {
@@ -341,6 +377,90 @@ main .s-privacy {
     font-weight: 700; }
     main .s-privacy .text--last {
       margin-bottom: 25px; }
+main .s-vacancies {
+  padding-top: 40px;
+  padding-bottom: 95px; }
+  main .s-vacancies .subtitle {
+    margin-bottom: 26px; }
+  main .s-vacancies .text {
+    margin-bottom: 27px; }
+    main .s-vacancies .text--vacancies {
+      margin-bottom: 46px; }
+  main .s-vacancies .row {
+    justify-content: space-between; }
+    main .s-vacancies .row-wrap {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 15px; }
+  main .s-vacancies .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px 27px 10px 33px;
+    margin-bottom: 45px;
+    background-color: #F2F3F6;
+    border-radius: 15px;
+    height: max-content; }
+main .s-project {
+  padding-bottom: 40px; }
+  main .s-project .subtitle {
+    margin-bottom: 13px; }
+  main .s-project .row {
+    justify-content: space-between; }
+  main .s-project .col {
+    flex: 0 0 45.8333333333%;
+    max-width: 45.8333333333%;
+    align-items: flex-start;
+    padding: 40px 35px 44px;
+    margin-bottom: 43px;
+    background-color: #F2F3F6;
+    border-radius: 15px;
+    border: 2px solid #F2F3F6;
+    transition: 0.3s all ease; }
+    main .s-project .col:hover {
+      border: 2px solid #3964FC; }
+    main .s-project .col-header {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px; }
+    main .s-project .col-year {
+      padding: 5px 8px;
+      background-color: white;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 26px;
+      border-radius: 5px;
+      text-align: center; }
+    main .s-project .col-inner {
+      border-radius: 5px;
+      display: flex;
+      align-items: center; }
+      main .s-project .col-inner--link {
+        background-color: white;
+        padding: 5px 8px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        transition: 0.3s all ease; }
+        main .s-project .col-inner--link--first {
+          border-radius: 5px 0 0 5px; }
+        main .s-project .col-inner--link--last {
+          border-radius: 0 5px 5px 0; }
+        main .s-project .col-inner--link:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          opacity: 0.75; }
+    main .s-project .col-img {
+      max-width: 100%;
+      margin-bottom: 38px; }
+    main .s-project .col .text {
+      margin-bottom: 25px;
+      font-size: 16px; }
+    main .s-project .col .btn {
+      max-width: 280px;
+      background-color: unset;
+      color: #3F3D56; }
+      main .s-project .col .btn:hover {
+        color: white;
+        background-color: #3964FC; }
 
 .footer .title {
   margin-top: -10px;
@@ -372,6 +492,7 @@ main .s-privacy {
   padding-bottom: 30px;
   text-align: center; }
 .footer .form {
+  margin-top: 25px;
   display: flex; }
   .footer .form-input {
     flex: 1 0 0;

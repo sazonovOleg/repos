@@ -10,4 +10,17 @@
 	&--black {
 		color: $black;
 	}
+	&--blue {
+		color: $blue;
+	}
+	&--vacancies {
+		font-size: 18px;
+	}
+	&--link {
+		text-decoration: underline;
+	}
+	&--border {
+		display: flex;
+		align-items: center;
+	}
 }

@@ -13,19 +13,27 @@
 	}
 	.container {
 		max-width: 1366px;
-		@extend %flexRow;
-		align-items: center;
+		@extend %flexRowCenter;
 		background-color: $greyLow;
 		border-radius: 33px;
 	}
 	&-col {
 		@extend %flexColumn;
 		flex: 1 0 0;
+		&--project {
+			max-width: 554px;
+		}
 	}
 	&-img {
 		margin-top: -30px;
 		margin-left: 10px;
 		margin-bottom: -40px;
 		margin-right: 80px;
+		&--vacancies {
+			margin-right: 0;
+		}
+		&--privacy {
+			margin-right: 40px;
+		}
 	}
 }

@@ -1,6 +1,7 @@
 .btn {
 	font-family: $fontGilroyBold;
 	background: $blue;
+	border: 2px solid $blue;
 	color: white;
 	border-radius: 15px;
 	text-align: center;
@@ -9,6 +10,7 @@
 	transition: $standard;
 	&:hover {
 		background-color: $blueLight;
+		border-color: $blueLight;
 	}
 	&--main {
 		max-width: 241px;
