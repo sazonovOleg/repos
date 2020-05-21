@@ -18,8 +18,9 @@
 		background-color: $greyLow;
 		border-radius: 33px;
 	}
-	.col {
+	&-col {
 		@extend %flexColumn;
+		flex: 1 0 0;
 	}
 	&-img {
 		margin-top: -30px;

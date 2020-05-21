@@ -10,7 +10,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Gillroy-Bold"; }
 
-main .s-main .col, main .s-about .container, main .s-services .row, main .s-price .col, main .s-question .col, .footer .col--user, .footer .col--contact, .footer .col--callback {
+main .s-main-col, main .s-about .container, main .s-services .row, main .s-price .col, main .s-question .col, .footer .col--user, .footer .col--contact, .footer .col--callback {
   display: flex;
   flex-direction: column; }
 
@@ -163,6 +163,8 @@ main .s-main {
     align-items: center;
     background-color: #F2F3F6;
     border-radius: 33px; }
+  main .s-main-col {
+    flex: 1 0 0; }
   main .s-main-img {
     margin-top: -30px;
     margin-left: 10px;
@@ -317,6 +319,28 @@ main .s-team {
     z-index: -1; }
   main .s-team .link-social {
     margin: 0 5px; }
+main .s-license {
+  padding-bottom: 60px; }
+  main .s-license .title {
+    margin-bottom: 15px; }
+  main .s-license .subtitle {
+    margin-bottom: 15px; }
+  main .s-license .text {
+    margin-bottom: 40px;
+    color: #3F3D56;
+    font-weight: 700; }
+    main .s-license .text--last {
+      margin-bottom: 25px; }
+main .s-privacy {
+  padding-bottom: 60px; }
+  main .s-privacy .subtitle {
+    margin-bottom: 15px; }
+  main .s-privacy .text {
+    margin-bottom: 40px;
+    color: #3F3D56;
+    font-weight: 700; }
+    main .s-privacy .text--last {
+      margin-bottom: 25px; }
 
 .footer .title {
   margin-top: -10px;

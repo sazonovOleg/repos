@@ -1,0 +1,14 @@
+.s-privacy {
+	padding-bottom: 60px;
+	.subtitle {
+		margin-bottom: 15px;
+	}
+	.text {
+		margin-bottom: 40px;
+		color: $black;
+		font-weight: 700;
+		&--last {
+			margin-bottom: 25px;
+		}
+	}
+}
