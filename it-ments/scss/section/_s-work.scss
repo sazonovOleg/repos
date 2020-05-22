@@ -2,11 +2,20 @@
 	padding-bottom: 60px;
 	.container {
 		@extend %flexRow;
+		@media #{$xs} {
+			flex-direction: column;
+		}
 	}
 	.col {
 		@include make-col(4);
 		text-align: center;
 		padding: 0 15px;
+		@media #{$xs} {
+			@include make-col(12);
+		}
+		&-img {
+			max-width: 100%;
+		}
 		&-header {
 			@extend %flexColumnCenter;
 			min-height: 180px;

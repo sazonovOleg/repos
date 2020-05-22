@@ -6,26 +6,54 @@
 	.subtitle {
 		margin-bottom: 13px;
 	}
+	.text {
+		@media #{$xs} {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
 	.container {
 		@extend %flexRow;
 	}
 	.col {
 		&--main {
 			@include make-col(3);
+			@media #{$sm} {
+				@include make-col(6);
+				padding-right: 70px;
+				order: -2;
+			}
+			@media #{$xs} {
+				padding-right: 20px;
+			}
 		}
 		&--user {
 			@extend %flexColumn;
 			align-items: flex-start;
 			@include make-col(2);
+			@media #{$sm} {
+				@include make-col(6);
+			}
 		}
 		&--contact {
 			@extend %flexColumn;
 			align-items: flex-start;
 			@include make-col(3);
+			@media #{$sm} {
+				@include make-col(6);
+				margin-bottom: 20px;
+				order: -1;
+			}
 		}
 		&--callback {
 			@extend %flexColumn;
 			@include make-col(4);
+			@media #{$sm} {
+				@include make-col(6);
+			}
+			@media #{$xs} {
+				@include make-col(12);
+			}
 		}
 		&--social {
 			@include make-col(12);
@@ -62,6 +90,10 @@
 		&--adress {
 			margin-bottom: 30px;
 			padding-right: 50px;
+			@media #{$sm} {
+				padding-right: 0;
+				margin-bottom: 15px;
+			}
 		}
 	}
 }

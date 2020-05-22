@@ -14,5 +14,12 @@
 	}
 	&--main {
 		max-width: 241px;
+		@media #{$sm} {
+			margin-bottom: 25px;
+		}
+	}
+	&--price {
+		max-width: 240px;
+		margin: 0 auto;
 	}
 }

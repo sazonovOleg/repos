@@ -11,12 +11,26 @@
 			max-width: 470px;
 		}
 		&--border {
-			max-width: 680px;
+			border-left: 5px solid $blue;
+			padding-left: 15px;
+			max-width: 695px;
+			padding-bottom: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.row {
+		@media #{$xs} {
+			flex-direction: column;
 		}
 	}
 	.col {
 		padding: 0 15px;
 		@include make-col(4);
+		@media #{$xs} {
+			@include make-col(12);
+			margin-bottom: 30px;
+			text-align: center;
+		}
 		&-img {
 			margin-bottom: 24px;
 		}

@@ -23,6 +23,20 @@
 			transition: $standard;
 			font-size: 18px;
 			font-family: $fontGilroyBold;
+			@media #{$xs} {
+				padding: 20px 105px 20px 25px;
+				line-height: 24px;
+			}
+			@media #{$xxs} {
+				padding-right: 65px;
+			}
+			&:hover {
+				background: $blue;
+				color: white;
+				.line {
+					background-color: white;
+				}
+			}
 			&[aria-expanded="true"] {
 				background: $blue;
 				color: white;

@@ -2,11 +2,27 @@
 	padding-bottom: 60px;
 	.container {
 		@extend %flexRow;
+		align-items: center;
+		@media #{$sm} {
+			justify-content: center;
+		}
+	}
+	&-img {
+		max-width: 100%;
+		@media #{$sm} {
+			margin-bottom: 40px;
+		}
 	}
 	.row {
 		@extend %flexColumn;
 		flex: 1 0 0;
 		padding-left: 90px;
+		@media #{$sm} {
+			padding-left: 0;
+			@include make-col(12);
+			align-items: center;
+			text-align: center;
+		}
 	}
 	.subtitle {
 		padding-bottom: 24px;

@@ -13,11 +13,13 @@
 	}
 	&-social {
 		margin: 0 10px;
+		&:hover {
+			.link-svg {
+				fill: $blue;
+			}
+		}
 	}
 	&-svg {
 		transition: $standard;
-		&:hover {
-			fill: $blue;
-		}
 	}
 }
