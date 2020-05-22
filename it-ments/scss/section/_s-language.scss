@@ -1,0 +1,32 @@
+.s-language {
+	position: relative;
+	text-align: center;
+	padding-top: 200px;
+	.container {
+		@extend %flexColumn;
+		justify-content: center;
+	}
+	.logo {
+		font-size: 48px;
+		line-height: 59px;
+		margin-bottom: 15px;
+	}
+	.text {
+		margin-bottom: 30px;
+	}
+	.link {
+		font-size: 16px;
+	}
+	&-wrap {
+		@extend %flexRow;
+		margin: 0 auto;
+		padding-bottom: 60px;
+		width: 100%;
+
+		max-width: 420px;
+		justify-content: space-between;
+	}
+	.btn {
+		max-width: 200px;
+	}
+}

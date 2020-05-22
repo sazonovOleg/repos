@@ -10,9 +10,19 @@
 	&--licence {
 		padding-top: 20px;
 		padding-bottom: 80px;
+		@media #{$xs} {
+			padding-top: 30px;
+		}
 	}
 	&--project {
 		padding-bottom: 100px;
+	}
+	&--vacancies {
+		.text {
+			@media #{$md} {
+				padding-bottom: 15px;
+			}
+		}
 	}
 	&-title {
 		font-size: 48px;
@@ -23,27 +33,38 @@
 		}
 		@media #{$xs} {
 			font-size: 30px;
+			line-height: 40px;
 		}
 		@media #{$xxs} {
 			font-size: 26px;
+			line-height: 35px;
 		}
 		&--blue {
 			color: $blue;
 		}
 		&--privacy {
 			padding-bottom: 0;
+			@media #{$xs} {
+				padding-bottom: 20px;
+			}
 		}
 	}
 	.text {
 		padding-bottom: 25px;
 	}
 	.container {
-		max-width: 1366px;
+		max-width: 1330px;
+
 		@extend %flexRowCenter;
 		background-color: $greyLow;
 		border-radius: 33px;
 		@media #{$sm} {
 			flex-direction: column;
+		}
+		&--privacy {
+			@media #{$xxs} {
+				padding: 0;
+			}
 		}
 	}
 	&-img {
@@ -54,8 +75,11 @@
 			width: 100%;
 			margin-right: 30px;
 		}
-		@media #{$sm} {
-			margin: -30px auto 10px;
+		&--licence {
+			margin: -60px 50px -20px 10px;
+			@media #{$md} {
+				margin-right: 0;
+			}
 		}
 		&--vacancies {
 			margin-top: -20px;
@@ -64,17 +88,18 @@
 		&--privacy {
 			margin: 0 40px -40px 50px;
 		}
-		&--licence {
-			margin: -60px 50px -20px 10px;
-		}
 		&--project {
 			margin-top: -50px;
+		}
+		@media #{$sm} {
+			margin: -30px auto 10px;
 		}
 	}
 	&-col {
 		@extend %flexColumn;
 		@media #{$sm} {
 			align-items: center;
+			text-align: center;
 		}
 		flex: 1 0 0;
 		&--project {
