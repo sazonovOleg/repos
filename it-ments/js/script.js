@@ -4,3 +4,4 @@ $(document).ready(function() {
         $('html').removeClass("active");
     })
 });
+new WOW().init();

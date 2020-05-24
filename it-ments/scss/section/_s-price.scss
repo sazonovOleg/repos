@@ -50,8 +50,10 @@
 			max-width: 420px;
 			min-height: 686px;
 		}
+		@media #{$xs} {
+			min-height: 570px;
+		}
 		@media #{$xxs} {
-			min-height: 793px;
 			padding: 37px 15px;
 		}
 		&--lg {

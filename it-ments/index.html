@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="scss/style.css">
 	<title>it-ments</title>
 </head>
 <body>
 
-<header>
+<header class="wow fadeInDown">
 	<nav class="nav">
 		<a href="#" class="nav-logo" target="_blank">it-ments.</a>
 		<div class="nav-wrap">
@@ -28,13 +29,18 @@
 			<a href="#" class="nav-item">F.A.Q.</a>
 			<a href="#" class="nav-item">Team</a>
 			<a href="#" class="nav-item">Contact us</a>
-			<a href="#" class="nav-item nav-item--language">English</a>
+			<a href="#" class="nav-item nav-item--language">English
+					<svg class="nav-item--arrow" width="8" height="4" viewBox="0 0 8 4" fill="none">
+						<path d="M0.726562 0C0.304688 0 0.09375 0.515625 0.398438 0.820312L3.39844 3.82031C3.58594 4.00781 3.89062 4.00781 4.07812 3.82031L7.07812 0.820312C7.38281 0.515625 7.17188 0 6.75 0H0.726562Z" fill="#3F3D56"/>
+					</svg>
+				<span class="nav-item nav-item--language nav-item--language--franc">Français</span>
+			</a>
 			<button class="nav-item nav-item--btn nav-item--btn--lg">Login in</button>
 		</div>
 	</nav>
 </header>
 <main>
-	<section class="s-main">
+	<section class="s-main wow fadeInLeft">
 		<div class="container">
 			<img src="image/main-1.png" alt="" class="s-main-img">
 			<div class="s-main-col">
@@ -44,7 +50,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-work">
+	<section class="s-work wow fadeInRight">
 		<div class="container">
 			<div class="col">
 				<div class="col-header">
@@ -82,7 +88,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-about">
+	<section class="s-about wow fadeInLeft">
 		<div class="container">
 			<h2 class="title">Learn more <span class="title--blue">about us.</span></h2>
 			<p class="text text--lg">Provider of custom software development services (mobile applications, web solutions, enterprise software)</p>
@@ -118,7 +124,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-services">
+	<section class="s-services wow fadeInRight">
 		<div class="container">
 			<img src="image/app.png" alt="" class="s-services-img">
 			<div class="row">
@@ -136,7 +142,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-price">
+	<section class="s-price wow fadeInUp">
 		<div class="container">
 			<h2 class="title title--blue">Price</h2>
 			<p class="text">Choose your plan</p>
@@ -251,7 +257,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-question">
+	<section class="s-question wow fadeInUp">
 		<div class="container">
 			<h2 class="title">Frequently asked <span class="title--blue">questions</span></h2>
 			<p class="caption">You have questions? Maybe the answer is below.
@@ -319,7 +325,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="s-team">
+	<section class="s-team wow fadeInLeft">
 		<div class="container">
 			<h2 class="title">Our <span class="title--blue">team</span></h2>
 			<p class="text">Executive Profiles</p>
@@ -668,7 +674,7 @@
 		</div>
 	</section>
 </main>
-<footer>
+<footer class="wow fadeInRight">
 	<section class="footer">
 		<div class="container">
 			<div class="col col--main">
@@ -757,6 +763,7 @@
 </footer>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
