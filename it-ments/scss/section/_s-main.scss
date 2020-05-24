@@ -100,11 +100,8 @@
 		flex: 1 0 0;
 		-webkit-flex: 1 0 0;
 		@media #{$sm} {
-			flex: 0 0 100%;
-			align-items: center;
+			display: block;
 			text-align: center;
-			min-height: min-content;
-			height: min-content;
 		}
 		&--project {
 			max-width: 554px;
