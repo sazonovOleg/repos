@@ -200,7 +200,7 @@ header {
       border-top: 1px solid #F2F3F6;
       padding-top: 10px;
       margin-top: 65px;
-      z-index: 1;
+      z-index: 1000;
       opacity: 1; }
     header .nav-logo {
       font-family: "Gillroy-Bold";
@@ -332,7 +332,8 @@ header {
           bottom: 0; }
 
 main .s-main {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  z-index: 1; }
   @media (max-width: 1199px) {
     main .s-main {
       padding-left: 15px;

@@ -1,5 +1,6 @@
 .s-main {
 	padding-bottom: 50px;
+	z-index: 1;
 	@media #{$md} {
 		padding-left: 15px;
 		padding-right: 15px;
