@@ -411,12 +411,14 @@ main .s-main {
         margin: -30px auto 10px; } }
   main .s-main-col {
     flex: 1 0 0;
-    -webkit-flex: 1 0 0;
-    min-height: max-content; }
+    -webkit-flex: 1 0 0; }
     @media (max-width: 991px) {
       main .s-main-col {
+        flex: 0 0 100%;
         align-items: center;
-        text-align: center; } }
+        text-align: center;
+        min-height: min-content;
+        height: min-content; } }
     main .s-main-col--project {
       max-width: 554px; }
 main .s-work {

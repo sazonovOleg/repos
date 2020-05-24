@@ -99,12 +99,13 @@
 		@extend %flexColumn;
 		flex: 1 0 0;
 		-webkit-flex: 1 0 0;
-		min-height: max-content;
 		@media #{$sm} {
+			flex: 0 0 100%;
 			align-items: center;
 			text-align: center;
+			min-height: min-content;
+			height: min-content;
 		}
-
 		&--project {
 			max-width: 554px;
 		}
