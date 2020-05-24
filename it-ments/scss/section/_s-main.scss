@@ -98,7 +98,8 @@
 	&-col {
 		@extend %flexColumn;
 		flex: 1 0 0;
-		min-height: max-content;
+		-webkit-flex: 1 0 0;
+		min-height: auto;
 		@media #{$sm} {
 			align-items: center;
 			text-align: center;
