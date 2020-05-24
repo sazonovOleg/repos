@@ -99,7 +99,7 @@
 		@extend %flexColumn;
 		flex: 1 0 0;
 		-webkit-flex: 1 0 0;
-		min-height: auto;
+		min-height: max-content;
 		@media #{$sm} {
 			align-items: center;
 			text-align: center;

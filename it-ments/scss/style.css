@@ -412,7 +412,7 @@ main .s-main {
   main .s-main-col {
     flex: 1 0 0;
     -webkit-flex: 1 0 0;
-    min-height: auto; }
+    min-height: max-content; }
     @media (max-width: 991px) {
       main .s-main-col {
         align-items: center;
