@@ -54,7 +54,6 @@
 	}
 	.container {
 		max-width: 1330px;
-
 		@extend %flexRowCenter;
 		background-color: $greyLow;
 		border-radius: 33px;
@@ -97,11 +96,13 @@
 	}
 	&-col {
 		@extend %flexColumn;
+		flex: 1 0 0;
+		min-height: max-content;
 		@media #{$sm} {
 			align-items: center;
 			text-align: center;
 		}
-		flex: 1 0 0;
+
 		&--project {
 			max-width: 554px;
 		}

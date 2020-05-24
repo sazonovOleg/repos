@@ -106,6 +106,10 @@ header {
 				&:hover {
 					padding-bottom: 10px;
 					margin-bottom: -10px;
+					@media #{$sm} {
+						padding-bottom: 25px;
+						margin-bottom: 15px;
+					}
 					.nav-item--language--franc {
 						top: 25px;
 						opacity: 1;
@@ -114,6 +118,10 @@ header {
 					.nav-item--arrow {
 						transform: rotate(180deg);
 					}
+				}
+				@media #{$sm} {
+					padding-bottom: 25px;
+					margin-bottom: 15px;
 				}
 				&--franc {
 					position: absolute;
