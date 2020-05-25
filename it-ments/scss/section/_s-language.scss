@@ -1,7 +1,61 @@
 .s-language {
 	position: relative;
 	text-align: center;
-	padding-top: 200px;
+	&-header {
+		padding: 100px 0;
+		position: relative;
+	}
+	.container {
+		position: relative;
+	}
+	&-img{
+		position: absolute;
+		&--1 {
+			left: 500px;
+			top: 50px;
+			animation: cloud-1 250s infinite alternate;
+			-webkit-animation: cloud-1 250s infinite alternate;
+			animation-delay: 5s;
+		}
+		&--2 {
+			top: 90px;
+			right: 150px;
+			animation: cloud-2 120s infinite alternate;
+			-webkit-animation: cloud-2 120s infinite alternate;
+			animation-delay: 1s;
+		}
+		&--3 {
+			top: 90px;
+			left: 150px;
+			animation: cloud-3 140s infinite alternate;
+			-webkit-animation: cloud-3 140s infinite alternate;
+			animation-delay: 1.5s;
+		}
+		&--bird--1 {
+			top: 50px;
+			left: 0;
+			animation: bird-1 85s infinite alternate;
+			-webkit-animation: bird-1 85s infinite alternate;
+		}
+		&--bird--2 {
+			top: 90px;
+			left: 20px;
+			animation: bird-2 50s infinite alternate;
+			-webkit-animation: bird-2 50s infinite alternate;
+		}
+		&--bird--3 {
+			top: 30px;
+			right: 0;
+			animation: bird-3 60s infinite alternate;
+			-webkit-animation: bird-3 60s infinite alternate;
+		}
+		&--bird--4 {
+			top: 50px;
+			left: 0;
+			animation: bird-4 75s infinite alternate;
+			-webkit-animation: bird-4 75s infinite alternate;
+		}
+	}
 	.container {
 		@extend %flexColumn;
 		justify-content: center;
@@ -22,9 +76,14 @@
 		margin: 0 auto;
 		padding-bottom: 60px;
 		width: 100%;
-
 		max-width: 420px;
 		justify-content: space-between;
+	}
+	&-wrapper {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
 	}
 	.btn {
 		max-width: 200px;

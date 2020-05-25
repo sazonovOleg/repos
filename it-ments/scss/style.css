@@ -30,6 +30,71 @@ header .nav-menu, main .s-main .container, main .s-vacancies .nav-item {
   display: flex;
   flex-flow: row wrap; }
 
+@keyframes cloud-1 {
+  from {
+    left: 500px;
+    opacity: 0.75; }
+  to {
+    left: calc(100% - 50px); } }
+@-webkit-keyframes cloud-1 {
+  from {
+    left: 500px; }
+  to {
+    left: calc(100% - 50px); } }
+@keyframes cloud-2 {
+  from {
+    right: 150px; }
+  to {
+    right: calc(100% - 100px);
+    opacity: 0.75; } }
+@-webkit-keyframes cloud-2 {
+  from {
+    right: 150px; }
+  to {
+    right: calc(100% - 1000px);
+    opacity: 0.65; } }
+@keyframes cloud-3 {
+  from {
+    left: 150px;
+    opacity: 0.55; }
+  to {
+    left: calc(100% - 150px); } }
+@-webkit-keyframes cloud-3 {
+  from {
+    left: 150px; }
+  to {
+    left: calc(100% - 150px); } }
+@keyframes bird-1 {
+  from {
+    top: 50px;
+    left: 0; }
+  to {
+    top: 90px;
+    left: calc(100% - 50px); } }
+@keyframes bird-2 {
+  from {
+    left: 20px; }
+  to {
+    left: 450px;
+    top: 250px; } }
+@keyframes bird-3 {
+  from {
+    right: 0; }
+  to {
+    top: 120px;
+    right: 950px; } }
+@keyframes bird-4 {
+  from {
+    top: 80px;
+    left: 250px; }
+  50% {
+    top: 0;
+    left: 320px; }
+  75% {
+    top: 125px;
+    left: 360px; }
+  to {
+    left: 450px; } }
 a, h1, h2, h3, h4, h5, p, span {
   padding: 0;
   margin: 0; }
@@ -154,8 +219,52 @@ a, h1, h2, h3, h4, h5, p, span {
 
 .s-language {
   position: relative;
-  text-align: center;
-  padding-top: 200px; }
+  text-align: center; }
+  .s-language-header {
+    padding: 100px 0;
+    position: relative; }
+  .s-language .container {
+    position: relative; }
+  .s-language-img {
+    position: absolute; }
+    .s-language-img--1 {
+      left: 500px;
+      top: 50px;
+      animation: cloud-1 250s infinite alternate;
+      -webkit-animation: cloud-1 250s infinite alternate;
+      animation-delay: 5s; }
+    .s-language-img--2 {
+      top: 90px;
+      right: 150px;
+      animation: cloud-2 120s infinite alternate;
+      -webkit-animation: cloud-2 120s infinite alternate;
+      animation-delay: 1s; }
+    .s-language-img--3 {
+      top: 90px;
+      left: 150px;
+      animation: cloud-3 140s infinite alternate;
+      -webkit-animation: cloud-3 140s infinite alternate;
+      animation-delay: 1.5s; }
+    .s-language-img--bird--1 {
+      top: 50px;
+      left: 0;
+      animation: bird-1 85s infinite alternate;
+      -webkit-animation: bird-1 85s infinite alternate; }
+    .s-language-img--bird--2 {
+      top: 90px;
+      left: 20px;
+      animation: bird-2 50s infinite alternate;
+      -webkit-animation: bird-2 50s infinite alternate; }
+    .s-language-img--bird--3 {
+      top: 30px;
+      right: 0;
+      animation: bird-3 60s infinite alternate;
+      -webkit-animation: bird-3 60s infinite alternate; }
+    .s-language-img--bird--4 {
+      top: 50px;
+      left: 0;
+      animation: bird-4 75s infinite alternate;
+      -webkit-animation: bird-4 75s infinite alternate; }
   .s-language .container {
     justify-content: center; }
   .s-language .logo {
@@ -172,6 +281,11 @@ a, h1, h2, h3, h4, h5, p, span {
     width: 100%;
     max-width: 420px;
     justify-content: space-between; }
+  .s-language-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; }
   .s-language .btn {
     max-width: 200px; }
 

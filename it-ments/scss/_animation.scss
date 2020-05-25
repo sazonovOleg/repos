@@ -1,1 +1,104 @@
 $standard: .3s all ease;
+@keyframes cloud-1 {
+	from {
+		left: 500px;
+		opacity: 0.75;
+	}
+	to {
+		left: calc(100% - 50px);
+	}
+}
+
+@-webkit-keyframes cloud-1 {
+	from {
+		left: 500px;
+	}
+	to {
+		left: calc(100% - 50px);
+	}
+}
+
+@keyframes cloud-2 {
+	from {
+		right: 150px;
+	}
+	to {
+		right: calc(100% - 100px);
+		opacity: 0.75;
+	}
+}
+
+@-webkit-keyframes cloud-2 {
+	from {
+		right: 150px;
+	}
+	to {
+		right: calc(100% - 1000px);
+		opacity: 0.65;
+	}
+}
+
+@keyframes cloud-3 {
+	from {
+		left: 150px;
+		opacity: 0.55;
+	}
+	to {
+		left: calc(100% - 150px);
+	}
+}
+
+@-webkit-keyframes cloud-3 {
+	from {
+		left: 150px;
+	}
+	to {
+		left: calc(100% - 150px);
+	}
+}
+
+@keyframes bird-1 {
+	from {
+		top: 50px;
+		left: 0;
+	}
+	to {
+		top: 90px;
+		left: calc(100% - 50px);
+	}
+}
+@keyframes bird-2 {
+	from {
+		left: 20px;
+	}
+	to {
+		left: 450px;
+		top: 250px;
+	}
+}
+@keyframes bird-3 {
+	from {
+		right: 0;
+	}
+	to {
+		top: 120px;
+		right: 950px;
+	}
+}
+@keyframes bird-4 {
+	from {
+		top: 80px;
+		left: 250px;
+	}
+	50% {
+		top: 0;
+		left: 320px;
+	}
+	75% {
+		top: 125px;
+		left: 360px;
+	}
+	to {
+		left: 450px;
+	}
+}
