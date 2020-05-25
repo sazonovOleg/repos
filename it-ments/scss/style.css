@@ -69,7 +69,7 @@ header .nav-menu, main .s-main .container, main .s-vacancies .nav-item {
     top: 50px;
     left: 0; }
   to {
-    top: 90px;
+    top: 140px;
     left: calc(100% - 50px); } }
 @keyframes bird-2 {
   from {
@@ -230,19 +230,19 @@ a, h1, h2, h3, h4, h5, p, span {
     .s-language-img--1 {
       left: 500px;
       top: 50px;
-      animation: cloud-1 250s infinite alternate;
+      animation: cloud-1 320s infinite alternate;
       -webkit-animation: cloud-1 250s infinite alternate;
-      animation-delay: 5s; }
+      animation-delay: 15s; }
     .s-language-img--2 {
       top: 90px;
       right: 150px;
-      animation: cloud-2 120s infinite alternate;
+      animation: cloud-2 280s infinite alternate;
       -webkit-animation: cloud-2 120s infinite alternate;
-      animation-delay: 1s; }
+      animation-delay: 10s; }
     .s-language-img--3 {
       top: 90px;
       left: 150px;
-      animation: cloud-3 140s infinite alternate;
+      animation: cloud-3 220s infinite alternate;
       -webkit-animation: cloud-3 140s infinite alternate;
       animation-delay: 1.5s; }
     .s-language-img--bird--1 {

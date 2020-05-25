@@ -13,21 +13,21 @@
 		&--1 {
 			left: 500px;
 			top: 50px;
-			animation: cloud-1 250s infinite alternate;
+			animation: cloud-1 320s infinite alternate;
 			-webkit-animation: cloud-1 250s infinite alternate;
-			animation-delay: 5s;
+			animation-delay: 15s;
 		}
 		&--2 {
 			top: 90px;
 			right: 150px;
-			animation: cloud-2 120s infinite alternate;
+			animation: cloud-2 280s infinite alternate;
 			-webkit-animation: cloud-2 120s infinite alternate;
-			animation-delay: 1s;
+			animation-delay: 10s;
 		}
 		&--3 {
 			top: 90px;
 			left: 150px;
-			animation: cloud-3 140s infinite alternate;
+			animation: cloud-3 220s infinite alternate;
 			-webkit-animation: cloud-3 140s infinite alternate;
 			animation-delay: 1.5s;
 		}
