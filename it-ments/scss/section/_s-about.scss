@@ -5,8 +5,17 @@
 	}
 	.subtitle {
 		padding-bottom: 25px;
+		max-width: 845px;
 	}
 	.text {
+		max-width: 310px;
+		&--small {
+			max-width: 270px;
+			font-size: 14px;
+			@media #{$sm} {
+				margin: 0 auto;
+			}
+		}
 		&--lg {
 			max-width: 470px;
 		}
@@ -19,14 +28,14 @@
 		}
 	}
 	.row {
-		@media #{$xs} {
+		@media #{$sm} {
 			flex-direction: column;
 		}
 	}
 	.col {
 		padding: 0 15px;
 		@include make-col(4);
-		@media #{$xs} {
+		@media #{$sm} {
 			@include make-col(12);
 			margin-bottom: 30px;
 			text-align: center;

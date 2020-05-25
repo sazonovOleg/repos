@@ -11,11 +11,11 @@
 		text-align: center;
 		padding-bottom: 36px;
 		&--month {
+			padding-bottom: 0;
 			font-size: 18px;
 			margin-bottom: 20px;
-			opacity: 0;
+			opacity: 1;
 			transition: $standard;
-			z-index: -1;
 			color: $greyHard;
 		}
 	}
@@ -44,7 +44,11 @@
 		transition: $standard;
 		overflow: hidden;
 		cursor: pointer;
+		@media #{$md} {
+			padding: 30px 20px 20px;
+		}
 		@media #{$sm} {
+			padding: 30px 20px 20px;
 			@include make-col(6);
 			margin: 0 auto;
 			max-width: 420px;
@@ -66,10 +70,6 @@
 			.col-info {
 				top: 52px;
 			}
-			.text--month {
-				opacity: 1;
-				z-index: 2;
-			}
 		}
 		&-info {
 			transform: rotate(-90deg);
@@ -89,6 +89,9 @@
 			color: $blue;
 			text-align: center;
 			margin-bottom: 10px;
+			@media #{$md} {
+				font-size: 32px;
+			}
 			@media #{$xxs} {
 				font-size: 30px;
 			}
