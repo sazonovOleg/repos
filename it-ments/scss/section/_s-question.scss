@@ -20,7 +20,7 @@
 			text-align: left;
 			color: $black;
 			border-radius: 15px;
-			transition: $standard;
+			transition: .7s all ease;
 			font-size: 18px;
 			font-family: $fontGilroyBold;
 			@media #{$xs} {
@@ -67,6 +67,9 @@
 		border-radius: 15px;
 		top: 35px;
 		transition: $standard;
+		@media #{$xs} {
+			top: 40px;
+		}
 		&--vertical {
 			transform: rotate(90deg);
 		}

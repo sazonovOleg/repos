@@ -1,5 +1,6 @@
 .s-team {
 	padding-bottom: 67px;
+	overflow: hidden;
 	.title {
 		text-align: center;
 	}
@@ -74,6 +75,54 @@
 				opacity: 1;
 				z-index: 2;
 				margin-bottom: 20px;
+			}
+		}
+		&-control-prev {
+			left: -80px;
+			@media #{$md} {
+				left: -50px;
+			}
+			@media #{$sm} {
+				left: -40px;
+			}
+			@media #{$xs} {
+				width: 50px;
+				left: 0;
+			}
+			&-icon {
+				@media #{$md} {
+					width: 40px;
+				}
+				@media #{$sm} {
+					width: 30px;
+				}
+				@media #{$xs} {
+					width: 50px;
+				}
+			}
+		}
+		&-control-next {
+			right: -80px;
+			@media #{$md} {
+				right: -50px;
+			}
+			@media #{$sm} {
+				right: -40px;
+			}
+			@media #{$xs} {
+				width: 50px;
+				right: 0;
+			}
+			&-icon {
+				@media #{$md} {
+					width: 40px;
+				}
+				@media #{$sm} {
+					width: 30px;
+				}
+				@media #{$xs} {
+					width: 50px;
+				}
 			}
 		}
 	}

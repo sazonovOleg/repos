@@ -8,6 +8,17 @@
 	&:hover {
 		color: $blue;
 	}
+	&--bot {
+		&:hover {
+			color: $black!important;
+		}
+		&--up {
+			margin-top: 20px;
+			@media #{$sm} {
+				margin-top: 0;
+			}
+		}
+	}
 	&--bold {
 		font-family: $fontGilroyBold;
 	}
