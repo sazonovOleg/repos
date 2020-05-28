@@ -55,6 +55,18 @@
 			animation: bird-4 75s infinite alternate;
 			-webkit-animation: bird-4 75s infinite alternate;
 		}
+		&--bird--5 {
+			top: 50px;
+			left: 0;
+			animation: bird-2 75s infinite alternate;
+			-webkit-animation: bird-2 75s infinite alternate;
+		}
+		&--bird--6 {
+			top: 50px;
+			left: 0;
+			animation: bird-3 75s infinite alternate;
+			-webkit-animation: bird-3 75s infinite alternate;
+		}
 	}
 	.container {
 		@extend %flexColumn;

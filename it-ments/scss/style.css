@@ -434,6 +434,16 @@ a, h1, h2, h3, h4, h5, p, span {
       left: 0;
       animation: bird-4 75s infinite alternate;
       -webkit-animation: bird-4 75s infinite alternate; }
+    .s-language-img--bird--5 {
+      top: 50px;
+      left: 0;
+      animation: bird-2 75s infinite alternate;
+      -webkit-animation: bird-2 75s infinite alternate; }
+    .s-language-img--bird--6 {
+      top: 50px;
+      left: 0;
+      animation: bird-3 75s infinite alternate;
+      -webkit-animation: bird-3 75s infinite alternate; }
   .s-language .container {
     justify-content: center; }
   .s-language .logo {
