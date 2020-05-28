@@ -1,5 +1,8 @@
 .s-work {
 	padding-bottom: 60px;
+	@media #{$md} {
+		padding-bottom: 50px;
+	}
 	.container {
 		@extend %flexRow;
 		@media #{$xs} {

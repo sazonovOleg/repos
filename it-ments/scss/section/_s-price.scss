@@ -45,10 +45,9 @@
 		overflow: hidden;
 		cursor: pointer;
 		@media #{$md} {
-			padding: 30px 20px 20px;
+			padding: 30px 20px 30px;
 		}
 		@media #{$sm} {
-			padding: 30px 20px 20px;
 			@include make-col(6);
 			margin: 0 auto;
 			max-width: 420px;

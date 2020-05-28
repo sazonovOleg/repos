@@ -231,7 +231,7 @@ textarea {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1000px;
   }
 }
 
@@ -263,7 +263,7 @@ textarea {
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
+    max-width: 1000px;
   }
 }
 

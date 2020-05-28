@@ -13,6 +13,9 @@
 	}
 	&--main {
 		padding-bottom: 20px;
+		@media #{$md} {
+			padding-bottom: 50px;
+		}
 	}
 	&--licence {
 		padding-top: 20px;
@@ -82,9 +85,9 @@
 		&--main {
 			margin: -30px 80px -130px 10px;
 			@media #{$md} {
-				max-width: 288px;
+				max-width: 483px;
 				width: 100%;
-				margin-right: 30px;
+				margin: -30px 50px -105px 0;
 			}
 		}
 		&--licence {

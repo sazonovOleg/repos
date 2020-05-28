@@ -665,6 +665,9 @@ main .s-main {
       padding: 150px 15px 10px; } }
   main .s-main--main {
     padding-bottom: 20px; }
+    @media (max-width: 1199px) {
+      main .s-main--main {
+        padding-bottom: 50px; } }
   main .s-main--licence {
     padding-top: 20px;
     padding-bottom: 80px; }
@@ -717,9 +720,9 @@ main .s-main {
       margin: -30px 80px -130px 10px; }
       @media (max-width: 1199px) {
         main .s-main-img--main {
-          max-width: 288px;
+          max-width: 483px;
           width: 100%;
-          margin-right: 30px; } }
+          margin: -30px 50px -105px 0; } }
     main .s-main-img--licence {
       margin: -60px 50px -20px 10px; }
       @media (max-width: 1199px) {
@@ -748,6 +751,9 @@ main .s-main {
       max-width: 554px; }
 main .s-work {
   padding-bottom: 60px; }
+  @media (max-width: 1199px) {
+    main .s-work {
+      padding-bottom: 50px; } }
   @media screen and (max-width: 767px) {
     main .s-work .container {
       flex-direction: column; } }
@@ -770,6 +776,8 @@ main .s-about {
   main .s-about .subtitle {
     padding-bottom: 25px;
     max-width: 845px; }
+  main .s-about .caption {
+    max-width: 470px; }
   main .s-about .text {
     max-width: 310px; }
     main .s-about .text--small {
@@ -778,8 +786,6 @@ main .s-about {
       @media (max-width: 991px) {
         main .s-about .text--small {
           margin: 0 auto; } }
-    main .s-about .text--lg {
-      max-width: 470px; }
     main .s-about .text--border {
       border-left: 5px solid #3964FC;
       padding-left: 15px;
@@ -818,6 +824,9 @@ main .s-services {
   main .s-services .row {
     flex: 1 0 0;
     padding: 35px 70px 0 90px; }
+    @media (max-width: 1199px) {
+      main .s-services .row {
+        padding: 35px 0 0 45px; } }
     @media (max-width: 991px) {
       main .s-services .row {
         padding-left: 0;
@@ -870,10 +879,9 @@ main .s-price {
     cursor: pointer; }
     @media (max-width: 1199px) {
       main .s-price .col {
-        padding: 30px 20px 20px; } }
+        padding: 30px 20px 30px; } }
     @media (max-width: 991px) {
       main .s-price .col {
-        padding: 30px 20px 20px;
         flex: 0 0 50%;
         max-width: 50%;
         margin: 0 auto;
