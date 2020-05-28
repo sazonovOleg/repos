@@ -34,7 +34,7 @@
 		}
 	}
 	.col {
-		@include make-col(3.7);
+		@include make-col(3.8);
 		@extend %flexColumn;
 		background-color: $greyLow;
 		position: relative;
@@ -69,6 +69,10 @@
 			border-color: $blue;
 			.col-info {
 				top: 52px;
+			}
+			.btn {
+				color: white;
+				background-color: $blue;
 			}
 		}
 		&-info {

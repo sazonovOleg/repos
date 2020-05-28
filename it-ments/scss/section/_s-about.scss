@@ -1,5 +1,5 @@
 .s-about {
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	.container {
 		@extend %flexColumn;
 	}
@@ -28,6 +28,7 @@
 		}
 	}
 	.row {
+		margin-top: 40px;
 		@media #{$sm} {
 			flex-direction: column;
 		}

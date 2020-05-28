@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Gillroy';
-	src: url('../font/Gilroy.woff') format('woff');
+	src: url('../font/Gilroy-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -8,8 +8,14 @@
 	src: url('../font/Gilroy-Bold.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'Gillroy-Semibold';
+	src: url('../font/Gilroy-Semibold.woff2') format('woff2');
+}
+
 $fontGilroy: 'Gillroy';
 $fontGilroyBold: 'Gillroy-Bold';
+$fontGilroySemibold: 'Gillroy-Semibold';
 body {
 	font-family: $fontGilroy;
 }

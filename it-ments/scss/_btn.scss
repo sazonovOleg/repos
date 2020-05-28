@@ -17,9 +17,20 @@
 		@media #{$sm} {
 			margin-bottom: 25px;
 		}
+		@media #{$xs} {
+			max-width: 286px;
+		}
 	}
 	&--price {
 		max-width: 240px;
 		margin: 0 auto;
+		background: none;
+		color: $black;
+		&:hover {
+			border: 2px solid $blue;
+		}
+		@media #{$xs} {
+			max-width: 286px;
+		}
 	}
 }

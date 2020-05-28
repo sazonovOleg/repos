@@ -80,6 +80,7 @@
 			@include make-col(12);
 			padding: 30px 0;
 			text-align: center;
+			color: $greyHard;
 			br {
 				display: none;
 				@media #{$xs} {

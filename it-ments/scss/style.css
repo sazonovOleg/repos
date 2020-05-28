@@ -1,10 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Gillroy';
-  src: url("../font/Gilroy.woff") format("woff"); }
+  src: url("../font/Gilroy-Medium.woff2") format("woff2"); }
 @font-face {
   font-family: 'Gillroy-Bold';
   src: url("../font/Gilroy-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Gillroy-Semibold';
+  src: url("../font/Gilroy-Semibold.woff2") format("woff2"); }
 body {
   font-family: "Gillroy"; }
 
@@ -131,14 +134,22 @@ a, h1, h2, h3, h4, h5, p, span {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 12px;
-  font-weight: 700; }
+  font-weight: 600;
+  font-family: "Gillroy-Semibold"; }
+  .caption--grey {
+    color: #818AA9;
+    margin-bottom: 23px; }
+
+p {
+  font-family: "Gillroy"; }
 
 .text {
   color: #818AA9;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
-  word-break: break-word; }
+  font-weight: 500;
+  word-break: break-word;
+  font-family: "Gillroy"; }
   .text--lg {
     font-size: 18px;
     padding-bottom: 50px; }
@@ -172,13 +183,23 @@ a, h1, h2, h3, h4, h5, p, span {
     @media (max-width: 991px) {
       .btn--main {
         margin-bottom: 25px; } }
+    @media screen and (max-width: 767px) {
+      .btn--main {
+        max-width: 286px; } }
   .btn--price {
     max-width: 240px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: none;
+    color: #3F3D56; }
+    .btn--price:hover {
+      border: 2px solid #3964FC; }
+    @media screen and (max-width: 767px) {
+      .btn--price {
+        max-width: 286px; } }
 
 .link {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   color: #3F3D56;
@@ -205,11 +226,9 @@ a, h1, h2, h3, h4, h5, p, span {
   flex: 1 0 0;
   color: #3964FC;
   padding-left: 20px; }
-  .list-item {
-    font-weight: bold; }
-    .list-item span {
-      color: #3F3D56 !important;
-      line-height: 24px; }
+  .list-item span {
+    color: #3F3D56 !important;
+    line-height: 24px; }
 
 .slick-dots {
   display: block;
@@ -469,7 +488,7 @@ a, h1, h2, h3, h4, h5, p, span {
     max-width: 200px; }
 
 header {
-  padding: 44px 0;
+  padding: 35px 0;
   z-index: 1000; }
   @media (max-width: 991px) {
     header {
@@ -477,6 +496,9 @@ header {
       width: 100%;
       background: white;
       padding: 20px 0; } }
+  @media screen and (max-width: 767px) {
+    header {
+      padding: 20px 0 0; } }
   header .nav {
     position: relative;
     max-width: 1140px;
@@ -638,6 +660,11 @@ main .s-main {
   @media (max-width: 991px) {
     main .s-main {
       padding: 150px 15px 50px; } }
+  @media screen and (max-width: 767px) {
+    main .s-main {
+      padding: 150px 15px 10px; } }
+  main .s-main--main {
+    padding-bottom: 20px; }
   main .s-main--licence {
     padding-top: 20px;
     padding-bottom: 80px; }
@@ -685,13 +712,14 @@ main .s-main {
       main .s-main .container--privacy {
         padding: 0; } }
   main .s-main-img {
-    margin: -30px 80px -120px 10px;
     max-width: 100%; }
-    @media (max-width: 1199px) {
-      main .s-main-img {
-        max-width: 450px;
-        width: 100%;
-        margin-right: 30px; } }
+    main .s-main-img--main {
+      margin: -30px 80px -130px 10px; }
+      @media (max-width: 1199px) {
+        main .s-main-img--main {
+          max-width: 288px;
+          width: 100%;
+          margin-right: 30px; } }
     main .s-main-img--licence {
       margin: -60px 50px -20px 10px; }
       @media (max-width: 1199px) {
@@ -738,7 +766,7 @@ main .s-work {
       min-height: 180px;
       margin-bottom: 15px; }
 main .s-about {
-  padding-bottom: 60px; }
+  padding-bottom: 40px; }
   main .s-about .subtitle {
     padding-bottom: 25px;
     max-width: 845px; }
@@ -758,9 +786,11 @@ main .s-about {
       max-width: 695px;
       padding-bottom: 0;
       margin-bottom: 20px; }
-  @media (max-width: 991px) {
-    main .s-about .row {
-      flex-direction: column; } }
+  main .s-about .row {
+    margin-top: 40px; }
+    @media (max-width: 991px) {
+      main .s-about .row {
+        flex-direction: column; } }
   main .s-about .col {
     padding: 0 15px;
     flex: 0 0 33.3333333333%;
@@ -787,7 +817,7 @@ main .s-services {
         margin-bottom: 40px; } }
   main .s-services .row {
     flex: 1 0 0;
-    padding-left: 90px; }
+    padding: 35px 70px 0 90px; }
     @media (max-width: 991px) {
       main .s-services .row {
         padding-left: 0;
@@ -828,8 +858,8 @@ main .s-price {
     main .s-price .carousel-item {
       min-height: 520px; }
   main .s-price .col {
-    flex: 0 0 30.8333333333%;
-    max-width: 30.8333333333%;
+    flex: 0 0 31.6666666667%;
+    max-width: 31.6666666667%;
     background-color: #F2F3F6;
     position: relative;
     padding: 37px 34px 27px;
@@ -862,6 +892,9 @@ main .s-price {
       border-color: #3964FC; }
       main .s-price .col:hover .col-info {
         top: 52px; }
+      main .s-price .col:hover .btn {
+        color: white;
+        background-color: #3964FC; }
     main .s-price .col-info {
       transform: rotate(-90deg);
       top: -56px;
@@ -891,7 +924,8 @@ main .s-question {
   padding-bottom: 90px; }
   main .s-question .caption {
     max-width: 465px;
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    color: #818AA9; }
   main .s-question .row {
     flex-direction: column; }
   main .s-question .col {
@@ -935,7 +969,8 @@ main .s-question {
       background: #F2F3F6;
       font-size: 16px;
       line-height: 24px;
-      border-radius: 0 0 15px 15px; }
+      border-radius: 0 0 15px 15px;
+      color: #818AA9; }
   main .s-question .line {
     background-color: black;
     width: 25px;
@@ -955,6 +990,8 @@ main .s-team {
   padding-bottom: 67px;
   overflow: hidden; }
   main .s-team .title {
+    text-align: center; }
+  main .s-team .caption {
     text-align: center; }
   main .s-team .subtitle {
     text-align: center;
@@ -1273,7 +1310,8 @@ main .s-project {
   flex: 0 0 100%;
   max-width: 100%;
   padding: 30px 0;
-  text-align: center; }
+  text-align: center;
+  color: #818AA9; }
   .footer .col--copyright br {
     display: none; }
     @media screen and (max-width: 767px) {

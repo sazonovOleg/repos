@@ -16,7 +16,7 @@
 	.row {
 		@extend %flexColumn;
 		flex: 1 0 0;
-		padding-left: 90px;
+		padding: 35px 70px 0 90px;
 		@media #{$sm} {
 			padding-left: 0;
 			@include make-col(12);
