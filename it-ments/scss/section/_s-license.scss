@@ -2,14 +2,26 @@
 	padding-bottom: 60px;
 	.title {
 		margin-bottom: 15px;
+		br {
+			display: none;
+			@media #{$xs} {
+				display: inline;
+			}
+		}
 	}
 	.subtitle {
-		margin-bottom: 15px;
+		margin-bottom: 17px;
+		@media #{$xs} {
+			margin-bottom: 8px;
+		}
 	}
 	.text {
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 		color: $black;
 		font-weight: 700;
+		@media #{$xs} {
+			margin-bottom: 30px;
+		}
 		&--last {
 			margin-bottom: 25px;
 		}

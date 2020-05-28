@@ -5,9 +5,7 @@
 		margin-bottom: 26px;
 	}
 	.caption {
-		&--one {
-			margin-bottom: 12px;
-		}
+		margin-bottom: 16px;
 	}
 	.text{
 		margin-bottom: 27px;
@@ -36,7 +34,7 @@
 	.col {
 		@include make-col(12);
 		padding: 40px 27px 10px 33px;
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 		background-color: $greyLow;
 		border-radius: 15px;
 		height: max-content;

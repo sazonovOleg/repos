@@ -6,7 +6,7 @@
 		padding-right: 15px;
 	}
 	@media #{$sm} {
-		padding: 30px 15px 50px;
+		padding: 150px 15px 50px;
 	}
 	&--licence {
 		padding-top: 20px;
@@ -69,7 +69,7 @@
 		}
 	}
 	&-img {
-		margin: -30px 80px -40px 10px;
+		margin: -30px 80px -120px 10px;
 		max-width: 100%;
 		@media #{$md} {
 			max-width: 450px;
@@ -84,6 +84,7 @@
 		}
 		&--vacancies {
 			margin-top: -20px;
+			margin-bottom: -40px;
 			margin-right: 0;
 		}
 		&--privacy {
@@ -91,6 +92,7 @@
 		}
 		&--project {
 			margin-top: -50px;
+			margin-bottom: -40px;
 		}
 		@media #{$sm} {
 			margin: -30px auto 10px;

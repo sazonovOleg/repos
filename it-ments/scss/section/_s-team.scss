@@ -39,6 +39,9 @@
 			@media #{$sm} {
 				max-width: 220px;
 			}
+			@media #{$xs} {
+				max-width: 100%;
+			}
 			&:hover {
 				.carousel-content {
 					opacity: 1;
@@ -75,54 +78,6 @@
 				opacity: 1;
 				z-index: 2;
 				margin-bottom: 20px;
-			}
-		}
-		&-control-prev {
-			left: -80px;
-			@media #{$md} {
-				left: -50px;
-			}
-			@media #{$sm} {
-				left: -40px;
-			}
-			@media #{$xs} {
-				width: 50px;
-				left: 0;
-			}
-			&-icon {
-				@media #{$md} {
-					width: 40px;
-				}
-				@media #{$sm} {
-					width: 30px;
-				}
-				@media #{$xs} {
-					width: 50px;
-				}
-			}
-		}
-		&-control-next {
-			right: -80px;
-			@media #{$md} {
-				right: -50px;
-			}
-			@media #{$sm} {
-				right: -40px;
-			}
-			@media #{$xs} {
-				width: 50px;
-				right: 0;
-			}
-			&-icon {
-				@media #{$md} {
-					width: 40px;
-				}
-				@media #{$sm} {
-					width: 30px;
-				}
-				@media #{$xs} {
-					width: 50px;
-				}
 			}
 		}
 	}

@@ -10,7 +10,7 @@
 		}
 	}
 	.col {
-		@include make-col(5.5);
+		@include make-col(5.7);
 		@extend %flexColumn;
 		align-items: flex-start;
 		padding: 40px 35px 44px;
@@ -38,6 +38,7 @@
 		&-year {
 			padding: 5px 8px;
 			background-color: white;
+			color: $greyHard;
 			font-weight: bold;
 			font-size: 14px;
 			line-height: 26px;
@@ -69,7 +70,14 @@
 		}
 		&-img {
 			max-width: 100%;
+			width: 100%;
 			margin-bottom: 38px;
+			cursor: pointer;
+			transition: all 0.3s linear 0.3s;
+			border-radius: 15px;
+			&:hover {
+				transform:scale(1.4);
+			}
 		}
 		.text {
 			margin-bottom: 25px;
