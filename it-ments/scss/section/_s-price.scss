@@ -59,10 +59,19 @@
 			margin: 0 auto;
 			max-width: 310px;
 			min-height: 657px;
-
 		}
 		@media #{$xxs} {
 			padding: 37px 15px;
+		}
+		&--recomended {
+			border-color: $blue;
+			.col-info {
+				top: 52px;
+			}
+			.btn {
+				color: white;
+				background-color: $blue;
+			}
 		}
 		&:hover {
 			border-color: $blue;

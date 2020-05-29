@@ -1057,6 +1057,13 @@ main .s-price {
     @media screen and (max-width: 375px) {
       main .s-price .col {
         padding: 37px 15px; } }
+    main .s-price .col--recomended {
+      border-color: #3964FC; }
+      main .s-price .col--recomended .col-info {
+        top: 52px; }
+      main .s-price .col--recomended .btn {
+        color: white;
+        background-color: #3964FC; }
     main .s-price .col:hover {
       border-color: #3964FC; }
       main .s-price .col:hover .col-info {

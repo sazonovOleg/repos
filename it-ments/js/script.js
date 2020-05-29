@@ -15,7 +15,7 @@ $('.multiple-items').slick({
     prevArrow     : false,
     nextArrow     : false,
     autoplay      : true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     edgeFriction: 100,
     responsive: [
         {
