@@ -6,6 +6,7 @@
 	}
 	.caption {
 		text-align: center;
+		margin-bottom: 26px;
 	}
 	.subtitle {
 		text-align: center;
@@ -20,6 +21,9 @@
 	.text {
 		text-align: center;
 		margin-bottom: 20px;
+		@media #{$md} {
+			font-size: 14px;
+		}
 		@media #{$xs} {
 			margin-bottom: 10px;
 		}

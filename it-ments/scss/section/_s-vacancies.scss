@@ -3,9 +3,12 @@
 	padding-bottom: 95px;
 	.subtitle {
 		margin-bottom: 26px;
+		@media #{$md} {
+			margin-bottom: 20px;
+		}
 	}
 	.caption {
-		margin-bottom: 16px;
+		margin-bottom: 13px;
 	}
 	.text{
 		margin-bottom: 27px;
@@ -16,6 +19,9 @@
 			margin-bottom: 46px;
 			padding-left: 0;
 			border: none;
+		}
+		&--blue {
+			font-family: $fontGilroySemibold;
 		}
 		&--link {
 			color: $blue;
@@ -39,6 +45,7 @@
 		border-radius: 15px;
 		height: max-content;
 		@media #{$xs} {
+			margin-bottom: 15px;
 			padding: 30px 24px 10px;
 		}
 	}

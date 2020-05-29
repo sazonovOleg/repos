@@ -1,9 +1,22 @@
 .s-question {
 	padding-bottom: 90px;
+	@media #{$xs} {
+		padding-bottom: 55px;
+	}
 	.caption {
 		max-width: 465px;
 		margin-bottom: 36px;
 		color: $greyHard;
+		@media #{$md} {
+			font-size: 16px;
+			margin-bottom: 27px;
+		}
+		@media #{$xs} {
+			font-size: 18px;
+			br {
+				display: none;
+			}
+		}
 	}
 	.row {
 		flex-direction: column;
@@ -24,11 +37,14 @@
 			transition: .7s all ease;
 			font-size: 18px;
 			font-family: $fontGilroyBold;
+			@media #{$md} {
+				font-size: 16px;
+			}
 			@media #{$xs} {
 				padding: 20px 105px 20px 25px;
 				line-height: 24px;
 			}
-			@media #{$xxs} {
+			@media all and (max-width : 320px) {
 				padding-right: 65px;
 			}
 			&:hover {
@@ -57,6 +73,10 @@
 			line-height: 24px;
 			border-radius: 0 0 15px 15px;
 			color: $greyHard;
+			@media #{$md} {
+				font-size: 14px;
+				padding-right: 80px;
+			}
 		}
 	}
 	.line {
@@ -69,11 +89,23 @@
 		border-radius: 15px;
 		top: 35px;
 		transition: $standard;
+		@media #{$md} {
+			width: 18px;
+			top: 33px;
+		}
 		@media #{$xs} {
 			top: 40px;
 		}
 		&--vertical {
 			transform: rotate(90deg);
+		}
+		&--bot {
+			@media #{$xs} {
+				top: 30px;
+			}
+			@media all and (max-width : 320px) {
+				top: 40px;
+			}
 		}
 	}
 }

@@ -1,7 +1,15 @@
 .s-price {
 	padding-bottom: 90px;
+	@media #{$md} {
+		padding-bottom: 70px;
+	}
 	.title {
 		text-align: center;
+		&--top {
+			@media #{$md} {
+				padding-bottom: 27px;
+			}
+		}
 	}
 	.subtitle {
 		text-align: center;
@@ -38,7 +46,7 @@
 		@extend %flexColumn;
 		background-color: $greyLow;
 		position: relative;
-		padding: 37px 34px 27px;
+		padding: 37px 31px 27px;
 		border-radius: 15px;
 		border: 2px solid white;
 		transition: $standard;
@@ -46,6 +54,7 @@
 		cursor: pointer;
 		@media #{$md} {
 			padding: 30px 20px 30px;
+			@include make-col(3.9);
 		}
 		@media #{$sm} {
 			@include make-col(6);
@@ -54,6 +63,7 @@
 			min-height: 686px;
 		}
 		@media #{$xs} {
+			max-width: 310px;
 			min-height: 570px;
 		}
 		@media #{$xxs} {

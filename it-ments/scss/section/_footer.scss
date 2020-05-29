@@ -2,14 +2,21 @@
 	.title {
 		margin-top: -10px;
 		line-height: 34px;
+		font-size: 30px;
 	}
 	.subtitle {
 		margin-bottom: 13px;
 	}
 	.text {
-		@media #{$xs} {
+		font-size: 14px;
+		@media #{$md} {
 			font-size: 12px;
 			line-height: 20px;
+		}
+		&--black {
+			@media #{$xs} {
+				max-width: 330px;
+			}
 		}
 	}
 	.container {
@@ -17,13 +24,17 @@
 	}
 	.col {
 		&--main {
-			@include make-col(3);
+			@include make-col(2.6);
+			@media #{$md} {
+				@include make-col(2.4);
+			}
 			@media #{$sm} {
 				@include make-col(6);
 				padding-right: 70px;
 				order: -2;
 			}
 			@media #{$xs} {
+				@include make-col(7);
 				padding-top: 3px;
 				padding-right: 20px;
 			}
@@ -31,23 +42,24 @@
 		&--user {
 			@extend %flexColumn;
 			align-items: flex-start;
-			@include make-col(1.7);
+			@include make-col(2);
 			@media #{$md} {
-				@include make-col(2);
+				@include make-col(1.8);
 			}
 			@media #{$sm} {
 				@include make-col(6);
 			}
 			@media #{$xs} {
+				@include make-col(5);
 				order: -1;
 			}
 		}
 		&--contact {
 			@extend %flexColumn;
 			align-items: flex-start;
-			@include make-col(3.6);
+			@include make-col(3.7);
 			@media #{$md} {
-				@include make-col(3.3);
+				@include make-col(4.1);
 				padding-right: 15px;
 			}
 			@media #{$sm} {
@@ -68,6 +80,9 @@
 		&--callback {
 			@extend %flexColumn;
 			@include make-col(3.7);
+			@media #{$md} {
+				@include make-col(3.5);
+			}
 			@media #{$sm} {
 				@include make-col(6);
 			}
@@ -81,6 +96,7 @@
 			padding: 30px 0;
 			text-align: center;
 			color: $greyHard;
+			font-size: 12px;
 			br {
 				display: none;
 				@media #{$xs} {

@@ -4,41 +4,61 @@
 		@extend %flexColumn;
 	}
 	.subtitle {
-		padding-bottom: 25px;
+		margin-bottom: 26px;
 		max-width: 845px;
+		@media #{$md} {
+			padding-right: 70px;
+		}
+		@media #{$xs} {
+			padding-right: 0;
+		}
 	}
 	.caption {
-		max-width: 470px;
+		@media #{$md} {
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
 	}
 	.text {
-		max-width: 310px;
+		&--top {
+			max-width: 420px;
+			margin-bottom: 50px;
+			@media #{$xs} {
+				font-size: 18px;
+				margin-bottom: 33px;
+			}
+		}
 		&--small {
-			max-width: 270px;
-			font-size: 14px;
+			max-width: 310px;
+			font-size: 16px;
+			@media #{$md} {
+				max-width: 270px;
+				font-size: 14px;
+			}
 			@media #{$sm} {
 				margin: 0 auto;
+			}
+			@media #{$xs} {
+				max-width: 295px;
 			}
 		}
 		&--border {
 			border-left: 5px solid $blue;
 			padding-left: 15px;
-			max-width: 695px;
+			max-width: 635px;
 			padding-bottom: 0;
-			margin-bottom: 20px;
-		}
-	}
-	.row {
-		margin-top: 40px;
-		@media #{$sm} {
-			flex-direction: column;
+			margin-bottom: 50px;
+			@media #{$xs} {
+				margin-bottom: 36px;
+			}
 		}
 	}
 	.col {
 		padding: 0 15px;
 		@include make-col(4);
-		@media #{$sm} {
+		@media #{$xs} {
 			@include make-col(12);
-			margin-bottom: 30px;
+			margin-bottom: 35px;
 			text-align: center;
 		}
 		&-img {

@@ -1,5 +1,8 @@
 .s-services {
 	padding-bottom: 60px;
+	@media #{$xs} {
+		padding-bottom: 45px;
+	}
 	.container {
 		@extend %flexRow;
 		align-items: center;
@@ -11,6 +14,10 @@
 		max-width: 100%;
 		@media #{$sm} {
 			margin-bottom: 40px;
+		}
+		@media #{$xs} {
+			max-width: 280px;
+			margin-bottom: 0;
 		}
 	}
 	.row {
@@ -29,8 +36,14 @@
 	}
 	.subtitle {
 		padding-bottom: 24px;
+		@media #{$xs} {
+			padding-bottom: 14px;
+		}
 	}
 	.text {
 		padding-bottom: 30px;
+		@media #{$xs} {
+			padding-bottom: 23px;
+		}
 	}
 }

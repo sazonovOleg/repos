@@ -1,5 +1,11 @@
 .s-license {
-	padding-bottom: 60px;
+	padding-bottom: 130px;
+	@media #{$md} {
+		padding-bottom: 54px;
+	}
+	@media #{$xs} {
+		padding-bottom: 25px;
+	}
 	.title {
 		margin-bottom: 15px;
 		br {
@@ -18,9 +24,11 @@
 	.text {
 		margin-bottom: 50px;
 		color: $black;
-		font-weight: 700;
-		@media #{$xs} {
+		@media #{$md} {
 			margin-bottom: 30px;
+		}
+		@media #{$xs} {
+			margin-bottom: 25px;
 		}
 		&--last {
 			margin-bottom: 25px;
