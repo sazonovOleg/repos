@@ -535,6 +535,8 @@ header {
       color: #3F3D56;
       transition: 0.3s all ease;
       z-index: 2; }
+      header .nav-logo--blue {
+        color: #3964FC; }
       @media screen and (max-width: 767px) {
         header .nav-logo {
           font-size: 26px; } }

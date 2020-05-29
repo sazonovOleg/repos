@@ -46,6 +46,9 @@ header {
 			color: $black;
 			transition: $standard;
 			z-index: 2;
+			&--blue {
+				color: $blue;
+			}
 			@media #{$xs} {
 				font-size: 26px;
 			}
