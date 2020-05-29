@@ -6,7 +6,11 @@
 	.subtitle {
 		margin-bottom: 15px;
 		@media #{$md} {
+			padding-top: 30px;
 			margin-bottom: 10px;
+		}
+		@media #{$sm} {
+			padding-top: 0;
 		}
 	}
 	.text {

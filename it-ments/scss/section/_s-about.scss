@@ -21,7 +21,7 @@
 	}
 	.text {
 		&--top {
-			max-width: 420px;
+			max-width: 430px;
 			margin-bottom: 50px;
 			@media #{$xs} {
 				font-size: 18px;
@@ -49,6 +49,7 @@
 			padding-bottom: 0;
 			margin-bottom: 50px;
 			@media #{$xs} {
+				padding-right: 5px;
 				margin-bottom: 36px;
 			}
 		}

@@ -19,6 +19,9 @@
 			margin-bottom: 46px;
 			padding-left: 0;
 			border: none;
+			@media #{$xs} {
+				max-width: 380px;
+			}
 		}
 		&--blue {
 			font-family: $fontGilroySemibold;
@@ -47,6 +50,12 @@
 		@media #{$xs} {
 			margin-bottom: 15px;
 			padding: 30px 24px 10px;
+		}
+		.caption {
+			font-family: $fontGilroyBold;
+		}
+		.text {
+			color: $black;
 		}
 	}
 	.nav {

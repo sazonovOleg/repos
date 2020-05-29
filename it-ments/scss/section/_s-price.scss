@@ -57,10 +57,11 @@
 		}
 		@media #{$xs} {
 			margin: 0 auto;
-			max-width: 310px;
+			max-width: 320px;
 			min-height: 657px;
 		}
 		@media #{$xxs} {
+			max-width: 290px;
 			padding: 37px 15px;
 		}
 		&--recomended {

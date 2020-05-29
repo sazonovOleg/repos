@@ -42,6 +42,7 @@
 	}
 	.text {
 		padding-bottom: 30px;
+		font-family: $fontGilroySemibold;
 		@media #{$xs} {
 			padding-bottom: 23px;
 		}

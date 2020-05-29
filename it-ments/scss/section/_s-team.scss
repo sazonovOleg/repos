@@ -48,7 +48,9 @@
 				max-width: 220px;
 			}
 			@media #{$xs} {
+				margin: 0 10px;
 				max-width: 100%;
+
 			}
 			&:hover {
 				.carousel-content {

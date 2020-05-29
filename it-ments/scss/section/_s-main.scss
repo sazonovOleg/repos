@@ -20,7 +20,7 @@
 	}
 	&--licence {
 		padding-top: 20px;
-		padding-bottom: 80px;
+		padding-bottom: 105px;
 		@media #{$md} {
 			.col {
 				padding: 20px 0;
@@ -35,8 +35,9 @@
 		}
 	}
 	&--privacy {
+		padding-bottom: 100px;
 		@media #{$md} {
-			padding-bottom: 95px;
+			padding-bottom: 55px;
 		}
 		@media #{$xs} {
 			padding-top: 70px;
@@ -126,12 +127,13 @@
 				margin: 0 20px -30px -10px;
 			}
 			@media #{$xs} {
-				max-width: 280px;
+				max-width: 320px;
+				width: 100%;
 				margin: 0 0 10px;
 			}
 		}
 		&--privacy {
-			margin: 0 40px -40px 50px;
+			margin: 20px 40px -40px 50px;
 			@media #{$md} {
 				max-width: 450px;
 				margin: 20px 40px -30px -16px;

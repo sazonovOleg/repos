@@ -8,7 +8,11 @@
 	}
 	.container {
 		@extend %flexRow;
+		@media #{$sm} {
+			padding: 0;
+		}
 		@media #{$xs} {
+			padding: 0 15px;
 			flex-direction: column;
 		}
 	}
@@ -28,10 +32,11 @@
 		}
 		&-header {
 			@extend %flexColumnCenter;
+			justify-content: flex-end;
 			min-height: 180px;
-			margin-bottom: 15px;
+			margin-bottom: 32px;
 			@media #{$md} {
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 			@media #{$xs} {
 				min-height: auto;
@@ -49,6 +54,7 @@
 		}
 	}
 	.text {
+		padding: 0 5px;
 		@media #{$md} {
 			font-size: 14px;
 		}

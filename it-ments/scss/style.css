@@ -584,9 +584,12 @@ header {
         z-index: 2; }
         @media screen and (max-width: 767px) {
           header .nav-item--btn {
-            max-width: 113px;
-            padding: 12px;
+            padding: 9px 0;
+            max-width: 89px;
             margin-left: 0; } }
+        @media screen and (max-width: 375px) {
+          header .nav-item--btn {
+            max-width: 113px; } }
         @media (max-width: 991px) {
           header .nav-item--btn--lg {
             display: none; } }
@@ -691,7 +694,7 @@ main .s-main {
         padding-bottom: 45px; } }
   main .s-main--licence {
     padding-top: 20px;
-    padding-bottom: 80px; }
+    padding-bottom: 105px; }
     @media (max-width: 1199px) {
       main .s-main--licence .col {
         padding: 20px 0; } }
@@ -702,13 +705,15 @@ main .s-main {
       main .s-main--licence {
         padding-top: 85px;
         padding-bottom: 35px; } }
-  @media (max-width: 1199px) {
-    main .s-main--privacy {
-      padding-bottom: 95px; } }
-  @media screen and (max-width: 767px) {
-    main .s-main--privacy {
-      padding-top: 70px;
-      padding-bottom: 30px; } }
+  main .s-main--privacy {
+    padding-bottom: 100px; }
+    @media (max-width: 1199px) {
+      main .s-main--privacy {
+        padding-bottom: 55px; } }
+    @media screen and (max-width: 767px) {
+      main .s-main--privacy {
+        padding-top: 70px;
+        padding-bottom: 30px; } }
   main .s-main--project {
     padding-bottom: 100px; }
     @media (max-width: 991px) {
@@ -783,10 +788,11 @@ main .s-main {
           margin: 0 20px -30px -10px; } }
       @media screen and (max-width: 767px) {
         main .s-main-img--vacancies {
-          max-width: 280px;
+          max-width: 320px;
+          width: 100%;
           margin: 0 0 10px; } }
     main .s-main-img--privacy {
-      margin: 0 40px -40px 50px; }
+      margin: 20px 40px -40px 50px; }
       @media (max-width: 1199px) {
         main .s-main-img--privacy {
           max-width: 450px;
@@ -860,8 +866,12 @@ main .s-work {
   @media screen and (max-width: 767px) {
     main .s-work {
       padding-bottom: 0; } }
+  @media (max-width: 991px) {
+    main .s-work .container {
+      padding: 0; } }
   @media screen and (max-width: 767px) {
     main .s-work .container {
+      padding: 0 15px;
       flex-direction: column; } }
   main .s-work .col {
     flex: 0 0 33.3333333333%;
@@ -879,11 +889,12 @@ main .s-work {
         main .s-work .col-img {
           max-width: 171px; } }
     main .s-work .col-header {
+      justify-content: flex-end;
       min-height: 180px;
-      margin-bottom: 15px; }
+      margin-bottom: 32px; }
       @media (max-width: 1199px) {
         main .s-work .col-header {
-          margin-bottom: 10px; } }
+          margin-bottom: 20px; } }
       @media screen and (max-width: 767px) {
         main .s-work .col-header {
           min-height: auto;
@@ -895,15 +906,17 @@ main .s-work {
   @media (max-width: 991px) {
     main .s-work .caption {
       margin-bottom: 5px; } }
-  @media (max-width: 1199px) {
-    main .s-work .text {
-      font-size: 14px; } }
-  @media screen and (max-width: 767px) {
-    main .s-work .text {
-      padding: 0 35px; } }
-  @media screen and (max-width: 375px) {
-    main .s-work .text {
-      padding: 0; } }
+  main .s-work .text {
+    padding: 0 5px; }
+    @media (max-width: 1199px) {
+      main .s-work .text {
+        font-size: 14px; } }
+    @media screen and (max-width: 767px) {
+      main .s-work .text {
+        padding: 0 35px; } }
+    @media screen and (max-width: 375px) {
+      main .s-work .text {
+        padding: 0; } }
 main .s-about {
   padding-bottom: 40px; }
   main .s-about .subtitle {
@@ -920,7 +933,7 @@ main .s-about {
       font-size: 16px;
       margin-bottom: 8px; } }
   main .s-about .text--top {
-    max-width: 420px;
+    max-width: 430px;
     margin-bottom: 50px; }
     @media screen and (max-width: 767px) {
       main .s-about .text--top {
@@ -947,6 +960,7 @@ main .s-about {
     margin-bottom: 50px; }
     @media screen and (max-width: 767px) {
       main .s-about .text--border {
+        padding-right: 5px;
         margin-bottom: 36px; } }
   main .s-about .col {
     padding: 0 15px;
@@ -998,7 +1012,8 @@ main .s-services {
       main .s-services .subtitle {
         padding-bottom: 14px; } }
   main .s-services .text {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-family: "Gillroy-Semibold"; }
     @media screen and (max-width: 767px) {
       main .s-services .text {
         padding-bottom: 23px; } }
@@ -1054,10 +1069,11 @@ main .s-price {
     @media screen and (max-width: 767px) {
       main .s-price .col {
         margin: 0 auto;
-        max-width: 310px;
+        max-width: 320px;
         min-height: 657px; } }
     @media screen and (max-width: 375px) {
       main .s-price .col {
+        max-width: 290px;
         padding: 37px 15px; } }
     main .s-price .col--recomended {
       border-color: #3964FC; }
@@ -1126,7 +1142,7 @@ main .s-question {
     main .s-question .col-btn {
       position: relative;
       width: 100%;
-      padding: 25px 25px 25px 32px;
+      padding: 17px 25px 17px 32px;
       background: #F2F3F6;
       text-align: left;
       color: #3F3D56;
@@ -1176,7 +1192,7 @@ main .s-question {
     position: absolute;
     right: 25px;
     border-radius: 15px;
-    top: 35px;
+    top: 24px;
     transition: 0.3s all ease; }
     @media (max-width: 1199px) {
       main .s-question .line {
@@ -1189,7 +1205,7 @@ main .s-question {
       transform: rotate(90deg); }
     @media screen and (max-width: 767px) {
       main .s-question .line--bot {
-        top: 30px; } }
+        top: 40px; } }
     @media all and (max-width: 320px) {
       main .s-question .line--bot {
         top: 40px; } }
@@ -1237,6 +1253,7 @@ main .s-team {
         max-width: 220px; } }
     @media screen and (max-width: 767px) {
       main .s-team .carousel-wrapper {
+        margin: 0 10px;
         max-width: 100%; } }
     main .s-team .carousel-wrapper:hover .carousel-content {
       opacity: 1;
@@ -1286,7 +1303,7 @@ main .s-license {
     margin-bottom: 17px; }
     @media screen and (max-width: 767px) {
       main .s-license .subtitle {
-        margin-bottom: 8px; } }
+        margin-bottom: 12px; } }
   main .s-license .text {
     margin-bottom: 50px;
     color: #3F3D56; }
@@ -1307,7 +1324,11 @@ main .s-privacy {
     margin-bottom: 15px; }
     @media (max-width: 1199px) {
       main .s-privacy .subtitle {
+        padding-top: 30px;
         margin-bottom: 10px; } }
+    @media (max-width: 991px) {
+      main .s-privacy .subtitle {
+        padding-top: 0; } }
   main .s-privacy .text {
     margin-bottom: 30px;
     color: #3F3D56; }
@@ -1343,6 +1364,9 @@ main .s-vacancies {
       margin-bottom: 46px;
       padding-left: 0;
       border: none; }
+      @media screen and (max-width: 767px) {
+        main .s-vacancies .text--vacancies {
+          max-width: 380px; } }
     main .s-vacancies .text--blue {
       font-family: "Gillroy-Semibold"; }
     main .s-vacancies .text--link {
@@ -1369,6 +1393,10 @@ main .s-vacancies {
       main .s-vacancies .col {
         margin-bottom: 15px;
         padding: 30px 24px 10px; } }
+    main .s-vacancies .col .caption {
+      font-family: "Gillroy-Bold"; }
+    main .s-vacancies .col .text {
+      color: #3F3D56; }
   main .s-vacancies .nav {
     justify-content: center; }
     main .s-vacancies .nav-item {
@@ -1390,7 +1418,7 @@ main .s-project {
   main .s-project .subtitle {
     margin-bottom: 13px; }
   main .s-project .row {
-    justify-content: space-between; }
+    justify-content: center; }
     @media screen and (max-width: 767px) {
       main .s-project .row {
         padding: 0 15px; } }

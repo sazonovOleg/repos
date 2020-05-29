@@ -102,9 +102,12 @@ header {
 				margin-bottom: 0;
 				z-index: 2;
 				@media #{$xs} {
-					max-width: 113px;
-					padding: 12px;
+					padding: 9px 0;
+					max-width: 89px;
 					margin-left: 0;
+				}
+				@media #{$xxs} {
+					max-width: 113px;
 				}
 				&--lg {
 					@media #{$sm} {
