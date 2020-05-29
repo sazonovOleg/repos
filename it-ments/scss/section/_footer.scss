@@ -135,6 +135,9 @@
 			color: $greyHard;
 			z-index: 0;
 			outline: none!important;
+			&:focus {
+				border: 2px solid $blue;
+			}
 		}
 		.btn {
 			max-width: 118px;

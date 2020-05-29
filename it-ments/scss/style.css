@@ -1601,6 +1601,8 @@ main .s-project {
     color: #818AA9;
     z-index: 0;
     outline: none !important; }
+    .footer .form-input:focus {
+      border: 2px solid #3964FC; }
   .footer .form .btn {
     max-width: 118px;
     margin-left: -30px;
