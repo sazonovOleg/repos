@@ -561,6 +561,14 @@ header {
         header .nav-item {
           padding: 15px 20px;
           margin-bottom: 10px; } }
+      @media screen and (max-width: 767px) {
+        header .nav-item {
+          width: 100%;
+          margin: 0 15px 5px;
+          padding: 10px 20px;
+          border-radius: 15px; }
+          header .nav-item:hover {
+            background-color: #F2F3F6; } }
       header .nav-item:hover {
         color: #3964FC; }
       header .nav-item--btn {
@@ -574,6 +582,7 @@ header {
         z-index: 2; }
         @media screen and (max-width: 767px) {
           header .nav-item--btn {
+            max-width: 113px;
             padding: 12px;
             margin-left: 0; } }
         @media (max-width: 991px) {
@@ -588,6 +597,9 @@ header {
       header .nav-item--language {
         position: relative;
         z-index: 1; }
+        @media screen and (max-width: 767px) {
+          header .nav-item--language:hover {
+            background: none; } }
         header .nav-item--language:hover {
           padding-bottom: 10px;
           margin-bottom: -10px; }
@@ -617,7 +629,7 @@ header {
     header .nav-wrap {
       display: none;
       max-width: 210px;
-      width: 100%; }
+      width: 92%; }
       @media (max-width: 991px) {
         header .nav-wrap {
           display: flex;
@@ -625,7 +637,7 @@ header {
           align-items: center; } }
       @media screen and (max-width: 767px) {
         header .nav-wrap {
-          max-width: 150px; } }
+          max-width: 170px; } }
     header .nav-burger {
       position: relative;
       display: none;
@@ -673,6 +685,7 @@ main .s-main {
         padding-bottom: 50px; } }
     @media screen and (max-width: 767px) {
       main .s-main--main {
+        padding-top: 90px;
         padding-bottom: 45px; } }
   main .s-main--licence {
     padding-top: 20px;
@@ -680,6 +693,9 @@ main .s-main {
     @media (max-width: 1199px) {
       main .s-main--licence .col {
         padding: 20px 0; } }
+    @media (max-width: 991px) {
+      main .s-main--licence {
+        padding-top: 130px; } }
     @media screen and (max-width: 767px) {
       main .s-main--licence {
         padding-top: 85px;
@@ -695,7 +711,7 @@ main .s-main {
     padding-bottom: 100px; }
     @media (max-width: 991px) {
       main .s-main--project {
-        padding: 80px 15px 50px; } }
+        padding: 100px 15px 50px; } }
     @media screen and (max-width: 767px) {
       main .s-main--project {
         padding: 80px 15px 30px; } }
@@ -705,6 +721,9 @@ main .s-main {
     @media (max-width: 991px) {
       main .s-main--project .text {
         padding: 0 10px 40px; } }
+  @media (max-width: 991px) {
+    main .s-main--vacancies {
+      padding: 90px 15px 50px; } }
   @media screen and (max-width: 767px) {
     main .s-main--vacancies {
       padding: 80px 15px 10px; } }
@@ -734,6 +753,9 @@ main .s-main {
           max-width: 483px;
           width: 100%;
           margin: -30px 50px -105px 0; } }
+      @media (max-width: 991px) {
+        main .s-main-img--main {
+          margin: -20px 0 0; } }
       @media screen and (max-width: 767px) {
         main .s-main-img--main {
           margin: -20px 0 0; } }
@@ -743,6 +765,9 @@ main .s-main {
         main .s-main-img--licence {
           max-width: 450px;
           margin: -45px 30px -45px 0; } }
+      @media (max-width: 991px) {
+        main .s-main-img--licence {
+          margin: -20px auto 20px; } }
       @media screen and (max-width: 767px) {
         main .s-main-img--licence {
           max-width: 280px;
@@ -808,7 +833,7 @@ main .s-main {
       padding-top: 20px; }
     main .s-main-title--privacy {
       padding-bottom: 0; }
-      @media screen and (max-width: 767px) {
+      @media (max-width: 991px) {
         main .s-main-title--privacy {
           padding-bottom: 40px; } }
   main .s-main .caption {
@@ -986,35 +1011,31 @@ main .s-price {
       main .s-price .title--top {
         padding-bottom: 27px; } }
   main .s-price .subtitle {
-    text-align: center;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    text-align: center; }
   main .s-price .text {
-    text-align: center;
-    padding-bottom: 36px; }
+    padding-bottom: 36px;
+    text-align: center; }
     main .s-price .text--month {
+      margin-bottom: 20px;
       padding-bottom: 0;
       font-size: 18px;
-      margin-bottom: 20px;
       opacity: 1;
       transition: 0.3s all ease;
       color: #818AA9; }
   main .s-price .row {
     padding: 0 15px;
     justify-content: space-between; }
-  main .s-price .carousel {
-    display: none;
-    width: 100%; }
-    @media (max-width: 991px) {
-      main .s-price .carousel {
-        display: block; } }
-    main .s-price .carousel-item {
-      min-height: 520px; }
+  main .s-price .slick-dots {
+    display: none; }
   main .s-price .col {
-    flex: 0 0 31.6666666667%;
-    max-width: 31.6666666667%;
-    background-color: #F2F3F6;
     position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 677px;
     padding: 37px 31px 27px;
+    margin: 0 15px;
+    background-color: #F2F3F6;
     border-radius: 15px;
     border: 2px solid white;
     transition: 0.3s all ease;
@@ -1022,26 +1043,20 @@ main .s-price {
     cursor: pointer; }
     @media (max-width: 1199px) {
       main .s-price .col {
-        padding: 30px 20px 30px;
-        flex: 0 0 32.5%;
-        max-width: 32.5%; } }
+        padding: 30px 20px 30px; } }
     @media (max-width: 991px) {
       main .s-price .col {
-        flex: 0 0 50%;
-        max-width: 50%;
-        margin: 0 auto;
+        margin: 0 10px;
         max-width: 420px;
         min-height: 686px; } }
     @media screen and (max-width: 767px) {
       main .s-price .col {
+        margin: 0 auto;
         max-width: 310px;
-        min-height: 570px; } }
+        min-height: 657px; } }
     @media screen and (max-width: 375px) {
       main .s-price .col {
         padding: 37px 15px; } }
-    @media (max-width: 991px) {
-      main .s-price .col--lg {
-        display: none; } }
     main .s-price .col:hover {
       border-color: #3964FC; }
       main .s-price .col:hover .col-info {
@@ -1209,6 +1224,7 @@ main .s-team {
         max-width: 300px; } }
     @media (max-width: 991px) {
       main .s-team .carousel-wrapper {
+        margin: 0 auto;
         max-width: 220px; } }
     @media screen and (max-width: 767px) {
       main .s-team .carousel-wrapper {
@@ -1388,7 +1404,8 @@ main .s-project {
       main .s-project .col {
         flex: 0 0 48.3333333333%;
         max-width: 48.3333333333%;
-        padding: 30px 20px; } }
+        padding: 30px 20px;
+        margin: 0 5px 10px; } }
     @media screen and (max-width: 767px) {
       main .s-project .col {
         margin: 0 0 15px;

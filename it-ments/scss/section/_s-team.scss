@@ -44,6 +44,7 @@
 				max-width: 300px;
 			}
 			@media #{$sm} {
+				margin: 0 auto;
 				max-width: 220px;
 			}
 			@media #{$xs} {

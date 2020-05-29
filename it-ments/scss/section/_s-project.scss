@@ -27,6 +27,7 @@
 		@media #{$sm} {
 			@include make-col(5.8);
 			padding: 30px 20px;
+			margin: 0 5px 10px;
 		}
 		@media #{$xs} {
 			margin: 0 0 15px;

@@ -12,16 +12,16 @@
 		}
 	}
 	.subtitle {
-		text-align: center;
 		padding-bottom: 25px;
+		text-align: center;
 	}
 	.text {
-		text-align: center;
 		padding-bottom: 36px;
+		text-align: center;
 		&--month {
+			margin-bottom: 20px;
 			padding-bottom: 0;
 			font-size: 18px;
-			margin-bottom: 20px;
 			opacity: 1;
 			transition: $standard;
 			color: $greyHard;
@@ -31,22 +31,17 @@
 		padding: 0 15px;
 		justify-content: space-between;
 	}
-	.carousel {
+	.slick-dots {
 		display: none;
-		width: 100%;
-		@media #{$sm} {
-			display: block;
-		}
-		&-item {
-			min-height: 520px;
-		}
 	}
 	.col {
-		@include make-col(3.8);
-		@extend %flexColumn;
-		background-color: $greyLow;
 		position: relative;
+		@include make-col(12);
+		@extend %flexColumn;
+		min-height: 677px;
 		padding: 37px 31px 27px;
+		margin: 0 15px;
+		background-color: $greyLow;
 		border-radius: 15px;
 		border: 2px solid white;
 		transition: $standard;
@@ -54,25 +49,20 @@
 		cursor: pointer;
 		@media #{$md} {
 			padding: 30px 20px 30px;
-			@include make-col(3.9);
 		}
 		@media #{$sm} {
-			@include make-col(6);
-			margin: 0 auto;
+			margin: 0 10px;
 			max-width: 420px;
 			min-height: 686px;
 		}
 		@media #{$xs} {
+			margin: 0 auto;
 			max-width: 310px;
-			min-height: 570px;
+			min-height: 657px;
+
 		}
 		@media #{$xxs} {
 			padding: 37px 15px;
-		}
-		&--lg {
-			@media #{$sm} {
-				display: none;
-			}
 		}
 		&:hover {
 			border-color: $blue;

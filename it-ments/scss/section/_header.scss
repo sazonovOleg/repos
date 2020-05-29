@@ -77,6 +77,15 @@ header {
 				padding: 15px 20px;
 				margin-bottom: 10px;
 			}
+			@media #{$xs} {
+				width: 100%;
+				margin: 0 15px 5px;
+				padding: 10px 20px;
+				border-radius: 15px;
+				&:hover {
+					background-color: $greyLow;
+				}
+			}
 			&:hover {
 				color: $blue;
 			}
@@ -90,6 +99,7 @@ header {
 				margin-bottom: 0;
 				z-index: 2;
 				@media #{$xs} {
+					max-width: 113px;
 					padding: 12px;
 					margin-left: 0;
 				}
@@ -110,6 +120,11 @@ header {
 			&--language {
 				position: relative;
 				z-index: 1;
+				@media #{$xs} {
+					&:hover {
+						background: none;
+					}
+				}
 				&:hover {
 					padding-bottom: 10px;
 					margin-bottom: -10px;
@@ -146,14 +161,14 @@ header {
 		&-wrap {
 			display: none;
 			max-width: 210px;
-			width: 100%;
+			width: 92%;
 			@media #{$sm} {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 			}
 			@media #{$xs} {
-				max-width: 150px;
+				max-width: 170px;
 			}
 		}
 		&-burger {

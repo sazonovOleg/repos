@@ -15,6 +15,8 @@ $('.multiple-items').slick({
     prevArrow     : false,
     nextArrow     : false,
     autoplay      : true,
+    autoplaySpeed: 1000,
+    edgeFriction: 100,
     responsive: [
         {
             breakpoint: 1024,
@@ -23,11 +25,18 @@ $('.multiple-items').slick({
             }
         },
         {
-            breakpoint: 767,
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 766,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-        }
+        },
     ]
 });
