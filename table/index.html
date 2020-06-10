@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- Первая модалка-->
+
     <div class="modal fade" id="sendTable" tabindex="-1" role="dialog" aria-labelledby="sendTableLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -37,42 +37,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Вторая -->
-    <!-- <div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="sendModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="sendModalLabel">Заказ успешно отправлен</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="main_right--form">
-                        <div class="form_wrap">
-                            <input type="checkbox" class="form_checkbox form_checkbox--one" value="1000">
-                            <label for="" class="form_label">Доставка 1000р.</label>
-                        </div>
-                        <div class="form_wrap">
-                            <input type="checkbox" class="form_checkbox form_checkbox--two" value="2000">
-                            <label for="" class="form_label">Сборка 2000р.</label>
-                        </div>
-                        <div class="modal-form">
-                            <h3 class="form_wrapper--subtitle">
-                                Цена:
-                            </h3>
-
-                            <input type="text" placeholder="" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
-
-                            <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#exampleModal">Отправить</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 
     <main>
         <section class="main">
@@ -122,14 +86,14 @@
                         <h1 class="main_title">электрический стол </h1>
                         <h2 class="main_subtitle">для работы сидя - стоя</h2>
                         <div class="main_table">
-                            <img src="img/white.png" alt="" class="table-img table-img--white">
-                            <img src="img/black.png" alt="" class="table-img table-img--black">
-                            <img src="img/wood.png" alt="" class="table-img table-img--wood">
-                            <img src="img/ball.png" alt="" class="table-img table-img--ball">
-                            <img src="img/buble.png" alt="" class="table-img table-img--buble">
-                            <img src="img/legs-white.png" alt="pic" class="legs-img legs-img--white">
-                            <img src="img/legs-grey.png" alt="pic" class="legs-img legs-img--grey">
-                            <img src="img/legs-black.png" alt="pic" class="legs-img legs-img--black">
+                            <img src="img/white.png" alt="" class="table-img" data-color="white">
+                            <img src="img/black.png" alt="" class="table-img" data-color="grey">
+                            <img src="img/wood.png" alt="" class="table-img" data-color="wood">
+                            <img src="img/ball.png" alt="" class="table-img" data-color="cloud">
+                            <img src="img/buble.png" alt="" class="table-img" data-color="bubble">
+                            <img src="img/legs-white.png" alt="" data-color="white" class="legs-img" >
+                            <img src="img/legs-grey.png" alt="" data-color="grey" class="legs-img">
+                            <img src="img/legs-black.png" alt="" data-color="black" class="legs-img">
                         </div>
                     </div>
                     <div class="main_right col-lg-3 col-12">
@@ -137,22 +101,22 @@
                             <h3 class="main_right--title">
                                 Выбрать цвет ножек:
                             </h3>
-                            <div class="main_right--content">
-                                <label class="legs visible legs--white " for=""><input type="checkbox" class="legs-check legs-check--one " checked></label>
-                                <label class="legs legs--grey"><input type="checkbox" class="legs-check legs-check--two"></label>
-                                <label class="legs legs--black"><input type="checkbox" class="legs-check legs-check--three"></label>
-                            </div>
+                            <form class="main_right--content">
+                                <label><input class="main-radio" type="radio" data-price="22000" data-color="white" name="radio" checked></label>
+                                <label><input class="main-radio" type="radio" data-price="23000" data-color="grey" name="radio"></label>
+                                <label><input class="main-radio" type="radio" data-price="24000" data-color="black" name="radio"></label>
+                            </form>
                         </div>
                         <div class="main_right--wrapper">
                             <h3 class="main_right--title">
                                 Выбрать столешницу:
                             </h3>
                             <div class="main_right--content">
-                                <label class="table table--white"><input type="checkbox" class="table-check table-check--one"></label>
-                                <label class="table table--grey"><input type="checkbox" class="table-check table-check--two"></label>
-                                <label class="table table--brown"><input type="checkbox" class="table-check table-check--three"></label>
-                                <label class="table table--ball"><input type="checkbox" class="table-check table-check--four"></label>
-                                <label class="table table--buble"><input type="checkbox" class="table-check table-check--five"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="20000" data-color="white"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="25000" data-color="grey"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="30000" data-color="wood"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="35000" data-color="cloud"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="40000" data-color="bubble"></label>
                             </div>
                         </div>
                         <form action="" class="main_right--form">
@@ -222,9 +186,6 @@
             </div>
         </section>
     </main>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/js.js"></script>
 </body>
 
