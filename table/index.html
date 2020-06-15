@@ -4,15 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Электрический стол</title>
 </head>
 
 <body>
 
-    <div class="modal fade" id="sendTable" tabindex="-1" role="dialog" aria-labelledby="sendTableLabel" aria-hidden="true">
+    <div class="modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -26,10 +25,12 @@
                         <input type="text" id="form_name" placeholder="Введите имя" class="modal-form__input">
                         <input type="tel" id="form_lastname" placeholder="Введите телефон" class="modal-form__input">
                         <div class="modal-form__wrapper">
-                            <h3 class="form_wrapper--subtitle">
+                            <p class="modal-form--text">Цвет ножек: <span class="form-text--color" id="textOutLegs"> </span></p>
+                            <p class="modal-form--text">Цвет столешницы: <span class="form-text--color" id="textOutTable"> </span></p>
+                            <h3 class="modal-form--subtitle">
                                 Цена:
                             </h3>
-                            <input type="text" class="form_wrapper--total form_wrapper--total-two" id="resultTwo" disabled>
+                            <input type="text" value="22000" class="total total-two" id="resultTwo" disabled>
                             <button class="btn btn--modal" type="button" data-toggle="modal" data-target="#sendModal">Отправить</button>
                         </div>
                     </form>
@@ -41,8 +42,8 @@
     <main>
         <section class="main">
             <div class="container">
-                <div class="main_row row">
-                    <div class="main_left col-lg-3 col-6 col-sm-12">
+                <div class="row">
+                    <div class="main_left">
                         <div class="main_left--wrap">
                             <div class="main_left--image">
                                 <img src="img/icon-1.png" alt="">
@@ -82,29 +83,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main_center col-lg-6 col-12">
+                    <div class="main_center">
                         <h1 class="main_title">электрический стол </h1>
                         <h2 class="main_subtitle">для работы сидя - стоя</h2>
                         <div class="main_table">
-                            <img src="img/white.png" alt="" class="table-img" data-color="white">
-                            <img src="img/black.png" alt="" class="table-img" data-color="grey">
-                            <img src="img/wood.png" alt="" class="table-img" data-color="wood">
-                            <img src="img/ball.png" alt="" class="table-img" data-color="cloud">
-                            <img src="img/buble.png" alt="" class="table-img" data-color="bubble">
-                            <img src="img/legs-white.png" alt="" data-color="white" class="legs-img" >
-                            <img src="img/legs-grey.png" alt="" data-color="grey" class="legs-img">
-                            <img src="img/legs-black.png" alt="" data-color="black" class="legs-img">
+                            <img src="img/white.png" alt="" class="table-img" data-color="белый">
+                            <img src="img/black.png" alt="" class="table-img" data-color="серый">
+                            <img src="img/wood.png" alt="" class="table-img" data-color="черный">
+                            <img src="img/ball.png" alt="" class="table-img" data-color="облачный">
+                            <img src="img/buble.png" alt="" class="table-img" data-color="разноцветный">
+                            <img src="img/legs-white.png" alt="" data-color="белый" class="legs-img" >
+                            <img src="img/legs-grey.png" alt="" data-color="серый" class="legs-img">
+                            <img src="img/legs-black.png" alt="" data-color="черный" class="legs-img">
                         </div>
                     </div>
-                    <div class="main_right col-lg-3 col-12">
+                    <div class="main_right">
                         <div class="main_right--wrapper">
                             <h3 class="main_right--title">
                                 Выбрать цвет ножек:
                             </h3>
                             <form class="main_right--content">
-                                <label><input class="main-radio" type="radio" data-price="22000" data-color="white" name="radio" checked></label>
-                                <label><input class="main-radio" type="radio" data-price="23000" data-color="grey" name="radio"></label>
-                                <label><input class="main-radio" type="radio" data-price="24000" data-color="black" name="radio"></label>
+                                <label><input class="main-radio" type="radio" data-price="22000" data-color="белый" name="radio" checked></label>
+                                <label><input class="main-radio" type="radio" data-price="23000" data-color="серый" name="radio"></label>
+                                <label><input class="main-radio" type="radio" data-price="24000" data-color="черный" name="radio"></label>
                             </form>
                         </div>
                         <div class="main_right--wrapper">
@@ -112,27 +113,27 @@
                                 Выбрать столешницу:
                             </h3>
                             <div class="main_right--content">
-                                <label><input class="main-checkbox" type="checkbox" data-price="20000" data-color="white"></label>
-                                <label><input class="main-checkbox" type="checkbox" data-price="25000" data-color="grey"></label>
-                                <label><input class="main-checkbox" type="checkbox" data-price="30000" data-color="wood"></label>
-                                <label><input class="main-checkbox" type="checkbox" data-price="35000" data-color="cloud"></label>
-                                <label><input class="main-checkbox" type="checkbox" data-price="40000" data-color="bubble"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="20000" data-color="белый"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="25000" data-color="серый"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="30000" data-color="черный"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="35000" data-color="облачный"></label>
+                                <label><input class="main-checkbox" type="checkbox" data-price="40000" data-color="разноцветный"></label>
                             </div>
                         </div>
-                        <form action="" class="main_right--form">
+                        <form action="" class="form">
                             <div class="form_wrapper">
                                 <h3 class="form_wrapper--subtitle">Цена:</h3>
-                                <input type="text" placeholder="" id="resultOne" value="22000" class="form_wrapper--total" disabled>
-                                <button class="btn" type="button" data-toggle="modal" data-target="#sendTable">ЗАКАЗАТЬ</button>
+                                <input type="text" placeholder="" id="resultOne" value="22000" class="total" disabled>
+                                <button class="btn" id="btnModal" type="button" data-toggle="modal" data-target="#sendTable">ЗАКАЗАТЬ</button>
                             </div>
                         </form>
                     </div>
-                    <div class="main_bot col-6 col-sm-12">
+                    <div class="main_bot">
                         <div class="main_bot--wrapper">
                             <div class="main_bot--img">
                                 <img src="img/icon-7.png" alt="">
                             </div>
-                            <div class="main_bot--iner">
+                            <div class="main_bot--inner">
                                 <h3 class="main_bot--subtitle">
                                     Размер столешницы:
                                 </h3>
@@ -145,7 +146,7 @@
                             <div class="main_bot--img">
                                 <img src="img/icon-8.png" alt="">
                             </div>
-                            <div class="main_bot--iner">
+                            <div class="main_bot--inner">
                                 <h3 class="main_bot--subtitle">
                                     Максимальная нагрузка:
                                 </h3>
@@ -158,7 +159,7 @@
                             <div class="main_bot--img">
                                 <img src="img/icon-9.png" alt="">
                             </div>
-                            <div class="main_bot--iner">
+                            <div class="main_bot--inner">
                                 <h3 class="main_bot--subtitle">
                                     Регулировка:
                                 </h3>
@@ -174,7 +175,7 @@
         <section class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="footer_col col-12">
+                    <div class="footer_col">
                         <p class="footer_col--text">
                             Адрес склада г. Москва Улица Речников д.17
                         </p>
