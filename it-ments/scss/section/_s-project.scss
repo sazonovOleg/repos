@@ -1,0 +1,107 @@
+.s-project {
+	padding-bottom: 40px;
+	.subtitle {
+		margin-bottom: 13px;
+	}
+	.row {
+		justify-content: center;
+		@media #{$xs}  {
+			padding: 0 15px;
+		}
+	}
+	.col {
+		@include make-col(5.7);
+		@extend %flexColumn;
+		align-items: flex-start;
+		padding: 40px 35px 44px;
+		margin: 0 13px 26px;
+		background-color: $greyLow;
+		border-radius: 15px;
+		border: 2px solid $greyLow;
+		transition: $standard;
+		@media #{$md} {
+			margin: 0 10px 20px;
+			padding-left: 29px;
+			padding-right: 29px;
+		}
+		@media #{$sm} {
+			@include make-col(5.8);
+			padding: 30px 20px;
+			margin: 0 5px 10px;
+		}
+		@media #{$xs} {
+			margin: 0 0 15px;
+			@include make-col(12);
+		}
+		&:hover {
+			border: 2px solid $blue;
+		}
+		&-header {
+			width: 100%;
+			@extend %flexRow;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		&-year {
+			padding: 5px 8px;
+			background-color: white;
+			color: $greyHard;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 26px;
+			border-radius: 5px;
+			text-align: center;
+		}
+		&-inner {
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			&--link {
+				background-color: white;
+				padding: 5px 8px;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 24px;
+				transition: $standard;
+				&--first {
+					border-radius: 5px 0 0 5px;
+				}
+				&--last {
+					border-radius: 0 5px 5px 0;
+				}
+				&:hover {
+					background-color: rgba(255,255,255,0.3);
+					opacity: 0.75;
+				}
+			}
+		}
+		&-img {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 38px;
+			cursor: pointer;
+			transition: all 0.3s linear 0.3s;
+			border-radius: 15px;
+			&:hover {
+				transform:scale(1.4);
+			}
+		}
+		.text {
+			margin-bottom: 25px;
+			font-size: 16px;
+		}
+		.btn {
+			max-width: 280px;
+			background-color: unset;
+			color: $black;
+			@media #{$xs} {
+				max-width: 100%;
+			}
+			&:hover {
+				color: white;
+				background-color: $blue;
+				border-color: $blue;
+			}
+		}
+	}
+}

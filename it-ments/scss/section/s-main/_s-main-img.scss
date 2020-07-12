@@ -1,0 +1,72 @@
+&-img {
+	max-width: 100%;
+	&--main {
+		margin: -30px 80px -130px 10px;
+		@media #{$md} {
+			max-width: 483px;
+			width: 100%;
+			margin: -30px 50px -105px 0;
+		}
+		@media #{$sm} {
+			margin: -20px 0 0;
+		}
+		@media #{$xs} {
+			margin: -20px 0 0;
+		}
+	}
+	&--licence {
+		margin: -45px 30px -60px 10px;
+		@media #{$md} {
+			max-width: 450px;
+			margin: -45px 30px -45px 0;
+		}
+		@media #{$sm} {
+			margin: -20px auto 20px;
+		}
+		@media #{$xs} {
+			max-width: 280px;
+			width: 100%;
+			margin: -20px auto 20px;
+		}
+	}
+	&--vacancies {
+		margin: -65px 0 -30px 20px;
+		@media #{$md} {
+			max-width: 450px;
+			margin: 0 20px -30px -10px;
+		}
+		@media #{$xs} {
+			max-width: 320px;
+			width: 100%;
+			margin: 0 0 10px;
+		}
+	}
+	&--privacy {
+		margin: 20px 40px -40px 50px;
+		@media #{$md} {
+			max-width: 450px;
+			margin: 20px 40px -30px -16px;
+		}
+		@media #{$sm} {
+			width: 100%;
+			margin: 20px 0 20px 0;
+		}
+		@media #{$xs} {
+			max-width: 280px;
+		}
+	}
+	&--project {
+		margin: -50px 30px -40px -5px;
+		@media #{$md} {
+			max-width: 420px;
+			margin: -30px 20px -35px 30px;
+		}
+		@media #{$sm} {
+			margin: 20px 0;
+		}
+		@media #{$xs} {
+			max-width: 300px;
+		}
+
+	}
+}

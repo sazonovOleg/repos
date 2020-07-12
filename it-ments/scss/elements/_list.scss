@@ -1,0 +1,11 @@
+.list {
+	flex: 1 0 0;
+	color: $blue;
+	padding-left: 20px;
+	&-item {
+		span {
+			color: $black!important;
+			line-height: 24px;
+		}
+	}
+}

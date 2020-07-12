@@ -1,0 +1,32 @@
+p {
+	font-family: $fontGilroy;
+}
+
+.text {
+	color: $greyHard;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	word-break: break-word;
+	font-family: $fontGilroy;
+	&--lg {
+		font-size: 18px;
+		padding-bottom: 50px;
+	}
+	&--black {
+		color: $black;
+	}
+	&--blue {
+		color: $blue;
+	}
+	&--vacancies {
+		font-size: 18px;
+	}
+	&--link {
+		text-decoration: underline;
+	}
+	&--border {
+		display: flex;
+		align-items: center;
+	}
+}

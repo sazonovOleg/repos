@@ -1,0 +1,10 @@
+&--privacy {
+	padding-bottom: 100px;
+	@media #{$md} {
+		padding-bottom: 55px;
+	}
+	@media #{$xs} {
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+}

@@ -1,0 +1,55 @@
+.s-main {
+	padding-bottom: 50px;
+	z-index: 1;
+	@media #{$md} {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@media #{$sm} {
+		padding: 150px 15px 50px;
+	}
+	.container {
+		max-width: 1330px;
+		@extend %flexRowCenter;
+		background-color: $greyLow;
+		border-radius: 33px;
+		@media #{$sm} {
+			flex-direction: column;
+		}
+	}
+	&--main {
+		padding-bottom: 60px;
+		@media #{$md} {
+			padding-bottom: 50px;
+		}
+		@media #{$xs} {
+			padding-top: 90px;
+			padding-bottom: 45px;
+		}
+	}
+	@import "s-main--licence";
+	@import "s-main--privacy";
+	@import "s-main--project";
+	@import "s-main--vacancies";
+	@import "s-main-img";
+	@import "s-main-title";
+	.caption {
+		margin-bottom: 27px;
+		padding-left: 7px;
+	}
+	.text {
+		padding-bottom: 25px;
+	}
+	&-col {
+		@extend %flexColumn;
+		flex: 1 0 0;
+		-webkit-flex: 1 0 0;
+		@media #{$sm} {
+			display: block;
+			text-align: center;
+		}
+		&--project {
+			max-width: 554px;
+		}
+	}
+}

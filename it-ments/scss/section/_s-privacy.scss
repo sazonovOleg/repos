@@ -1,0 +1,36 @@
+.s-privacy {
+	padding-bottom: 60px;
+	@media #{$xs} {
+		padding-bottom: 54px;
+	}
+	.subtitle {
+		margin-bottom: 15px;
+		@media #{$md} {
+			padding-top: 30px;
+			margin-bottom: 10px;
+		}
+		@media #{$sm} {
+			padding-top: 0;
+		}
+	}
+	.text {
+		margin-bottom: 30px;
+		color: $black;
+		@media #{$md} {
+			margin-bottom: 20px;
+		}
+		&--last {
+			margin-bottom: 25px;
+		}
+	}
+	.list {
+		margin-bottom: 40px;
+		@media #{$xs} {
+			padding-right: 20px;
+			margin-bottom: 30px;
+		}
+		&-item {
+			margin-bottom: 20px;
+		}
+	}
+}

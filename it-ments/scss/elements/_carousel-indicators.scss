@@ -1,0 +1,36 @@
+.carousel-indicators {
+	margin-top: 45px;
+	li {
+		width: 13px;
+		height: 13px;
+		background-color: $greyMedium;
+		border-radius: 50%;
+		margin: 0 8px;
+		&.active {
+			background-color: $blue;
+		}
+		@media #{$xs} {
+			width: 18px;
+			height: 18px;
+			margin: 0 12px;
+		}
+	}
+}
+.slick-dots {
+	margin-top: 45px;
+	li {
+		width: 13px;
+		height: 13px;
+		background-color: $greyMedium;
+		border-radius: 50%;
+		margin: 0 8px;
+		&.slick-active {
+			background-color: $blue;
+		}
+		@media #{$xs} {
+			width: 18px;
+			height: 18px;
+			margin: 0 12px;
+		}
+	}
+}

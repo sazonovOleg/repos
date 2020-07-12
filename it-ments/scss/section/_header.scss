@@ -1,0 +1,215 @@
+header {
+	padding: 35px 0;
+	z-index: 1000;
+	@media #{$sm} {
+		position: fixed;
+		width: 100%;
+		background: white;
+		padding: 20px 0;
+	}
+	@media #{$xs} {
+		padding: 12px 0;
+	}
+	.nav {
+		position: relative;
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 15px;
+		justify-content: space-between;
+		&.active {
+			.nav-burger-item--1 {
+				top: 12px;
+				transform: rotate(-45deg);
+			}
+			.nav-burger-item--2 {
+				opacity: 0;
+				z-index: -2;
+			}
+			.nav-burger-item--3 {
+				transform: rotate(45deg);
+				bottom: 13px;
+			}
+			.nav-menu {
+				border-top: 1px solid $greyLow;
+				padding-top: 10px;
+				margin-top: 55px;
+				z-index: 1000;
+				opacity: 1;
+			}
+		}
+		&-logo {
+			font-family: $fontGilroyBold;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 37px;
+			color: $black;
+			transition: $standard;
+			z-index: 2;
+			&--blue {
+				color: $blue;
+			}
+			@media #{$xs} {
+				font-size: 26px;
+			}
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+		&-menu {
+			@extend %flexRowCenter;
+			@media #{$sm} {
+				transition: 1.3s all ease;
+				position: absolute;
+				width: 100%;
+				margin-top: -550px;
+				flex-direction: column;
+				align-items: flex-start;
+				background-color: white;
+				z-index: -2;
+				opacity: 0;
+				left: 0;
+			}
+		}
+		&-item {
+			font-family: $fontGilroyBold;
+			color: $black;
+			margin: 0 12px;
+			transition: $standard;
+			@media #{$sm} {
+				padding: 15px 20px;
+				margin-bottom: 10px;
+			}
+			@media #{$xs} {
+				width: 100%;
+				margin: 0 15px 5px;
+				padding: 10px 20px;
+				border-radius: 15px;
+				&:hover {
+					background-color: $greyLow;
+				}
+			}
+			&:hover {
+				color: $blue;
+			}
+			&--btn {
+				padding: 14px 33px;
+				margin-bottom: 0;
+				background: none;
+				border: 2px solid $greyLight;
+				border-radius: 15px;
+				transition: $standard;
+				outline: none !important;
+				z-index: 2;
+				@media #{$xs} {
+					padding: 9px 0;
+					max-width: 89px;
+					margin-left: 0;
+				}
+				@media #{$xxs} {
+					max-width: 113px;
+				}
+				&--lg {
+					@media #{$sm} {
+						display: none;
+					}
+				}
+				&:hover {
+					border-color: $blue;
+					color: black;
+				}
+				&:active {
+					background: $blue;
+					color: white;
+				}
+			}
+			&--language {
+				position: relative;
+				z-index: 1;
+				@media #{$xs} {
+					&:hover {
+						background: none;
+					}
+				}
+				&:hover {
+					padding-bottom: 10px;
+					margin-bottom: -10px;
+					@media #{$sm} {
+						padding-bottom: 25px;
+						margin-bottom: 15px;
+					}
+					.nav-item--language--franc {
+						top: 25px;
+						opacity: 1;
+						z-index: 1;
+					}
+					.nav-item--arrow {
+						transform: rotate(180deg);
+					}
+				}
+				@media #{$sm} {
+					padding-bottom: 25px;
+					margin-bottom: 15px;
+				}
+				&--franc {
+					position: absolute;
+					left: -12px;
+					top: 0;
+					opacity: 0;
+					z-index: -2;
+					transition: 0.5s all ease-out;
+				}
+			}
+			&--arrow {
+				transition: $standard;
+			}
+		}
+		&-wrap {
+			display: none;
+			max-width: 210px;
+			width: 92%;
+			@media #{$sm} {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			@media #{$xs} {
+				max-width: 170px;
+			}
+		}
+		&-burger {
+			position: relative;
+			display: none;
+			width: 40px;
+			min-height: 30px;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: space-between;
+			cursor: pointer;
+			z-index: 2;
+			@media #{$sm} {
+				display: flex;
+			}
+			&-item {
+				position: absolute;
+				display: block;
+				width: 40px;
+				height: 5px;
+				border-radius: 5px;
+				background-color: $blue;
+				transition: $standard;
+				&--1 {
+					top: 0;
+				}
+				&--2 {
+					top: 13px;
+					width: 20px;
+					opacity: 1;
+				}
+				&--3 {
+					bottom: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.btn {
+	font-family: $fontGilroyBold;
+	background: $blue;
+	border: 2px solid $blue;
+	color: white;
+	border-radius: 15px;
+	text-align: center;
+	width: 100%;
+	padding: 16px 0;
+	transition: $standard;
+	&:hover {
+		background-color: $blueLight;
+		border-color: $blueLight;
+	}
+	&--main {
+		max-width: 264px;
+		@media #{$sm} {
+			margin-bottom: 25px;
+		}
+		@media #{$xs} {
+			max-width: 286px;
+		}
+	}
+	&--price {
+		max-width: 240px;
+		margin: 0 auto;
+		background: none;
+		color: $black;
+		&:hover {
+			border: 2px solid $blue;
+		}
+		@media #{$xs} {
+			max-width: 286px;
+		}
+	}
+}
