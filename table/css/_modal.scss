@@ -48,7 +48,6 @@
 		}
 		&_label {
 			color: #373737;
-			font-family: Gilroy;
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 20.54px;
@@ -57,5 +56,10 @@
 			display: flex;
 			flex-direction: column;
 		}
+	}
+	&-price {
+		font-size: 20px;
+		font-weight: 700;
+		color: black;
 	}
 }

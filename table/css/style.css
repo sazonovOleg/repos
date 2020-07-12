@@ -55,13 +55,16 @@
     line-height: 24.88px; }
   .modal-form_label {
     color: #373737;
-    font-family: Gilroy;
     font-size: 18px;
     font-weight: 400;
     line-height: 20.54px; }
   .modal-form__wrapper {
     display: flex;
     flex-direction: column; }
+.modal-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: black; }
 
 h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -261,14 +264,6 @@ input {
   font-size: 40px;
   font-weight: 700;
   text-align: center; }
-  .total-two {
-    margin-bottom: 0;
-    width: 200px;
-    color: #010101;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    height: 50px; }
 
 .footer {
   padding-bottom: 20px; }

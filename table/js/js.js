@@ -7,11 +7,11 @@ function calculator() {
         textOutLegs = document.getElementById('textOutLegs'),
         textOutTable = document.getElementById('textOutTable'),
         resultModal = document.getElementById('resultTwo'),
-        atrPrice = 'data-price',
-        atrColor = 'data-color',
         modal = document.querySelector('.modal'),
         close = document.querySelector('.close'),
-        btnModal = document.getElementById('btnModal');
+        btnModal = document.getElementById('btnModal'),
+        atrPrice = 'data-price',
+        atrColor = 'data-color';
     textOutLegs.innerHTML = document.querySelector('input[type="radio"]').getAttribute(atrColor);
     textOutTable.innerHTML = 'не выбрано';
     objVariables = {};
@@ -69,6 +69,7 @@ function calculator() {
             objVariables.dataTableResult = 0;
             document.querySelector('.table-img[data-color="' + objVariables.tableColorResult + '"]').style.display = 'none';
             result.value = objVariables.dataLegsResult;
+            textOutTable.innerHTML = 'не выбрано';
         }
     }
 
