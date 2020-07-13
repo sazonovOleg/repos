@@ -1,8 +1,7 @@
 .footer {
 	.title {
 		margin-top: -10px;
-		line-height: 34px;
-		font-size: 30px;
+		@include font-set(30px,null,34px);
 	}
 	.subtitle {
 		margin-bottom: 13px;
@@ -10,8 +9,7 @@
 	.text {
 		font-size: 14px;
 		@media #{$md} {
-			font-size: 12px;
-			line-height: 20px;
+			@include font-set(12px,null,20px);
 		}
 		&--black {
 			@media #{$xs} {
@@ -91,11 +89,11 @@
 			}
 		}
 		&--copyright {
-			border-top: 1px solid $greyBorder;
 			@include make-col(12);
 			padding: 30px 0;
 			text-align: center;
 			color: $greyHard;
+			border-top: 1px solid $greyBorder;
 			font-size: 12px;
 			br {
 				display: none;
@@ -107,9 +105,8 @@
 				margin-top: 30px;
 			}
 			@media #{$xs} {
-				line-height: 20px;
 				padding: 20px 0;
-				font-size: 12px;
+				@include font-set(12px,null,20px);
 			}
 		}
 		&-content {
@@ -130,8 +127,7 @@
 			padding: 17px 20px 17px 22px;
 			background-color: $greyLow;
 			border-radius: 15px;
-			font-size: 14px;
-			line-height: 17px;
+			@include font-set(14px,500,17px);
 			color: $greyHard;
 			z-index: 0;
 			outline: none!important;

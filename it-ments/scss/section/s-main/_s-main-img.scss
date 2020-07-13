@@ -3,8 +3,7 @@
 	&--main {
 		margin: -30px 80px -130px 10px;
 		@media #{$md} {
-			max-width: 483px;
-			width: 100%;
+			@include size(100%,483px,null);
 			margin: -30px 50px -105px 0;
 		}
 		@media #{$sm} {
@@ -24,6 +23,7 @@
 			margin: -20px auto 20px;
 		}
 		@media #{$xs} {
+			@include size(100%,280px,null);
 			max-width: 280px;
 			width: 100%;
 			margin: -20px auto 20px;
@@ -36,8 +36,7 @@
 			margin: 0 20px -30px -10px;
 		}
 		@media #{$xs} {
-			max-width: 320px;
-			width: 100%;
+			@include size(100%,320px,null);
 			margin: 0 0 10px;
 		}
 	}
@@ -67,6 +66,5 @@
 		@media #{$xs} {
 			max-width: 300px;
 		}
-
 	}
 }

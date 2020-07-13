@@ -1,0 +1,16 @@
+.slick-dots {
+	margin-top: 45px;
+	li {
+		@include size(13px,null,13px);
+		background-color: $greyMedium;
+		border-radius: 50%;
+		margin: 0 8px;
+		&.slick-active {
+			background-color: $blue;
+		}
+		@media #{$xs} {
+			@include size(18px,null,18px);
+			margin: 0 12px;
+		}
+	}
+}

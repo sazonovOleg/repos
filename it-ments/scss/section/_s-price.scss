@@ -86,15 +86,14 @@
 		}
 		&-info {
 			transform: rotate(-90deg);
+			padding: 8px 10px 8px 25px;
 			top: -56px;
 			left: -30px;
 			position: absolute;
 			background-color: $blue;
 			color: white;
 			border-radius: 15px 0 0 15px;
-			font-size: 14px;
-			padding: 8px 10px 8px 25px;
-			line-height: 10px;
+			@include font-set(14px,null,10px);
 			transition: $standard;
 		}
 		&-price {

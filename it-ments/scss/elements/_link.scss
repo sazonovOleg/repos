@@ -1,8 +1,6 @@
 .link {
 	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 22px;
+	@include font-set(14px,500,22px);
 	color: $black;
 	transition: $standard;
 	&:hover {

@@ -1,18 +1,15 @@
 &-title {
-	font-size: 48px;
-	line-height: 59px;
 	padding-bottom: 10px;
+	@include font-set(48px,700,59px);
 	color: $black;
 	@media #{$md} {
 		font-size: 40px;
 	}
 	@media #{$xs} {
-		font-size: 30px;
-		line-height: 40px;
+		@include font-set(30px,null,40px);
 	}
 	@media #{$xxs} {
-		font-size: 26px;
-		line-height: 35px;
+		@include font-set(26px,null,35px);
 	}
 	&--blue {
 		color: $blue;

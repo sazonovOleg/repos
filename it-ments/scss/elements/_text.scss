@@ -4,9 +4,7 @@ p {
 
 .text {
 	color: $greyHard;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 500;
+	@include font-set(16px,500,24px);
 	word-break: break-word;
 	font-family: $fontGilroy;
 	&--lg {
@@ -26,7 +24,6 @@ p {
 		text-decoration: underline;
 	}
 	&--border {
-		display: flex;
-		align-items: center;
+		@include flex(null,null,center);
 	}
 }

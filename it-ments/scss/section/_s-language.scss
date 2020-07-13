@@ -85,15 +85,13 @@
 	}
 	&-wrap {
 		@extend %flexRow;
+		@include size(100%,420px);
 		margin: 0 auto;
 		padding-bottom: 60px;
-		width: 100%;
-		max-width: 420px;
 		justify-content: space-between;
 	}
 	&-wrapper {
-		max-width: 1000px;
-		width: 100%;
+		@include size(100%,1000px);
 		margin: 0 auto;
 		position: relative;
 	}

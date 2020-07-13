@@ -46,9 +46,7 @@
 			padding: 5px 8px;
 			background-color: white;
 			color: $greyHard;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 26px;
+			@include font-set(14px,700,26px);
 			border-radius: 5px;
 			text-align: center;
 		}
@@ -59,9 +57,7 @@
 			&--link {
 				background-color: white;
 				padding: 5px 8px;
-				font-weight: bold;
-				font-size: 14px;
-				line-height: 24px;
+				@include font-set(14px,700,24px);
 				transition: $standard;
 				&--first {
 					border-radius: 5px 0 0 5px;
@@ -76,14 +72,13 @@
 			}
 		}
 		&-img {
-			max-width: 100%;
-			width: 100%;
+			@include size(100%,100%,null);
 			margin-bottom: 38px;
 			cursor: pointer;
 			transition: all 0.3s linear 0.3s;
 			border-radius: 15px;
 			&:hover {
-				transform:scale(1.4);
+				transform:scale(1);
 			}
 		}
 		.text {

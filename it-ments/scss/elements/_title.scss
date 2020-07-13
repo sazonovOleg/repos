@@ -1,17 +1,13 @@
 .title {
 	color: $black;
 	font-family: $fontGilroyBold;
-	font-size: 36px;
-	line-height: 45px;
 	margin-bottom: 15px;
-	font-weight: 700;
+	@include font-set(36px,700,45px);
 	@media #{$md} {
-		font-size: 32px;
-		line-height: 40px;
+		@include font-set(32px,null,40px);
 	}
 	@media #{$xs} {
-		font-size: 26px;
-		line-height: 30px;
+		@include font-set(26px,null,30px);
 	}
 	&--blue {
 		color: $blue;

@@ -12,8 +12,7 @@ header {
 	}
 	.nav {
 		position: relative;
-		max-width: 1140px;
-		width: 100%;
+		@include size(100%,1140px,null);
 		margin: 0 auto;
 		padding: 0 15px;
 		justify-content: space-between;
@@ -40,9 +39,7 @@ header {
 		}
 		&-logo {
 			font-family: $fontGilroyBold;
-			font-weight: bold;
-			font-size: 30px;
-			line-height: 37px;
+			@include font-set(30px,700,37px);
 			color: $black;
 			transition: $standard;
 			z-index: 2;
@@ -166,8 +163,7 @@ header {
 		}
 		&-wrap {
 			display: none;
-			max-width: 210px;
-			width: 92%;
+			@include size(92%,210px,null);
 			@media #{$sm} {
 				display: flex;
 				justify-content: space-between;
@@ -179,12 +175,10 @@ header {
 		}
 		&-burger {
 			position: relative;
-			display: none;
 			width: 40px;
 			min-height: 30px;
-			flex-direction: column;
-			align-items: flex-end;
-			justify-content: space-between;
+			@include flex(column,space-between,flex-end);
+			display: none;
 			cursor: pointer;
 			z-index: 2;
 			@media #{$sm} {
@@ -193,8 +187,7 @@ header {
 			&-item {
 				position: absolute;
 				display: block;
-				width: 40px;
-				height: 5px;
+				@include size(40px,null,5px);
 				border-radius: 5px;
 				background-color: $blue;
 				transition: $standard;
