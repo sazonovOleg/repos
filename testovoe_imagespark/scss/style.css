@@ -1241,6 +1241,7 @@ header {
         background: linear-gradient(to top, #57d781 0%, #25adff 100%); }
     @media screen and (max-width: 767px) {
       .footer-social-icon {
-        max-width: 30px; } }
+        max-width: 25px;
+        max-height: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
