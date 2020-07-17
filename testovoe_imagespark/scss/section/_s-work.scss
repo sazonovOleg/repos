@@ -1,0 +1,90 @@
+.s-work {
+	padding: 149px 0 54px;
+	background-color: $greyLightColor;
+	overflow: hidden;
+	@media #{$lg} {
+		padding-top: 80px;
+	}
+	@media #{$xs} {
+		padding: 40px 0 35px;
+	}
+	.title {
+		position: relative;
+		text-align: center;
+		padding-bottom: 211px;
+		@media #{$lg} {
+			padding-bottom: 130px;
+		}
+		@media #{$xs} {
+			padding-bottom: 50px;
+		}
+	}
+	.row {
+		@media #{$lg} {
+			justify-content: space-around;
+		}
+	}
+	.subtitle {
+		display: flex;
+		align-items: center;
+		&:before {
+			margin-left: -14px;
+			margin-right: 20px;
+			display: block;
+			content: " ";
+			@include size(45px,null,4px);
+			background-color: $redColor;
+			@media #{$lg} {
+				margin-left: 0;
+			}
+			@media #{$xs} {
+				width: 25px;
+				margin-right: 10px;
+			}
+		}
+	}
+	&-img {
+		position: absolute;
+		left: 27%;
+		top: -180px;
+		@media #{$lg} {
+			max-width: 160px;
+			top: -120px;
+			left: 26%;
+		}
+		@media #{$md} {
+			left: 23%;
+		}
+		@media #{$sm} {
+			max-width: 120px;
+			top: -85px;
+			left: 20%;
+		}
+		@media #{$xs} {
+			max-width: 80px;
+			top: -48px;
+			left: 1%;
+		}
+	}
+	.col {
+		@include make-col(4);
+		margin-bottom: 96px;
+		@media #{$lg} {
+			margin-bottom: 70px;
+			@include make-col(5);
+		}
+		@media #{$sm} {
+			@include make-col(12);
+		}
+		@media #{$xs} {
+			margin-bottom: 30px;
+		}
+	}
+	.text {
+		font-size: 17px;
+		max-width: 440px;
+		@media #{$sm} {
+			max-width: 100%;
+		}
+	}
+}

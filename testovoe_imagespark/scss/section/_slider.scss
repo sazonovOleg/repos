@@ -1,0 +1,40 @@
+.slider {
+	padding-top: 80px;
+	.slick {
+		&-slide {
+			padding: 0 15px;
+			@include flex(row wrap, flex-start, center);
+			@media #{$sm} {
+				@include flex(column-reverse, center, flex-start);
+			}
+		}
+	}
+	&-col {
+		margin-left: 96px;
+		@include make-col(3);
+		@include flex(column, flex-start, flex-start);
+		@media #{$lg} {
+			margin-left: 40px;
+			@include make-col(4.5);
+		}
+		@media #{$sm} {
+			margin-left: 0;
+			margin-bottom: 10px;
+			@include make-col(7);
+		}
+		@media #{$xs} {
+			@include make-col(12);
+		}
+	}
+	&-img {
+		@media #{$lg} {
+			max-width: 600px;
+		}
+		@media #{$md} {
+			max-width: 500px;
+		}
+		@media #{$sm} {
+			max-width: 100%;
+		}
+	}
+}

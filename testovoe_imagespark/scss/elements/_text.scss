@@ -1,0 +1,21 @@
+.text {
+	@include font-set(17px, 400, 32px);
+	@media #{$xs} {
+		font-size: 15px;
+	}
+	&--slogan {
+		text-align: center;
+		@include font-set(34px, 300, 55px);
+		@media #{$lg} {
+			font-size: 28px;
+		}
+		@media #{$sm} {
+			font-size: 20px;
+		}
+		@media #{$xs} {
+			font-size: 18px;
+			max-width: 290px;
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.s-banner {
+	padding-bottom: 193px;
+	@include flex(column, flex-start, flex-start);
+	@media #{$md} {
+		padding-bottom: 130px;
+	}
+	@media #{$xs} {
+		padding-bottom: 60px;
+	}
+	&-title {
+		padding-bottom: 90px;
+		color: $secondaryColor;
+		@include font-set(90px, 400, 110px);
+		text-transform: uppercase;
+		@media #{$lg} {
+			@include font-set(60px, null, 80px);
+			padding-bottom: 40px;
+		}
+		@media #{$md} {
+			font-size: 50px;
+		}
+		@media #{$sm} {
+			@include font-set(40px, null, 60px);
+		}
+		@media #{$xs} {
+			@include font-set(30px, null, 40px);
+		}
+	}
+	&-text {
+		color: $secondaryColor;
+		@include font-set(34px, 300, 55px);
+		@media #{$lg} {
+			@include font-set(24px, null, 40px);
+		}
+		@media #{$sm} {
+			font-size: 20px;
+		}
+		@media #{$xs} {
+			@include font-set(14px, null, 30px);
+		}
+	}
+}

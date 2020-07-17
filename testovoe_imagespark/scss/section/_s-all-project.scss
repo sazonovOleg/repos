@@ -1,0 +1,18 @@
+.s-all-project {
+	position: relative;
+	padding: 70px 0;
+	background-color: $greyDarkColor;
+	overflow: hidden;
+	@media #{$sm} {
+		padding: 40px 0;
+	}
+	@media #{$xs} {
+		padding: 20px 0;
+	}
+	.container {
+		@include flex(row,center);
+		@media #{$xs} {
+			justify-content: flex-start;
+		}
+	}
+}

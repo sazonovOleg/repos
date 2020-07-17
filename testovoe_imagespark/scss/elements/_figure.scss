@@ -1,0 +1,87 @@
+.figure {
+	position: absolute;
+	z-index: 0;
+	transition: 1s all ease;
+	@media #{$sm} {
+		display: none;
+	}
+	&-header-1 {
+		right: 30%;
+		top: 70%;
+		animation: rotateAnimationRight 35s infinite alternate;
+		-webkit-animation: rotateAnimationRight 35s infinite alternate;
+		animation-delay: 0s;
+	}
+	&-header-2 {
+		right: 5%;
+		top: 25%;
+		animation: infinityRotate 5s infinite linear;
+		-webkit-animation: infinityRotate 5s infinite linear;
+		animation-delay: 0s;
+	}
+	&-header-3 {
+		right: 10%;
+		top: 80%;
+		animation: rotateAnimationTop 35s infinite alternate;
+		-webkit-animation: rotateAnimationTop 35s infinite alternate;
+		animation-delay: 0s;
+	}
+	&-header-4 {
+		left: 5%;
+		top: 85%;
+		animation: infinityRotate 5s infinite linear;
+		-webkit-animation: infinityRotate 5s infinite linear;
+		animation-delay: 0s;
+	}
+	&-header-5 {
+		left: -1%;
+		top: 30%;
+		animation: rotateAnimationLeft 35s infinite alternate;
+		-webkit-animation: rotateAnimationLeft 35s infinite alternate;
+		animation-delay: 0s;
+	}
+}
+
+@keyframes rotateAnimationRight {
+	from {
+		right: 30%;
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		right: 99%;
+	}
+}
+
+@keyframes rotateAnimationLeft {
+	from {
+		left: -1%;
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		left: 99%;
+	}
+}
+
+@keyframes rotateAnimationTop {
+	from {
+		right: 10%;
+		top: 80%;
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		top: 5%;
+		right: 99%;
+	}
+}
+
+@keyframes infinityRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,11 @@
+.subtitle {
+	padding-bottom: 36px;
+	@include font-set(19px,400,32px);
+	@media #{$sm} {
+		padding-bottom: 20px;
+	}
+	@media #{$xs} {
+		@include font-set(18px,null,22px);
+		padding-bottom: 15px;
+	}
+}

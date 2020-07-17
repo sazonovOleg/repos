@@ -1,0 +1,28 @@
+.burger {
+	display: none;
+	transition: $standardTransition;
+	z-index: 2;
+	@media #{$sm} {
+		display: block;
+	}
+	&-item {
+		transition: $standardTransition;
+		display: block;
+		width: 25px;
+		height: 2px;
+		margin-bottom: 5px;
+		background-color: $secondaryColor;
+	}
+	&.active {
+		.burger-item-one {
+			transform: rotate(45deg);
+		}
+		.burger-item-two {
+			opacity: 0;
+		}
+		.burger-item-three {
+			margin-top: -14px;
+			transform: rotate(-45deg);
+		}
+	}
+}

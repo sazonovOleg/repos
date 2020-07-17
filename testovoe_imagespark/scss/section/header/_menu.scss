@@ -1,0 +1,52 @@
+.menu {
+	@include flex(row, space-between, center);
+	flex: auto;
+	max-width: max-content;
+	transition: 1s all ease;
+	@media #{$sm} {
+		@include size(220px, 100%, 100vh);
+		position: absolute;
+		top: -20px;
+		right: -250px;
+		@include flex(column, flex-start, flex-start);
+		background-color: rgba(0, 0, 0, 0.75);
+		overflow-y: scroll;
+		z-index: 1;
+		&.active {
+			right: -24px;
+		}
+	}
+	&-wrap {
+		@media #{$sm} {
+			@include flex(column, null, flex-start);
+		}
+	}
+	&-link {
+		margin: 0 11px;
+		padding: 17px;
+		color: $secondaryColor;
+		@include font-set(22px, 300, 20px);
+		font-family: $fontRobotoRegular;
+		border: 2px solid rgba(255, 255, 255, 0);
+		transition: $standardTransition;
+		@media #{$lg} {
+			padding: 12px;
+			margin: 0 5px;
+			font-size: 18px;
+		}
+		@media #{$md} {
+			padding: 10px;
+			font-size: 16px;
+		}
+		&:hover {
+			border-color: $secondaryColor;
+		}
+		&--phone {
+			margin-right: 15px;
+			font-weight: 700;
+			&:hover {
+				border-color: rgba(255, 255, 255, 0);
+			}
+		}
+	}
+}

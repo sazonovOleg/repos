@@ -1,0 +1,44 @@
+.s-tinkoff {
+	padding: 214px 0 224px;
+	background-color: $yellowColor;
+	@media #{$lg} {
+		padding: 130px 0 165px;
+	}
+	@media #{$md} {
+		padding: 100px 0 80px;
+	}
+	@media #{$sm} {
+		padding: 40px 0 35px;
+	}
+	&-img {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		@media #{$lg} {
+			max-width: 520px;
+		}
+		@media #{$md} {
+			max-width: 450px;
+		}
+		@media #{$sm} {
+			max-width: 300px;
+			top: -20px;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.col {
+		@include flex(column);
+		@include make-col(5);
+		@media #{$md} {
+			@include make-col(6);
+		}
+		@media #{$sm} {
+			@include make-col(7);
+		}
+		@media #{$xs} {
+			@include make-col(12);
+		}
+	}
+}

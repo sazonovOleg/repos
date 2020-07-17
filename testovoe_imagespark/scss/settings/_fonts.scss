@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Gillroy';
+	src: url('../font/Gilroy-Extrabold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../font/Roboto-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../font/Roboto-Regular.woff2') format('woff2');
+}
+
+$fontGilroy: 'Gillroy';
+$fontRobotoBold: 'Roboto-Bold';
+$fontRobotoRegular: 'Roboto-Regular';
+body {
+	font-family: $fontRobotoRegular;
+}
+
+h1, h2 {
+	font-family: $fontGilroy;
+}
+
+h3, h4, h5 {
+	font-family: $fontRobotoBold;
+}

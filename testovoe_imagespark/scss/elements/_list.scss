@@ -1,0 +1,24 @@
+.list {
+	padding: 0;
+	margin-bottom: 78px;
+	font-family: $fontRobotoRegular;
+	list-style: none;
+	@include font-set(24px, 300, 34px);
+	@media #{$lg} {
+		margin-bottom: 40px;
+		@include font-set(20px, null, 24px);
+	}
+	@media #{$sm} {
+		margin-bottom: 20px;
+		@include font-set(16px, null, 20px);
+	}
+	@media #{$xs} {
+		font-size: 15px;
+	}
+	&-item {
+		margin-bottom: 24px;
+		@media #{$sm} {
+			margin-bottom: 18px;
+		}
+	}
+}

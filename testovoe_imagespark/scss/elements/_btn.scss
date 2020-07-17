@@ -1,0 +1,40 @@
+.btn {
+	position: relative;
+	display: block;
+	padding: 25px;
+	width: max-content;
+	@include font-set(22px,400,20px);
+	@include hoverColor($primaryColor,$primaryColor,none);
+	border: 2px solid;
+	transition: $standardTransition;
+	z-index: 2;
+	@media #{$lg} {
+		font-size: 18px;
+		padding: 20px;
+	}
+	@media #{$sm} {
+		font-size: 16px;
+		padding: 15px;
+	}
+	&:hover {
+		@include hoverColor($primaryColor,$secondaryColor,$primaryColor);
+		.btn-arrow {
+			fill: $secondaryColor;
+		}
+	}
+	&--white {
+		@include hoverColor($secondaryColor,$secondaryColor,none);
+		&:hover {
+			@include hoverColor($secondaryColor,$primaryColor,$secondaryColor);
+			.btn-arrow--white {
+				fill: $primaryColor;
+			}
+		}
+	}
+	&-arrow {
+		transition: $standardTransition;
+		&--white {
+			fill: $secondaryColor;
+		}
+	}
+}

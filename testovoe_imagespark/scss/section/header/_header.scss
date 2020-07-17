@@ -1,0 +1,43 @@
+header {
+	overflow-x: hidden;
+	.header {
+		position: relative;
+		padding: 76px 0;
+		background: url("../img/baner-img.jpg") center center no-repeat;
+		background-size: cover;
+		@media #{$lg} {
+			padding-top: 50px;
+		}
+		@media #{$sm} {
+			padding-top: 20px;
+		}
+		.nav {
+			@include flex(row, space-between, center);
+			padding-bottom: 166px;
+			@media #{$lg} {
+				padding-bottom: 70px;
+			}
+			@media #{$sm} {
+				padding-bottom: 30px;
+			}
+		}
+		@import "burger";
+		.logo {
+			color: $secondaryColor;
+			font-family: $fontGilroy;
+			@include font-set(48px, 400, 48px);
+			transition: $standardTransition;
+			&:hover {
+				opacity: 0.7;
+			}
+			@media #{$lg} {
+				font-size: 38px;
+			}
+			@media #{$md} {
+				font-size: 30px;
+			}
+		}
+		@import "menu";
+		@import "s-banner";
+	}
+}

@@ -1,0 +1,50 @@
+.s-do {
+	position: relative;
+	padding: 111px 0 58px;
+	@media #{$lg} {
+		padding-top: 70px;
+	}
+	@media #{$sm} {
+		padding-bottom: 77px;
+	}
+	.title {
+		@media #{$lg} {
+			text-align: left;
+		}
+	}
+	.row {
+		justify-content: center;
+		@media #{$lg} {
+			justify-content: flex-start;
+		}
+	}
+	.col {
+		@include flex(column,flex-start,flex-start);
+		@include make-col(4);
+		margin-bottom: 105px;
+		padding-left: 50px;
+		@media #{$lg} {
+			@include make-col(6);
+			padding-left: 0;
+			margin-bottom: 70px;
+		}
+		@media #{$sm} {
+			@include make-col(12);
+			margin-bottom: 40px;
+		}
+		&--p-none {
+			padding-left: 0;
+		}
+		&-svg {
+			min-height: 62px;
+			margin-bottom: 30px;
+		}
+	}
+	.text {
+		font-size: 14px;
+		max-width: 450px;
+		@media #{$sm} {
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.title {
+	padding-bottom: 70px;
+	@include font-set(48px,400,55px);
+	z-index: 2;
+	@media #{$lg} {
+		@include font-set(36px,null,40px);
+		padding-bottom: 50px;
+	}
+	@media #{$sm} {
+		font-size: 30px;
+		padding-bottom: 30px;
+	}
+	&--white {
+		color: $secondaryColor;
+	}
+	&--center {
+		text-align: center;
+	}
+}

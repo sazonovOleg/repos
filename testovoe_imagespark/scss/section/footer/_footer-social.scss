@@ -1,0 +1,30 @@
+&-social {
+	background-color: $blackShadowColor;
+	padding: 83px 0;
+	@include flex(row,center,center);
+	@media #{$lg} {
+		padding: 40px 0;
+	}
+	&-wrapper {
+		margin: 0 20px;
+		@include size(77px,null,77px);
+		@include flex(row,center,center);
+		border-radius: 50%;
+		border: 3px solid $footerBorder;
+		background: none;
+		transition: $standardTransition;
+		cursor: pointer;
+		@media #{$xs} {
+			margin: 0 10px;
+			@include size(40px,null,40px);
+		}
+		&:hover {
+			background: linear-gradient(to top, #57d781 0%, #25adff 100%);
+		}
+	}
+	&-icon {
+		@media #{$xs} {
+			max-width: 30px;
+		}
+	}
+}
