@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scss/style.css">
+	<title>Тестовое porpellerAds</title>
+</head>
+
+<body>
+
+<div class="player">
+	<form class="popup" id="popUp">
+		<div class="popup-wrap">
+			<p class="popup-text">
+				Для продолжения просмотра<br> нужно пройти регистрацию
+			</p>
+			<input type="email" class="popup-input" id="email" placeholder="example@mail.com">
+			<button type="button" class="popup-btn">OK</button>
+		</div>
+	</form>
+	<div class="player-wrap">
+		<video class="player-video" id="videoPlayer">
+			<source src="video/videoplayback.mp4" type="video/mp4">
+		</video>
+		<button class="player-play"  class="player-play"></button>
+	</div>
+	<div class="player-controls">
+		<div class="player-track">
+			<input type="range" id="timeLine" value="0" step="1" max="100" class="player-track-range">
+			<progress value="0" max="100" id="progress" class="player-progress"></progress>
+		</div>
+		<div class="buttons">
+			<div class="buttons-col">
+				<div class="buttons-wrap">
+					<button class="buttons-play buttons-icon" id="play"></button>
+					<button class="buttons-pause buttons-icon" id="pause"></button>
+				</div>
+				<div class="buttons-wrap">
+					<button class="buttons-sound-on buttons-icon" id="soundOn"></button>
+					<button class="buttons-sound-off buttons-icon" id="soundOff"></button>
+				</div>
+				<div class="time">
+					<span class="time-second time-second-start" id="outTime"></span>/
+					<span class="time-second time-second-end" id="fullTime"></span>
+				</div>
+			</div>
+			<button class="buttons-fullscreen buttons-icon" id="fullScreen"></button>
+		</div>
+	</div>
+</div>
+
+<script src="js/js.js"></script>
+</body>
+
+</html>
